@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Users, DollarSign, TrendingUp, Calendar, UserCheck, AlertTriangle, CreditCard, Briefcase } from 'lucide-react'
+import { Users, DollarSign, UserCheck, AlertTriangle, CreditCard, Briefcase } from 'lucide-react'
 
 const Dashboard: React.FC = () => {
   // Processing month state
