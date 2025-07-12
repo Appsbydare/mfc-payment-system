@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="flex flex-row w-full pt-4 px-4 gap-4">
         <Sidebar />
         <main className="flex-1 flex flex-col overflow-x-hidden overflow-y-auto">
-          <div className="w-full max-w-5xl mx-auto mt-6 mb-6 px-4 py-6 bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 backdrop-blur-md">
+          <div className="w-full max-w-5xl mx-auto mt-6 mb-6 px-4 py-6 bg-white/20 dark:bg-gray-900/20 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 backdrop-blur-md">
             {children}
           </div>
         </main>
