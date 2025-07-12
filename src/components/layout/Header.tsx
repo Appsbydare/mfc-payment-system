@@ -9,34 +9,24 @@ const Header: React.FC = () => {
   const isDarkMode = useSelector((state: RootState) => state.ui.isDarkMode)
 
   return (
-    <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
-      <div className="flex items-center justify-between px-6 py-4">
-        <div className="flex items-center">
-          <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-            Malta Fight Co. - Payment System
-          </h1>
-        </div>
-        
-        <div className="flex items-center space-x-4">
-          <button
-            onClick={() => dispatch(toggleDarkMode())}
-            className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-          >
-            {isDarkMode ? (
-              <Sun className="h-5 w-5 text-gray-600 dark:text-gray-300" />
-            ) : (
-              <Moon className="h-5 w-5 text-gray-600 dark:text-gray-300" />
-            )}
-          </button>
-          
-          <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-            <Bell className="h-5 w-5 text-gray-600 dark:text-gray-300" />
-          </button>
-          
-          <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-            <User className="h-5 w-5 text-gray-600 dark:text-gray-300" />
-          </button>
-        </div>
+    <header className="bg-white/80 dark:bg-gray-900/80 shadow-lg rounded-b-2xl border-b border-gray-200 dark:border-gray-700 backdrop-blur-md">
+      <div className="flex items-center justify-end px-3 py-1 min-h-[40px] gap-1.5">
+        <button
+          onClick={() => dispatch(toggleDarkMode())}
+          className="p-1 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-400 shadow-sm"
+        >
+          {isDarkMode ? (
+            <Sun className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+          ) : (
+            <Moon className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+          )}
+        </button>
+        <button className="p-1 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-400 shadow-sm">
+          <Bell className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+        </button>
+        <button className="p-1 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-400 shadow-sm">
+          <User className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+        </button>
       </div>
     </header>
   )

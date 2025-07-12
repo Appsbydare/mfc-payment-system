@@ -8,6 +8,8 @@ import {
   FileText, 
   Cog 
 } from 'lucide-react'
+import { useSelector } from 'react-redux'
+import { RootState } from '@store/index'
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
@@ -20,39 +22,45 @@ const navigation = [
 
 const Sidebar: React.FC = () => {
   const location = useLocation()
+  const isDarkMode = useSelector((state: RootState) => state.ui.isDarkMode)
 
   return (
-    <div className="w-64 bg-white dark:bg-gray-800 shadow-sm border-r border-gray-200 dark:border-gray-700">
-      <div className="flex flex-col h-full">
-        <div className="flex items-center justify-center h-16 px-4">
-          <h2 className="text-lg font-bold text-gray-900 dark:text-white">
-            MFC Payment System
-          </h2>
-        </div>
-        
-        <nav className="flex-1 px-4 py-6">
-          <ul className="space-y-2">
-            {navigation.map((item) => {
-              const isActive = location.pathname === item.href
-              return (
-                <li key={item.name}>
-                  <Link
-                    to={item.href}
-                    className={`flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
-                      isActive
-                        ? 'bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300'
-                        : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
-                    }`}
-                  >
-                    <item.icon className="mr-3 h-5 w-5" />
-                    {item.name}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-        </nav>
+    <div className="w-52 bg-gradient-to-b from-white/90 via-gray-50/90 to-gray-200/80 dark:from-gray-900/90 dark:via-gray-800/90 dark:to-gray-700/80 shadow-2xl rounded-2xl border border-gray-200 dark:border-gray-700 mt-4 mb-4 ml-4 flex flex-col h-[94vh] backdrop-blur-md">
+      <div className="flex items-center justify-center h-14 px-0 mt-2 mb-2">
+        <img
+          src={isDarkMode ? '/Logo_White.png' : '/Logo_Black.png'}
+          alt="MFC Logo"
+          className="h-10 w-10 object-contain select-none"
+          style={{ maxWidth: 40, maxHeight: 40 }}
+          draggable="false"
+        />
       </div>
+      <nav className="flex-1 px-1 py-2">
+        <ul className="space-y-0.5">
+          {navigation.map((item) => {
+            const isActive = location.pathname === item.href
+            return (
+              <li key={item.name}>
+                <Link
+                  to={item.href}
+                  className={`flex items-center px-2 py-1 text-xs font-medium rounded-lg transition-all gap-2 shadow-sm relative overflow-hidden
+                    ${isActive
+                      ? 'bg-primary-50 dark:bg-primary-900 text-primary-700 dark:text-primary-300 shadow-md'
+                      : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'}
+                  `}
+                  style={{ lineHeight: 1.1, minHeight: 32 }}
+                >
+                  {isActive && (
+                    <span className="absolute left-0 top-0 h-full w-1 bg-primary-500 rounded-r-lg" />
+                  )}
+                  <item.icon className="h-4 w-4 z-10" />
+                  <span className="z-10">{item.name}</span>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
     </div>
   )
 }
