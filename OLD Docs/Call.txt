@@ -1,0 +1,1212 @@
+Skip to Main Content
+Accessibility Overview
+Zoom Logo
+Zoom Meeting- Shared screen with speaker view
+Jun 9, 2025 02:01 PM
+Download (64 MB)
+
+00:00:21/00:42:04
+
+Speed
+
+
+Audio Transcript
+Search transcript
+Darshana
+Darshana
+00:19
+Hi, Jay! Can you hear me?
+Jay
+Jay
+00:21
+Hey, Darshanna? Yes, I can. How are you.
+Darshana
+Darshana
+00:24
+Yeah, I'm good.
+How are you?
+Jay
+Jay
+00:27
+Yes, very well, thank you.
+Darshana
+Darshana
+00:29
+Okay.
+Jay
+Jay
+00:30
+Thank you so much for for everything that you've you've done so far. I really appreciate it. It looks. It looks pretty much exactly how
+you know where, like the different panels, the the layout. You've understood it very well, so thank you.
+Darshana
+Darshana
+00:47
+Yeah, that's okay. So how do we start? So do you want me to like share my screen and show you the sample app we developed. So then it's it's actually only the Ui, the user interface. So if you can take me through and tell me if there is any important information. Then I can.
+Jay
+Jay
+01:11
+Yes.
+Darshana
+Darshana
+01:12
+So, okay.
+let me share my screen. Now.
+hold on.
+Yeah, okay, this is the user interface.
+So can you show my screen? Now.
+Jay
+Jay
+01:40
+Yeah, I can. I can see your screen.
+Darshana
+Darshana
+01:42
+Okay? In the 1st tab, we have a dashboard there with all the summaries based on the mentioned criterias
+and we have another tab data import. So this is where we can import the 2 files that you have provided.
+And in this tab you have anything special, or you think that we should know.
+Jay
+Jay
+02:12
+So can we go back to the to the dashboard.
+Darshana
+Darshana
+02:16
+Yeah.
+Jay
+Jay
+02:19
+On this one total attendances, total revenue. Do you know what would be good?
+So for me, it's really important to understand.
+and only say, Yes, if this is quick and easy, it's good for me to understand group attendance for group classes versus private classes.
+Darshana
+Darshana
+02:44
+Okay.
+Jay
+Jay
+02:45
+So.
+Darshana
+Darshana
+02:45
+So you need a split there.
+Jay
+Jay
+02:48
+Yeah, could could we have group attendances versus class attendance? Just a little split.
+Darshana
+Darshana
+02:52
+Yeah, we can do that. Yeah.
+Jay
+Jay
+02:54
+Perfect. Okay? And then under data.
+For now.
+Darshana
+Darshana
+02:59
+Jay. Excuse me, Jay. Is there any
+you know, like situations where the single person could be in both group and individual classes.
+Jay
+Jay
+03:13
+Yes, shit. Yeah, definitely.
+So we have
+you. So you might have 2 attendances, and one of those attendance would be the same person, so both both of them for the same person. But they'd use different packages. And we. We have subcategories so we can track it by the package.
+Darshana
+Darshana
+03:35
+Yeah, okay.
+Jay
+Jay
+03:37
+So, yeah, the the private membership package would be under a private subcategory.
+Darshana
+Darshana
+03:43
+Okay.
+Jay
+Jay
+03:44
+That's how you would distinguish.
+Darshana
+Darshana
+03:46
+Okay.
+Jay
+Jay
+03:49
+The data import section.
+for me. Yes, that that looks that looks beautiful. We have 2 sheets that we'd like to bring in so so far you've not worked on the actual
+the the logic, and the exceptions handling, and that kind of thing just yet right.
+Darshana
+Darshana
+04:10
+Yeah, this is just the interface. If I have finalized. So actually, I need to go into further details and analyze the scenario further and make a specification file before we proceed. So I will make a spec file and send you that. You'll have to go through that document carefully and let me know if you have anything. Once we finalize the specification, we can kick off.
+Jay
+Jay
+04:37
+Yeah, very good. And I think from the way you've set out the the interface, I think you've understood the problem.
+and I think it really comes down to the way that we handle all the little exceptions. So let's say, Dasha, I I bring these all together, and so this creates in the background a new spreadsheet right where each attendance is then tracked to a package.
+Yeah, yeah, okay, brilliant. So I'm going to do something manually for a data set of around 7 days.
+and we will use this as our sort of source of truth file where we compare if everything is correct.
+Now. What you've got for me is that there's like some kind of
+exceptions process where it will flag. If there's a problem it will say, Jay, how how do you want to handle this
+payment? Yeah,
+Darshana
+Darshana
+05:40
+Yeah.
+Jay
+Jay
+05:42
+I'd really be intrigued as to how that works. Because, yeah, again, it's very, very important that we go through these manually.
+Yeah, yeah, maybe I'll give you. I'll add to that specifications document.
+Darshana
+Darshana
+05:58
+Yeah, exactly. So. What I will do is, I'll
+you know. Go through the requirement again, and send you a summary summary sheet. Then you can check the sheet and let me know if you need to have any modifications. And if there is something that we haven't discussed. So we can incorporate that.
+And after we start,
+if you have any major changes that we have to be like discussed separately in a second phase. So if otherwise, that's that's the stand standard. That's how we like normally proceed. So yeah, once we finalize this specification file, we can start. And I will give you a roadmap also.
+Okay, yeah, that's how it happens. Yeah.
+Jay
+Jay
+06:56
+Good. And this this system? Are we able to
+Darshana
+Darshana
+Customize the the look a little bit and put our logo in. And things like this. Yeah.
+exactly. You can do that, Jay. You just need to send me the logo and other details. Then we can incorporate that.
+Jay
+Jay
+07:14
+Great. Thank you.
+I'll send you our brand kit, and you can. You can see if you can.
+Darshana
+Darshana
+07:19
+Yeah.
+Jay
+Jay
+07:19
+As similar as possible.
+Yes, this is very good. So this is all the rules. So I can create
+a new membership. Yeah, perfect good.
+Darshana
+Darshana
+07:30
+Yeah.
+Jay
+Jay
+07:31
+Now on here, what do you mean by tax exempt.
+Darshana
+Darshana
+07:39
+Yeah. If you have anything something like tax exempt. Or if it is really not relevant, we can remove that. And here also, I have seen that I have included private session here also. So that is also relevant because we have a drop down here. So I'll have to, you know, have some kind of
+revisit the code again, this is not.
+Jay
+Jay
+08:09
+Yes, exactly.
+Darshana
+Darshana
+08:10
+This is not.
+Jay
+Jay
+08:11
+You would choose.
+Darshana
+Darshana
+08:11
+Most.
+Jay
+Jay
+08:13
+Exactly. So. I want that in categories. Yeah, exactly. So we wouldn't choose it. There now, if you examine one of the files. For
+which file would it be in? Would it be the payments or the attendance data
+under the payments file? You'll notice that
+actually, the tax goes out as a separate transaction.
+Darshana
+Darshana
+08:39
+Okay.
+Jay
+Jay
+08:40
+The amount yeah is, is after the tax has been taken away. And this is this is how.
+Darshana
+Darshana
+08:46
+All right.
+Jay
+Jay
+08:47
+It's always after tax. So that tax exempt box is, is not necessary.
+Okay, we can remove that. Yeah, maybe. Yeah.
+Darshana
+Darshana
+08:57
+This is something like a mock up file where the basic.
+Jay
+Jay
+09:01
+I understand. That's fine.
+Darshana
+Darshana
+09:03
+Yeah.
+Jay
+Jay
+09:04
+Yes, yes, don't worry. I was not alarmed. I was actually very, very impressed, I thought, well, this
+he's really really understood from from my description. So I was very happy.
+Yeah.
+Darshana
+Darshana
+09:17
+Okay, and then can we go back to rules? Manager? Sorry. So. Most.
+Jay
+Jay
+09:22
+Percentages number of sessions, right? So there would need to be another sort of rule, right? Which is
+price per one session and how to calculate it.
+Darshana
+Darshana
+09:42
+Price for one session.
+Jay
+Jay
+09:46
+So, for example,
+Darshana
+Darshana
+09:50
+If you have you seen my rules document?
+It's an yeah. I've seen that. Actually, this scenario was like I did
+4 or 5 days ago. So I have done few similar other projects as well. So
+that's why I exactly. This is not in mind. 100%.
+Jay
+Jay
+10:16
+Yeah, if you if you click rules.
+Darshana
+Darshana
+10:19
+This one, okay.
+yeah.
+Jay
+Jay
+10:31
+These are all the different parties that we will be paying.
+Darshana
+Darshana
+10:35
+Money. Too.
+Okay. Yeah.
+Jay
+Jay
+10:37
+And that's that's easy. That's straightforward. There might be
+slightly different names on our app.
+So this is just full names and short names, just in case there's any discrepancies.
+Darshana
+Darshana
+10:49
+Yeah, no worries. Yeah, we can do that. I just used sample names. Yeah.
+Jay
+Jay
+10:56
+Great. Now, if you scroll to the top for me.
+This is where? Okay? Good. So let's say, you have Junior 10 pack pay as you go.
+Scroll up again for me. Sorry.
+Yeah. Tunia. 10 pack pay as you go.
+so if you go back to your previous screen. You have. I'm not sure if you included it, but
+in this one we've got the overall price.
+Darshana
+Darshana
+11:29
+Of the.
+Jay
+Jay
+11:30
+We don't have the price per session. So if you go back to the rules, you'll see how we can calculate the price per session. So if it's a 10 pack, it's very easy, because we just divide the purchase price by 10.
+Darshana
+Darshana
+11:41
+Okay, yeah.
+And and we do it like that.
+Yeah.
+Jay
+Jay
+11:46
+When we have twice a week, it's a little bit more complicated. So you can see that I've assumed that one month has 4.3 weeks.
+Darshana
+Darshana
+11:55
+Yeah.
+Jay
+Jay
+11:56
+And then we'll do. Divided by 2 for 2 a week.
+Darshana
+Darshana
+12:00
+And then.
+Jay
+Jay
+12:00
+The formula, for that is dividing it by 8.6. So I think it's important that we're able to have some kind of
+way of adding in that rule on that screen.
+Darshana
+Darshana
+12:14
+Yeah, it. You need it in this screen. Right? Yeah.
+Yeah.
+You see, let's see, yeah, I will include that calculations in the
+window itself. So then we are. If you need in the future you can change those rates as well.
+Jay
+Jay
+12:36
+Exactly. Exactly. So, yeah, we we need to be able to then play around with these formulas.
+I think, for now that that should be okay. And also, so one more thing right, go back to the other screen for me.
+So there are also some where we have a fixed price. So I have an unlimited plan. If you see under pay monthly.
+Yeah, this one. Yes.
+So this is an old package. Now we we I need to slowly phase this out, but I have some customers who will be very sad if I start charging them full price. So I'm still gonna allow them to use this, and it was a package that was not very
+what's the word profitable for us?
+Darshana
+Darshana
+13:24
+Because.
+Jay
+Jay
+13:25
+Some customers would use this, you know, 50 times in one month.
+Some would use at 20, and it was very difficult to track
+what the price was per session.
+So what we've done is we've just chosen a fixed price instead.
+Okay, so under
+on the other screen, the rule would be slightly different. So under coaches, instead of a percentage.
+we would just have a price, a fixed price.
+Darshana
+Darshana
+13:55
+You follow me?
+Yeah. Then maybe we'll have.
+Jay
+Jay
+14:00
+Maybe maybe it's worth having, like a toggle button where it's either percentage split or fixed rate.
+Darshana
+Darshana
+14:07
+Okay, yeah, we can do that. It's anyway straightforward. Yeah, we can do that. Yeah.
+Jay
+Jay
+14:15
+So yeah, you choose, is it a fixed rate? Or is it a percentage? And you put the percentage in there? And also generally, I will apply the same percentages to everything.
+So for me to change it on, each package is not always necessary.
+Okay, so maybe maybe we could do something like like
+under membership types, we have a main screen
+where all like an option screen, where we have a global rate.
+And then, if I need to change the customized rate for a certain package. I can do so.
+Darshana
+Darshana
+14:58
+Okay.
+Jay
+Jay
+14:59
+But otherwise it doesn't ask me for that information. It's more interested in
+the exact pricing and the rules for that membership. Are you following me?
+Darshana
+Darshana
+15:10
+Yeah, I got it. Yeah.
+Jay
+Jay
+15:12
+So that's something more customized.
+Darshana
+Darshana
+15:17
+Yeah, so we have a, so we have a global percentage.
+Jay
+Jay
+15:20
+And then it only if I need to change it for that specific package will I tick? Yes, I need an individual package like individual percentages. Or I select fixed rate.
+Darshana
+Darshana
+15:33
+Okay, yeah. Brilliant. Yeah.
+Okay. And then payment calculator.
+which is great.
+So what would have you managed a program like the details section for his coach.
+Yeah, this is like all the relevant record of this.
+Jay
+Jay
+16:10
+Gorge.
+Darshana
+Darshana
+16:11
+Will be displayed on this one.
+Jay
+Jay
+16:13
+Okay, what's what's really important for me is
+to have the private training split from the group training.
+Darshana
+Darshana
+16:26
+Can we come back again.
+Jay
+Jay
+16:29
+Let's say we have Alice Smith and her her payslip.
+Yeah, would be really good to have.
+I sort of like Number one. Not itemized.
+It would be a like a split like a break, a summary sorry.
+Darshana
+Darshana
+16:47
+Okay.
+Jay
+Jay
+16:48
+And that summary, I think the minimum details I'd want to see is the group classes, the total
+and the private classes. The total.
+Darshana
+Darshana
+16:59
+Okay, so you need it. Time. Wise, like.
+Jay
+Jay
+17:04
+Monthly basis, or weekly or
+monthly, would be perfect, and then I will probably have is, I'll have coaches asking me for a breakdown in the 1st few months, so it would be good if you know, we could provide them with the with the spreadsheet that that tracks all the details, you know.
+Darshana
+Darshana
+17:24
+Okay, so.
+Jay
+Jay
+17:25
+So we can, we can prove to them. Yes, you actually aren't this much. And this is why. And if they have any queries or any problems. If there's any mistakes, then we can. We can say, Oh, no, okay. I can see that the system has calculated something incorrectly, or
+you know the the customer didn't pay, or whatever we can figure these issues out.
+Darshana
+Darshana
+17:47
+So adding, those fields will
+increase the development hours, Jay. So I will do a
+spec, and we'll provide you a revised pricing breakdown as well. So then we can, you know, discuss and finalize.
+Jay
+Jay
+18:07
+Okay?
+And if it starts getting too expensive, let me know if there's a sort of
+a cheap solution, a quick solution that we can use for a few months, and then we can upgrade later. Maybe.
+Darshana
+Darshana
+18:21
+Okay.
+Jay
+Jay
+18:25
+For me. If there's if there's anything that I
+do not need at the moment, it is probably really detailed. Pay slips
+like I can I can if I have the raw data that is split.
+So as long as I know which transactions are tagged to Alice, I'm more than happy to create the payslip myself. For the 1st few months.
+Darshana
+Darshana
+18:50
+Okay.
+no, it's based on I mean, if we have the raw data, it's a matter of summarizing. It's not take that time. Yeah.
+Jay
+Jay
+19:03
+Okay.
+Darshana
+Darshana
+19:03
+At which time I mean. So yeah.
+we'll see those options as well.
+Jay
+Jay
+19:11
+Very good.
+Darshana
+Darshana
+19:12
+Okay.
+Jay
+Jay
+19:17
+Reports. Yeah, I like, I like the look of this.
+This is good.
+Darshana
+Darshana
+19:23
+Do you remember?
+Jay
+Jay
+19:28
+Yeah, for now I can't think of any any improvements on this
+could. And then settings coach management. Okay, excellent. We can add a new coach what's under general here.
+and database.
+Darshana
+Darshana
+19:44
+General means the personal information. And you know, this in this tab, we have the company details actually
+and databases. This is
+section where we need to save the files and have these databases saved. So we have like,
+you know, database imported and exported.
+There are.
+There are. These are actually administrative
+stuff. So this is not something very important, for in terms of your, I mean the front and side.
+this is basically the settings of the back end. So.
+Jay
+Jay
+20:37
+Very good. All right. Should we have a look through the the exceptions? Because I think this is where it's gonna get complex and
+most likely to create problems.
+Darshana
+Darshana
+20:50
+Okay, so how do we.
+Jay
+Jay
+20:53
+So if you look at the the document that says brief.
+Darshana
+Darshana
+21:03
+These are brief. Yeah.
+I'm I'm having a small trouble in there.
+Yes, give me a second. I need to convert this to Pdf.
+yeah.
+Jay
+Jay
+22:07
+Brilliant. Okay, so just something for you to kind of understand. So keep scrolling and.
+Darshana
+Darshana
+22:16
+I think so. Challenge number one actually scroll to the top of this page.
+Jay
+Jay
+22:22
+It's an example of what what details we need to merge. So, for example, on the attendance data sheet you'll have. You have Livia Vela, who attended the warrior flow class.
+Darshana
+Darshana
+22:35
+And she paid for that by the 10 pack.
+And the problem with the 1st spreadsheet is that there is no payment data.
+Jay
+Jay
+22:43
+And so this is why I reached out to you so you could help me merge these spreadsheets. Now there is another line where you can see that that adult 10 pack and the name Livia, and the the date of the attendance.
+Darshana
+Darshana
+22:58
+No, actually no. The date of the attendance is different, because the the membership was purchased on a different date. But obviously the the purchase sometimes is after
+after that date, as well
+Jay
+Jay
+23:15
+So you have those 2 data points, the name and the name of the membership which you'll hopefully use to track into this amount.
+Darshana
+Darshana
+23:22
+And then we apply those rules to say like for this one, we would divide it by 10, and then we would calculate
+the price per session. And then you would figure out, 30% goes to bgm.
+so yeah, so that that's how we're how we're essentially working. It.
+Jay
+Jay
+23:39
+Now, if you keep scrolling, the problems that you might encounter are scroll down for me.
+Darshana
+Darshana
+23:52
+Complications. Yeah, so keep scrolling.
+You know the rule spreadsheet kids and parents. So basically.
+But we have parents that have profiles, and they should be setting up their children underneath them.
+Now, sometimes parents buy these packages under their own profiles by mistake, and then.
+and when it comes to booking in the classes. They they book their names in, which is incorrect.
+So sometimes what we have to do is we have to
+cancel the package, and then I apply the kids
+package for free on the kids profile.
+So what I'll do is apply a hundred percent discount.
+Now.
+Jay
+Jay
+24:41
+Anything that has a hundred percent discount.
+Darshana
+Darshana
+24:44
+I would like you to ignore.
+Jay
+Jay
+24:46
+And treat as if it was full priced.
+Darshana
+Darshana
+24:50
+Okay, so do you need any method to attract? This is,
+not the original package. And this is for.
+Jay
+Jay
+24:59
+To be honest, what you'll see on the payments sheet is, you'll see one line for the price that they should have paid, and then you'll see next to it the discount line. So if the discount line is exactly the same. So if it's like a hundred euro package, and the discount line reads €100, then we can ignore that discount.
+But if the discount is anything less than a hundred euros.
+so let's say it's €10.
+I would like you to calculate the percentages on the discounted amount.
+Darshana
+Darshana
+25:34
+Okay, percentage of the discounted amount.
+Jay
+Jay
+25:37
+Yes, exactly. So. Sometimes we might have a sale, for example.
+and we give someone 20% off.
+And then I want to make sure that my coaches get paid. Everyone needs to get paid 20% less. Basically.
+Darshana
+Darshana
+25:53
+Okay.
+Jay
+Jay
+25:54
+Yeah. So there's a slightly different treatment for a hundred percent discount versus a small.
+Darshana
+Darshana
+26:01
+Yeah. But that's not a good practice. Right?
+Jay
+Jay
+26:08
+What do you mean?
+Darshana
+Darshana
+26:11
+I mean, if there is any specific method to track their packages, you you I mean.
+you need a sort of solution for that though you are okay with the method that you have explained. Now.
+Jay
+Jay
+26:26
+Yes, for me, this, this seems to work. Okay.
+Darshana
+Darshana
+26:29
+Okay?
+So the solution will be hard coded in the code. Right?
+Jay
+Jay
+26:37
+Exactly.
+Darshana
+Darshana
+26:38
+You don't have any option in the interface.
+Jay
+Jay
+26:43
+On the interface. I mean it.
+No, I mean what you mean, team up.
+or the program that you're creating.
+Darshana
+Darshana
+26:54
+Yeah, I'm in the program that I'm planning to create here.
+I mean, you need any some sort of indication to identify that this is a same package, but they are children.
+Jay
+Jay
+27:14
+Let's do this.
+Why don't you apply the rules
+without this? And then see, we can compare to my source of truth, spreadsheet.
+and we'll see where the mistakes have been made. And then we, I think we need to figure out exactly how we do this.
+Darshana
+Darshana
+27:35
+Okay.
+Jay
+Jay
+27:36
+Because what I want might be different to what's possible, if you understand
+like, there may be other factors at play here.
+But you. I think you understand, like the the key issue. So there's discounts that have been applied. And
+there's slightly different treatment of those discounts.
+Darshana
+Darshana
+27:59
+Yeah, that's what I mean, I mean. So if you have a real discount, how do we? And identify that.
+Jay
+Jay
+28:07
+Do you want to go to the payment spreadsheet?
+Darshana
+Darshana
+28:28
+Yeah.
+Jay
+Jay
+28:29
+Okay, so and yeah, if you expand memo for me.
+right? So, for example, the top one, Elizabeth, she has a 100% discount. You can see under the 1st entry there is a discount for a hundred percent.
+Now, can you press control F and type in discount.
+Darshana
+Darshana
+29:13
+Yeah, there, we go. Okay.
+Jay
+Jay
+29:15
+So. This is. This is a real discount. You can see that.
+I would like to amend things by this much.
+Darshana
+Darshana
+29:27
+Okay, so this, what is this?
+Jay
+Jay
+29:33
+So Mindbody was the old software that we used to use, and we had to move a lot of memberships across from Mindbody.
+Darshana
+Darshana
+29:42
+So it also has a minus value. There.
+Jay
+Jay
+29:46
+Yeah. So this was, this is a hundred percent discount.
+And I, how do I
+need you to treat? I need you to treat this, like it was never discounted. So we ignore the discount here.
+But if it's anything less than a hundred percent, then I need you to treat it as a normal package minus that amount.
+Darshana
+Darshana
+30:13
+Okay, like a normal discount.
+Jay
+Jay
+30:15
+Exactly. So let's say, it was a hundred euro pack.
+We discounted by 10%.
+Then everyone else needs to receive 10% less.
+Darshana
+Darshana
+30:28
+Okay.
+Jay
+Jay
+30:30
+I got that point. What I meant was like how to identify them.
+Darshana
+Darshana
+30:35
+Yeah, how to identify.
+Jay
+Jay
+30:38
+Basically the the names of the discounts are under the memo.
+Now, what I've done for you is, I have changed every single real discount to include the word discount. So that's how you tell
+include what they include the word discount.
+Darshana
+Darshana
+31:00
+Okay.
+Jay
+Jay
+31:01
+And now this wasn't always the case, so there are some exceptions. If you go back to the.
+Darshana
+Darshana
+31:10
+Hey? I have a small question. There.
+Jay
+Jay
+31:12
+Sure.
+Darshana
+Darshana
+31:13
+Yeah, how do we define these 2 things?
+So here freedom pass. This should be the scenario we early discussed. This is the.
+Jay
+Jay
+31:24
+Yeah, you can.
+Darshana
+Darshana
+31:25
+Your old software. But it is the same 100% discount.
+Jay
+Jay
+31:29
+Exactly.
+Darshana
+Darshana
+31:29
+Do we? Do? We need to separate this.
+Jay
+Jay
+31:32
+Nope, you treat these exactly the same way.
+Darshana
+Darshana
+31:35
+Okay, so.
+Jay
+Jay
+31:39
+If you want, you can tag them by the name of the discount, or you can tag by. If the discount matches the price, then it's equivalent to 100. It's up to you what kind of
+formulas you use to figure that out.
+Darshana
+Darshana
+31:59
+Okay, yeah. You were telling me something.
+Jay
+Jay
+32:06
+Yeah. So if you go back to the other other spreadsheet.
+Sorry. The other brief.
+Darshana
+Darshana
+32:13
+You mean the Pdf.
+Jay
+Jay
+32:15
+The the word document. Yeah, I think you may have changed it to a Pdf, yes.
+Darshana
+Darshana
+32:20
+Yes.
+Jay
+Jay
+32:21
+So if you scroll down for me.
+go up a little bit more
+so where it says certain packages.
+Darshana
+Darshana
+32:33
+Will have discounts applied to them.
+Okay.
+Jay
+Jay
+32:40
+Yes, so what I've done is I've changed all the names of the discounts. Keep scrolling down. Sorry.
+Darshana
+Darshana
+32:48
+Underneath. You know where it says Number one, the next bullet point.
+Listen.
+Jay
+Jay
+32:54
+Yeah. The next bullet point.
+Darshana
+Darshana
+32:59
+This one?
+Yes, so you can tell that a discount is a discount by it. Has the word discount in the name?
+Okay?
+Okay? And also in the past. I didn't have this. So I've noticed that this is probably the best way to track things, and there are some exceptions. So if you want to program these as well to say, summer school 7 weeks. All of these are discounts which should be treated as discounts. But don't have the name discount. They've been changed, however.
+Okay.
+Jay
+Jay
+33:30
+So in some old legacy packages you'll find this.
+Darshana
+Darshana
+33:34
+Okay, so do you want me to do anything for these, or just to identify this as a discount.
+Jay
+Jay
+33:44
+So you can save
+if it's tagged with the word mind, body, switch, or if it's tagged with freedom, pass, then you can ignore it
+on the opposite side. If it has the word discount in the subject, then please apply the discount, or if it
+has one of these names, summer school, 7 weeks or summer school, summer Academy, loyalty, scheme, or
+fortnight special, you understand.
+Darshana
+Darshana
+34:23
+Okay, I got it.
+Jay
+Jay
+34:25
+Good.
+Darshana
+Darshana
+34:25
+So based on that. Logic, we will have to separate the discounts and act accordingly. Right.
+Jay
+Jay
+34:32
+Exactly. So, then we apply the rules to the discounted amount.
+Darshana
+Darshana
+34:37
+Okay, yeah, based on the previously.
+explain scenario. If it's a 10%, then coaches and everyone will considered the 90%.
+Jay
+Jay
+34:53
+Yes, exactly good, good, good. This means that we continue to stay profitable, and we don't lose money when we provide discounts to the customers.
+that that saving is passed on to all the parties.
+Darshana
+Darshana
+35:06
+Okay.
+Jay
+Jay
+35:10
+Okay. We may have some duplicate customers.
+I don't think there should be too much of a problem, because you will not be able to sign in a customer who does not have a matching membership.
+Darshana
+Darshana
+35:32
+Yeah.
+Jay
+Jay
+35:33
+So it should should be okay. But it's just something to watch out for. What else?
+Oh, okay. Final one.
+So again, this is something that I've disabled.
+But basic there were. It's the last point.
+Classes have a drop-in function.
+And instead of including the package name, the memo actually has the class name.
+And I think I found all 4 classes where this was an issue. Yeah, so press control F and type in warrior flow.
+So this is a single class
+and it needs to be treated as a single class. So there's just a few exceptions. Again, this should not happen. Moving forward. It's just an old legacy issue that we've that we've managed to fix.
+Darshana
+Darshana
+36:35
+Okay, so.
+Jay
+Jay
+36:38
+Just some exceptions that I noticed when I was going through the data.
+Darshana
+Darshana
+36:48
+So you want to keep this or remove it.
+Jay
+Jay
+36:55
+In new data sets. We should not have this again.
+Darshana
+Darshana
+36:59
+Okay.
+Jay
+Jay
+37:00
+But it's something to just to consider when, if there's any mistakes, this like based on this data set, this is why.
+Darshana
+Darshana
+37:12
+Okay.
+Jay
+Jay
+37:13
+But I think this is one of those things that it should say. Listen, I don't recognize this. What should I? How should I treat it.
+I think that's software to respond. Yes.
+Darshana
+Darshana
+37:34
+Yeah, okay.
+Jay
+Jay
+37:36
+And I should be able to apply a manual package to it.
+Darshana
+Darshana
+37:45
+Yeah, that that I need to think about.
+Jay
+Jay
+37:50
+Sure.
+Darshana
+Darshana
+37:52
+Yeah, anyway. This call is on record jay. So I will.
+I will analyze all the scenarios separately.
+Jay
+Jay
+38:01
+Brilliant, and please feel free to
+call me. Send me a message as time goes.
+Darshana
+Darshana
+38:07
+Fantastic.
+Jay
+Jay
+38:10
+In terms of my availabilities. Right? So I'm a boxing coach as well. And I'm you know, running around trying to refurbish the gym. I'm also teaching a lot, so I try and do many things at one time.
+I will do my best to try and make sure things are as clear as possible to make your life easy.
+Darshana
+Darshana
+38:31
+Yeah.
+So anyways, Jay, probably we'll have. You know, problems in the initial stages.
+Yeah.
+Jay
+Jay
+38:43
+Expected.
+Darshana
+Darshana
+38:44
+So we just need to test. And you know,
+make the changes. So we'll have few test runs with the worst case scenarios and make the tool better.
+Jay
+Jay
+38:59
+Brilliant. Yeah, I mean, I'm quite. I'm quite confident in your ability, and
+I feel like we've understood a lot of the exceptions already. You know they're not going to be surprises.
+Darshana
+Darshana
+39:10
+Okay.
+Jay
+Jay
+39:12
+And I've amended and adapted the system
+to make life easier for for the future. So I'm confident.
+Darshana
+Darshana
+39:22
+Okay.
+then our next step would be finalize this specification. So just give me a couple of days. I will analyze the scenario again. And
+we'll give you a proper plan
+with the specification. So based on that, we can have another call or or yeah, or communicate
+and decide what to do next.
+Jay
+Jay
+39:52
+Brilliant
+thanks. So much, my friend. By the way, where are you from? In Sri Lanka? I'm Sri Lankan, too.
+Darshana
+Darshana
+39:59
+Huh!
+Jay
+Jay
+40:00
+Where are you from? In Sri Lanka? I'm Sri Lankan, too.
+Darshana
+Darshana
+40:04
+Seriously.
+Jay
+Jay
+40:05
+Yeah.
+Darshana
+Darshana
+40:05
+I'm yeah. I'm from Gumbach.
+Jay
+Jay
+40:09
+Gampa. Okay? So I'm Tamil. But from I was born in Colombia.
+and my parents grew up in Moladiv.
+Darshana
+Darshana
+40:18
+Okay.
+So now you live in Malta. Right?
+Jay
+Jay
+40:23
+Yeah. I lived in London for many years, and last 5 years in Malta.
+Darshana
+Darshana
+40:30
+Okay, so nice to meet you.
+Jay
+Jay
+40:33
+Pleasure, Brother.
+Darshana
+Darshana
+40:35
+Okay, you have the citizenship in Sri Lanka.
+Jay
+Jay
+40:39
+No, my my mother does, because she has.
+you know she she has some properties, and she wants to go back and maybe live there for her retirement.
+Me no English passport.
+Oh, okay, yes.
+Darshana
+Darshana
+40:59
+Okay.
+Jay
+Jay
+40:59
+Good good to work with a fellow, Sri Lankan. Brother, you, too. Yeah, good. Good.
+Darshana
+Darshana
+41:05
+Okay. Jay, then, yeah, I I have a doubt your name is somewhat similar to Sri Lankan. Names.
+Yeah.
+Jay
+Jay
+41:16
+I only speak a little bit of a little bit of singular. How old are you, Dashana?
+Darshana
+Darshana
+41:21
+I'm 42 now.
+Jay
+Jay
+41:24
+42, so.
+Darshana
+Darshana
+41:25
+Yeah.
+Jay
+Jay
+41:26
+How do you say? How do you say, big brother in singlese? I know manly.
+Darshana
+Darshana
+41:29
+Yeah. Big brother is Aya.
+Jay
+Jay
+41:31
+Aya, that's it. Aya. Okay, thank you. Aya.
+Darshana
+Darshana
+41:39
+You're welcome. Yeah, yeah. Just give me a couple of days jay, I will get back to you.
+Jay
+Jay
+41:46
+Cool all right.
+Darshana
+Darshana
+41:48
+Okay. Okay. Jay, have a good day.
+Jay
+Jay
+41:52
+You, too. Bye-bye.
+Darshana
+Darshana
+41:54
+By way.
