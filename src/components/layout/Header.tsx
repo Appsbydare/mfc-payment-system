@@ -9,11 +9,19 @@ const Header: React.FC = () => {
   const isDarkMode = useSelector((state: RootState) => state.ui.isDarkMode)
 
   return (
-    <header className="w-full bg-white/80 dark:bg-gray-900/80 shadow-lg rounded-b-2xl border-b border-gray-200 dark:border-gray-700 backdrop-blur-md">
+    <header className="w-full bg-white/30 dark:bg-gray-900/30 shadow-lg border-b border-gray-200 dark:border-gray-700 backdrop-blur-md">
       <div className="flex items-center justify-between px-6 py-3 min-h-[56px] gap-1.5">
-        {/* Left (empty for now) */}
-        <div className="w-32" />
-        {/* Centered Title - restored to previous style */}
+        {/* Left: Logo */}
+        <div className="flex items-center w-32">
+          <img
+            src={isDarkMode ? '/Logo_White.png' : '/Logo_Black.png'}
+            alt="MFC Logo"
+            className="h-10 w-10 object-contain select-none"
+            style={{ maxWidth: 40, maxHeight: 40 }}
+            draggable="false"
+          />
+        </div>
+        {/* Centered Title */}
         <span style={{ fontFamily: 'Impact, sans-serif', fontSize: 42 }}>Malta Fight Co. - Payment Automation System</span>
         {/* Right: Button group */}
         <div className="flex items-center gap-2">
