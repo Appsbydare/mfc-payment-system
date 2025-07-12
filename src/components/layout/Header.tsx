@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Moon, Sun, Bell, User } from 'lucide-react'
 import { toggleDarkMode } from '@store/uiSlice'
-import { RootState } from '@store'
+import { RootState } from '@store/index'
 
 const Header: React.FC = () => {
   const dispatch = useDispatch()

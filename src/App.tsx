@@ -8,7 +8,7 @@ import RuleManager from '@pages/RuleManager'
 import PaymentCalculator from '@pages/PaymentCalculator'
 import Reports from '@pages/Reports'
 import Settings from '@pages/Settings'
-import { RootState } from '@store'
+import { RootState } from '@store/index'
 
 function App() {
   const isDarkMode = useSelector((state: RootState) => state.ui.isDarkMode)
