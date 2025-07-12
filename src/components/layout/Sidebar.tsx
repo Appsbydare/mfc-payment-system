@@ -8,8 +8,6 @@ import {
   FileText, 
   Cog 
 } from 'lucide-react'
-import { useSelector } from 'react-redux'
-import { RootState } from '@store/index'
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
