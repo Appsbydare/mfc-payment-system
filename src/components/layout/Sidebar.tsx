@@ -22,7 +22,6 @@ const navigation = [
 
 const Sidebar: React.FC = () => {
   const location = useLocation()
-  const isDarkMode = useSelector((state: RootState) => state.ui.isDarkMode)
 
   return (
     <div className="w-52 bg-white/30 dark:bg-gray-900/30 shadow-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
