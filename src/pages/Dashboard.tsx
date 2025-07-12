@@ -1,80 +1,99 @@
-import React from 'react'
-import { Users, DollarSign, TrendingUp, Calendar } from 'lucide-react'
+import React, { useState } from 'react'
+import { Users, DollarSign, TrendingUp, Calendar, UserCheck, AlertTriangle, CreditCard, Briefcase } from 'lucide-react'
 
 const Dashboard: React.FC = () => {
+  // Processing month state
+  const [processingMonth, setProcessingMonth] = useState<string>(() => {
+    const now = new Date()
+    return now.toISOString().slice(0, 10)
+  })
+
+  // Stat cards data
   const stats = [
     {
       name: 'Total Attendances',
       value: '287',
-      change: '+12%',
-      changeType: 'positive',
+      color: 'text-red-500',
+      border: 'border-red-400',
       icon: Users,
+      labelClass: 'text-2xl font-extrabold',
     },
     {
       name: 'Total Revenue',
       value: '€4,256.30',
-      change: '+8%',
-      changeType: 'positive',
+      color: 'text-green-500',
+      border: 'border-green-400',
       icon: DollarSign,
+      labelClass: 'text-2xl font-extrabold',
     },
     {
-      name: 'Group Classes',
-      value: '156',
-      change: '+5%',
-      changeType: 'positive',
-      icon: TrendingUp,
+      name: 'Coaches to Pay',
+      value: '11',
+      color: 'text-sky-500',
+      border: 'border-sky-400',
+      icon: UserCheck,
+      labelClass: 'text-2xl font-extrabold',
     },
     {
-      name: 'Private Sessions',
-      value: '131',
-      change: '+15%',
-      changeType: 'positive',
-      icon: Calendar,
+      name: 'Pending Calculations',
+      value: '23',
+      color: 'text-yellow-500',
+      border: 'border-yellow-400',
+      icon: AlertTriangle,
+      labelClass: 'text-2xl font-extrabold',
+    },
+    {
+      name: 'BGM Payment',
+      value: '€1,276.89',
+      color: 'text-purple-500',
+      border: 'border-purple-400',
+      icon: CreditCard,
+      labelClass: 'text-2xl font-extrabold',
+    },
+    {
+      name: 'Management Pay',
+      value: '€361.78',
+      color: 'text-teal-500',
+      border: 'border-teal-400',
+      icon: Briefcase,
+      labelClass: 'text-2xl font-extrabold',
     },
   ]
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-          Dashboard
-        </h1>
-        <p className="text-gray-600 dark:text-gray-400">
-          Welcome to Malta Fight Co. Payment System
-        </p>
+      {/* Processing Month Selector */}
+      <div className="flex items-center justify-between">
+        <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">Dashboard</h1>
+        <div className="flex items-center gap-2">
+          <span className="font-semibold text-lg text-gray-700 dark:text-gray-200">Current Processing Month</span>
+          <input
+            type="date"
+            className="border rounded px-2 py-1 text-base"
+            value={processingMonth}
+            onChange={e => setProcessingMonth(e.target.value)}
+            style={{ minWidth: 140 }}
+          />
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Stat Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
         {stats.map((stat) => (
           <div
             key={stat.name}
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6"
+            className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm border-2 p-6 flex flex-col items-center justify-center ${stat.border}`}
           >
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <stat.icon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
-              </div>
-              <div className="ml-4 flex-1">
-                <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                  {stat.name}
-                </p>
-                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {stat.value}
-                </p>
-              </div>
+            <div className="flex items-center mb-2">
+              <stat.icon className={`h-10 w-10 mr-3 ${stat.color}`} />
+              <span className="text-xl font-bold text-gray-700 dark:text-gray-200">{stat.name}</span>
             </div>
-            <div className="mt-4">
-              <span className="text-sm text-green-600 dark:text-green-400">
-                {stat.change}
-              </span>
-              <span className="text-sm text-gray-600 dark:text-gray-400 ml-1">
-                from last month
-              </span>
-            </div>
+            <div className={`${stat.labelClass} ${stat.color}`}>{stat.value}</div>
           </div>
         ))}
       </div>
 
+      {/* Quick Actions & Recent Activity */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6">
           <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
