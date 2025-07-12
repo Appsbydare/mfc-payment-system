@@ -13,8 +13,8 @@ const Header: React.FC = () => {
       <div className="flex items-center justify-between px-6 py-3 min-h-[56px] gap-1.5">
         {/* Left (empty for now) */}
         <div className="w-32" />
-        {/* Centered Title */}
-        <span className="font-bold" style={{ fontFamily: 'Impact, sans-serif', fontSize: 24 }}>Malta Fight Co.</span>
+        {/* Centered Title - restored to previous style */}
+        <span style={{ fontFamily: 'Impact, sans-serif', fontSize: 42 }}>Malta Fight Co. - Payment Automation System</span>
         {/* Right: Button group */}
         <div className="flex items-center gap-2">
           <button
