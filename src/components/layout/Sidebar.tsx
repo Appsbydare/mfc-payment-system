@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
   const location = useLocation()
 
   return (
-    <div className="w-52 bg-white/30 dark:bg-gray-900/30 shadow-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
+    <div className="w-52 bg-white dark:bg-gray-900 shadow-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
       <nav className="flex-1 px-1 py-2">
         <ul className="space-y-0.5">
           {navigation.map((item) => {
