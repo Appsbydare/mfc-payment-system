@@ -25,7 +25,7 @@ const Sidebar: React.FC = () => {
   const isDarkMode = useSelector((state: RootState) => state.ui.isDarkMode)
 
   return (
-    <div className="w-52 bg-white/40 dark:bg-gray-900/40 shadow-2xl rounded-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
+    <div className="w-52 bg-white/80 dark:bg-gray-900/80 shadow-2xl rounded-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
       <div className="flex items-center justify-center h-14 px-0 mt-2 mb-2">
         <img
           src={isDarkMode ? '/Logo_White.png' : '/Logo_Black.png'}

@@ -8,12 +8,12 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/public/Logo_Black.png')" }}>
+    <div className="min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/back1.png')" }}>
       <Header />
       <div className="flex flex-row w-full pt-4 px-4 gap-4">
         <Sidebar />
         <main className="flex-1 flex flex-col overflow-x-hidden overflow-y-auto">
-          <div className="w-full max-w-5xl mx-auto mt-6 mb-6 px-4 py-6 bg-white/60 dark:bg-gray-800/60 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 backdrop-blur-md">
+          <div className="w-full max-w-5xl mx-auto mt-6 mb-6 px-4 py-6 bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 backdrop-blur-md">
             {children}
           </div>
         </main>
