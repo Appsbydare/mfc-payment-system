@@ -16,8 +16,8 @@ const Header: React.FC = () => {
           <img
             src={isDarkMode ? '/Logo_White.png' : '/Logo_Black.png'}
             alt="MFC Logo"
-            className="h-10 w-10 object-contain select-none"
-            style={{ maxWidth: 40, maxHeight: 40 }}
+            className="h-16 w-16 object-contain select-none"
+            style={{ maxWidth: 64, maxHeight: 64 }}
             draggable="false"
           />
         </div>

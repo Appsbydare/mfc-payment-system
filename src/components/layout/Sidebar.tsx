@@ -26,15 +26,6 @@ const Sidebar: React.FC = () => {
 
   return (
     <div className="w-52 bg-white/30 dark:bg-gray-900/30 shadow-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
-      <div className="flex items-center justify-center h-14 px-0 mt-2 mb-2">
-        <img
-          src={isDarkMode ? '/Logo_White.png' : '/Logo_Black.png'}
-          alt="MFC Logo"
-          className="h-10 w-10 object-contain select-none"
-          style={{ maxWidth: 180, maxHeight: 180 }}
-          draggable="false"
-        />
-      </div>
       <nav className="flex-1 px-1 py-2">
         <ul className="space-y-0.5">
           {navigation.map((item) => {
@@ -46,7 +37,7 @@ const Sidebar: React.FC = () => {
                   className={`flex items-center px-2 py-1 text-s font-medium rounded-lg transition-all gap-2 shadow-sm relative overflow-hidden
                     ${isActive
                       ? 'bg-primary-50 dark:bg-primary-900 text-primary-700 dark:text-primary-300 shadow-md'
-                      : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'}
+                      : 'text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'}
                   `}
                   style={{ lineHeight: 1.1, minHeight: 32 }}
                 >
