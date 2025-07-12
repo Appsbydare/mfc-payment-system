@@ -25,13 +25,13 @@ const Sidebar: React.FC = () => {
   const isDarkMode = useSelector((state: RootState) => state.ui.isDarkMode)
 
   return (
-    <div className="w-52 bg-white/80 dark:bg-gray-900/80 shadow-2xl rounded-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
+    <div className="w-52 bg-white/30 dark:bg-gray-900/30 shadow-2xl border border-gray-200 dark:border-gray-700 mb-4 ml-0 flex flex-col h-[94vh] backdrop-blur-md">
       <div className="flex items-center justify-center h-14 px-0 mt-2 mb-2">
         <img
           src={isDarkMode ? '/Logo_White.png' : '/Logo_Black.png'}
           alt="MFC Logo"
           className="h-10 w-10 object-contain select-none"
-          style={{ maxWidth: 40, maxHeight: 40 }}
+          style={{ maxWidth: 180, maxHeight: 180 }}
           draggable="false"
         />
       </div>
@@ -43,7 +43,7 @@ const Sidebar: React.FC = () => {
               <li key={item.name}>
                 <Link
                   to={item.href}
-                  className={`flex items-center px-2 py-1 text-xs font-medium rounded-lg transition-all gap-2 shadow-sm relative overflow-hidden
+                  className={`flex items-center px-2 py-1 text-s font-medium rounded-lg transition-all gap-2 shadow-sm relative overflow-hidden
                     ${isActive
                       ? 'bg-primary-50 dark:bg-primary-900 text-primary-700 dark:text-primary-300 shadow-md'
                       : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'}
