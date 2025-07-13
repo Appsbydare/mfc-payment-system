@@ -19,7 +19,7 @@ const Settings: React.FC = () => {
   const [fixedRate, setFixedRate] = useState(false)
   const [defaultSessionPrice, setDefaultSessionPrice] = useState(10)
   // Database state
-  const [dbStatus, setDbStatus] = useState('OK (mock)')
+  const [dbStatus] = useState('OK (mock)')
   const [backupStatus, setBackupStatus] = useState('No recent backup')
 
   // Handlers for coaches
