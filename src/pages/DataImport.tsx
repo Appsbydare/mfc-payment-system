@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Papa, { ParseResult } from 'papaparse'
+import Papa from 'papaparse'
 
 const attendanceColumns = [
   'Customer', 'Email', 'Date', 'Time', 'Class Type', 'Venue', 'Instructors', 'Booking Method', 'Membership', 'Booking Source', 'Status'
@@ -27,7 +27,7 @@ const DataImport: React.FC = () => {
     Papa.parse(file, {
       header: true,
       skipEmptyLines: true,
-      complete: (results: ParseResult<any>) => {
+      complete: (results: any) => {
         setAttendanceData(results.data as any[])
       },
       error: () => setStatus('Error parsing attendance file.')
@@ -40,7 +40,7 @@ const DataImport: React.FC = () => {
     Papa.parse(file, {
       header: true,
       skipEmptyLines: true,
-      complete: (results: ParseResult<any>) => {
+      complete: (results: any) => {
         setPaymentData(results.data as any[])
       },
       error: () => setStatus('Error parsing payment file.')
