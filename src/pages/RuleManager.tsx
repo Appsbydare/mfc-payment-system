@@ -40,13 +40,12 @@ const defaultRule = {
 
 const RuleManager: React.FC = () => {
   // State for memberships and selection
-  const [memberships, setMemberships] = useState(initialMemberships)
+  const [memberships] = useState(initialMemberships)
   const [expanded, setExpanded] = useState<{ [cat: string]: boolean }>({})
   const [selected, setSelected] = useState<{ category: string, type: string } | null>(null)
   const [search, setSearch] = useState('')
   // State for rule form
   const [rule, setRule] = useState(defaultRule)
-  const [editMode, setEditMode] = useState(false)
 
   // Handlers
   const handleExpand = (cat: string) => setExpanded(e => ({ ...e, [cat]: !e[cat] }))
@@ -67,7 +66,6 @@ const RuleManager: React.FC = () => {
       taxExempt: false,
       notes: 'Standard adult group class package. 10 sessions valid for 3 months.'
     })
-    setEditMode(true)
   }
   const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target
@@ -79,18 +77,15 @@ const RuleManager: React.FC = () => {
   }
   const handleAdd = () => {
     // Add new membership type (mock)
-    setEditMode(true)
     setSelected(null)
     setRule(defaultRule)
   }
   const handleSave = () => {
     // Save logic (mock)
-    setEditMode(false)
     alert('Rules saved (mock)!')
   }
   const handleDelete = () => {
     // Delete logic (mock)
-    setEditMode(false)
     setSelected(null)
     setRule(defaultRule)
     alert('Membership deleted (mock)!')
