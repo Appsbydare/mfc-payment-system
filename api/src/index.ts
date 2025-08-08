@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 5000;
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: process.env.CORS_ORIGIN || 'https://mfc-payment-system.vercel.app',
   credentials: true
 }));
 
@@ -56,7 +56,8 @@ app.get('/api/health', (req, res) => {
     status: 'OK',
     message: 'MFC Payment System API is running',
     timestamp: new Date().toISOString(),
-    environment: process.env.NODE_ENV || 'development'
+    environment: process.env.NODE_ENV || 'development',
+    version: '1.0.0'
   });
 });
 
@@ -80,7 +81,7 @@ app.listen(PORT, () => {
   console.log(`🚀 MFC Payment System API running on port ${PORT}`);
   console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`🔗 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`🗄️ Database: SQLite initialized`);
+  console.log(`🌐 CORS Origin: ${process.env.CORS_ORIGIN || 'https://mfc-payment-system.vercel.app'}`);
 });
 
 // Graceful shutdown
