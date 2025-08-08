@@ -2,8 +2,10 @@ import low from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
 import path from 'path';
 
-// Database file path
-const dbPath = path.join(__dirname, '../../data.json');
+// Database file path - use /tmp for Vercel serverless
+const dbPath = process.env.NODE_ENV === 'production' 
+  ? '/tmp/data.json' 
+  : path.join(__dirname, '../../data.json');
 
 // Create adapter and database instance
 const adapter = new FileSync(dbPath);
@@ -45,6 +47,7 @@ db.defaults({
 export const initializeDatabase = () => {
   console.log('✅ Database initialized successfully with lowdb');
   console.log(`📁 Database file: ${dbPath}`);
+  console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
 };
 
 export default db; 
