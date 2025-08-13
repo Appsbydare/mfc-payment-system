@@ -1,50 +1,50 @@
-[19:14:55.546] Running build in Washington, D.C., USA (East) – iad1
-[19:14:55.546] Build machine configuration: 2 cores, 8 GB
-[19:14:55.605] Cloning github.com/Appsbydare/mfc-payment-system (Branch: main, Commit: 580fb55)
-[19:14:55.952] Previous build caches not available
-[19:14:56.630] Cloning completed: 1.025s
-[19:14:56.716] Found .vercelignore (repository root)
-[19:14:56.740] Removed 20 ignored files defined in .vercelignore
-[19:14:56.740]   /api/data.json
-[19:14:56.741]   /api/env.example
-[19:14:56.741]   /api/package-lock.json
-[19:14:56.741]   /api/package.json
-[19:14:56.741]   /api/src/config/database.ts
-[19:14:56.741]   /api/src/index.ts
-[19:14:56.741]   /api/src/middleware/errorHandler.ts
-[19:14:56.741]   /api/src/middleware/notFound.ts
-[19:14:56.741]   /api/src/routes/auth.ts
-[19:14:56.741]   /api/src/routes/data.ts
-[19:14:58.998] Running "vercel build"
-[19:14:59.522] Vercel CLI 44.7.3
-[19:15:00.240] Running "install" command: `npm install`...
-[19:15:02.761] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
-[19:15:02.788] npm warn deprecated npmlog@5.0.1: This package is no longer supported.
-[19:15:02.998] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-[19:15:03.062] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
-[19:15:03.201] npm warn deprecated gauge@3.0.2: This package is no longer supported.
-[19:15:03.205] npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
-[19:15:13.293] 
-[19:15:13.294] added 192 packages, and audited 193 packages in 13s
-[19:15:13.296] 
-[19:15:13.296] 21 packages are looking for funding
-[19:15:13.296]   run `npm fund` for details
-[19:15:13.314] 
-[19:15:13.314] 6 vulnerabilities (1 moderate, 4 high, 1 critical)
-[19:15:13.314] 
-[19:15:13.314] To address issues that do not require attention, run:
-[19:15:13.315]   npm audit fix
-[19:15:13.315] 
-[19:15:13.315] To address all issues possible (including breaking changes), run:
-[19:15:13.315]   npm audit fix --force
-[19:15:13.315] 
-[19:15:13.315] Some issues need review, and may require choosing
-[19:15:13.315] a different dependency.
-[19:15:13.315] 
-[19:15:13.315] Run `npm audit` for details.
-[19:15:13.588] 
-[19:15:13.588] > mfc-payment-system@0.0.0 build
-[19:15:13.588] > vite build
-[19:15:13.588] 
-[19:15:13.593] sh: line 1: vite: command not found
-[19:15:13.603] Error: Command "npm run build" exited with 127
+[19:47:02.541] Running build in Washington, D.C., USA (East) – iad1
+[19:47:02.542] Build machine configuration: 2 cores, 8 GB
+[19:47:02.558] Cloning github.com/Appsbydare/mfc-payment-system (Branch: main, Commit: 580fb55)
+[19:47:02.565] Skipping build cache, deployment was triggered without cache.
+[19:47:03.012] Cloning completed: 453.000ms
+[19:47:03.525] Found .vercelignore (repository root)
+[19:47:03.530] Removed 20 ignored files defined in .vercelignore
+[19:47:03.530]   /api/data.json
+[19:47:03.530]   /api/env.example
+[19:47:03.530]   /api/package-lock.json
+[19:47:03.530]   /api/package.json
+[19:47:03.530]   /api/src/config/database.ts
+[19:47:03.530]   /api/src/index.ts
+[19:47:03.530]   /api/src/middleware/errorHandler.ts
+[19:47:03.530]   /api/src/middleware/notFound.ts
+[19:47:03.530]   /api/src/routes/auth.ts
+[19:47:03.530]   /api/src/routes/data.ts
+[19:47:06.057] Running "vercel build"
+[19:47:06.782] Vercel CLI 44.7.3
+[19:47:07.661] Running "install" command: `npm install`...
+[19:47:09.972] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[19:47:10.204] npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+[19:47:10.392] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[19:47:10.450] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[19:47:10.599] npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+[19:47:10.607] npm warn deprecated gauge@3.0.2: This package is no longer supported.
+[19:47:21.435] 
+[19:47:21.436] added 192 packages, and audited 193 packages in 13s
+[19:47:21.437] 
+[19:47:21.437] 21 packages are looking for funding
+[19:47:21.438]   run `npm fund` for details
+[19:47:21.449] 
+[19:47:21.450] 6 vulnerabilities (1 moderate, 4 high, 1 critical)
+[19:47:21.450] 
+[19:47:21.450] To address issues that do not require attention, run:
+[19:47:21.451]   npm audit fix
+[19:47:21.451] 
+[19:47:21.451] To address all issues possible (including breaking changes), run:
+[19:47:21.451]   npm audit fix --force
+[19:47:21.452] 
+[19:47:21.452] Some issues need review, and may require choosing
+[19:47:21.452] a different dependency.
+[19:47:21.452] 
+[19:47:21.452] Run `npm audit` for details.
+[19:47:21.767] 
+[19:47:21.767] > mfc-payment-system@0.0.0 build
+[19:47:21.767] > vite build
+[19:47:21.768] 
+[19:47:21.774] sh: line 1: vite: command not found
+[19:47:21.784] Error: Command "npm run build" exited with 127
