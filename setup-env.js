@@ -1,0 +1,51 @@
+const fs = require('fs');
+const path = require('path');
+
+// Google Sheets credentials from the JSON file
+const envContent = `# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# CORS Configuration
+CORS_ORIGIN=http://localhost:5173
+
+# Rate Limiting
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX_REQUESTS=100
+
+# JWT Configuration
+JWT_SECRET=mfc-payment-system-super-secret-jwt-key-2024
+JWT_EXPIRES_IN=7d
+
+# Google Sheets API Configuration
+# From maltafightco-0aa5cb40537f.json
+GOOGLE_SHEETS_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDLqjThQpMfRiAH\\nk+gkZIYsYKV0c2wEkzE3CLKqHTLFK7bMEzpDzNG1sh4w06d54GiPIh30lJH+B9vt\\nHrFN8FAbXGK+b4f0Z4/78VsBykQZKSNTKanv7QfooZEilC4IAJNbB38aZwa6HNjF\\nvf5mVW2WVEMgSuMe/+pBerFElpwEOan5IcBG4atiPXHHBKsDpapp7BFSI3Jn1+OB\\nFRLLBk58zVZx6QWnn4p2Fb7oF+Iv2uQ9hOVGrGDqVBIFMs20ovAZAUD6kxMrkhD3\\nC/x22A8Zwlg+dRdjRGXYnTKsKxfbG7oJ5Q/7NlLOKbLgMze/1xnCnQDfdL1Ejzgr\\n8O550UrxAgMBAAECggEAFx7rgecc7J/5YuLXp8oBsWgHYID58ksDe0vxfH50FQ4x\\nYlmMc8X8yLO/2astiBiBxj4JSIrVSBF8Vh714fM2JOUIELZ4qLZZEjEEM9/Se0jA\\nSeCg+iveifpNj69iymXGVL81HrozeU1tDoXTK6rnFfna5P+baRmEboqPNUojzBbL\\ntKV1OcfM8uiXJ1ZSdgadmDGKfs2lHpAscJSn8X3mtsuQj0LK1tAG4KwtY3tv575Q\\nWR3CIdG1c0ts2Ht4Dv13xEt9y7MmgNvZsix8vlNTtMCzMShuNWoTY4xJ+YiNw+ch\\ni74mX0Wp+WM9MZKobpf0mN1/sOH3VYhfflgX6mkHAQKBgQD6Wk58SYKmQ2pKXL+Y\\nFwrdFdBwYTlNNeuDAUNi/hIj/0m7DQuapG+rB89CIhdSTrwdyg3P4jKd4HGmghD4\\nHdKvZXtzw5TRAot3TGtpNu0wV7C9Kqy9I1JdEWclUwCoL8/ySV6UYTZcTjZCsRDX\\nn+BCj3JLa8rAIovgrP+Xb5QKjQKBgQDQQkt+X3gc+b+J9r5n1St4CUO5tBNM9tVt\\nIr2S9gsBlsKqb8KlCfhZE1TeOvaJKdo66Mt6tLjS1QCx2LrdfL+BDbLfr4dEOXX/\\nCI5x2Gn5dNeGpLmCg2BjstoylaNNqF/2cuj0zvzkXVzqPOcfqzymLHz+uqBY0Ism\\n0UMnm4x69QKBgQDTw01+LgP4NTAURI2/zUXgKpKMbIC2wbQ7tPbWJkkb79XjBa7a\\nGNtoFQwISaPmeDkBDadPP2tHRdF8YaqO5VMQD8wz6KzZesiTma2FavOIn7Qc3psM\\nxXLmzFCuLp5wpTjFHbCF3BDKVVHqabHwYgik5IduKnhuuwoMeukbpELaBQKBgQDH\\nj79nyXP/0BKK0baDKPIOhFIxkS0tgxnhCnk+aicBzsWbLJ0IKRWhxbR9f2Le7QwB\\nhzH001iILzQLN/NYakHYGJhfYIPuDGHVkQ1uakKimCQvEYnyVpH291u/PUTPFZlf\\nP52beP08l3qBuvp+jkf/tIHSVmNwt+WfvMbtHVDwQQKBgQC3IXKWpbtprzhiewYo\\njVC7vBh5IrQQen1U28RIlwCqyPEPkt8eKXRGKPst7LDJL3v7x0WApFyRKQCS1FOg\\nCa88Z6i2mbzvsF+u5eDpjcpLHm0WV/K8uwPtSMh9ifcl2WfT22cjKxxVBoLnpD1T\\n5q+BwUPs5viWUDJYMJ/WjDYs+w==\\n-----END PRIVATE KEY-----\\n"
+GOOGLE_SHEETS_CLIENT_EMAIL=mfc-payment-system-api@maltafightco.iam.gserviceaccount.com
+GOOGLE_SHEETS_PROJECT_ID=maltafightco
+GOOGLE_SHEETS_SPREADSHEET_ID=1GJjTjSHvuZdGzts2a-w5fs93QyOSVLM5ky2yzmWer9s
+
+# Email Configuration (for reports)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+
+# File Upload Configuration
+MAX_FILE_SIZE=10485760
+UPLOAD_PATH=./uploads
+`;
+
+// Write the .env file
+const envPath = path.join(__dirname, '.env');
+fs.writeFileSync(envPath, envContent);
+
+console.log('✅ .env file created successfully!');
+console.log('📁 Location:', envPath);
+console.log('🔑 Google Sheets credentials configured');
+console.log('📊 Spreadsheet ID:', '1GJjTjSHvuZdGzts2a-w5fs93QyOSVLM5ky2yzmWer9s');
+console.log('📧 Service Account Email:', 'mfc-payment-system-api@maltafightco.iam.gserviceaccount.com');
+console.log('');
+console.log('🚀 Next steps:');
+console.log('1. Run: npm install');
+console.log('2. Run: npm run dev');
+console.log('3. Check the console for successful initialization'); 
