@@ -1,5 +1,8 @@
 {
   "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "ignoreCommand": "echo 'Skipping build'",
   "rewrites": [
     {
       "source": "/api/(.*)",
