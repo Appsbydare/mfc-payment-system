@@ -1,0 +1,236 @@
+MALTA FIGHT CO. - PAYMENT AUTOMATION SYSTEM
+FINAL REQUIREMENTS SUMMARY
+==================================================
+
+PROJECT OVERVIEW
+================
+Development of a web-based payment automation system for Malta Fight Co.'s combat sports gym to automate monthly payment calculations, integrate GoTeamUp attendance data with payment rules, and generate automated reports.
+
+CORE REQUIREMENTS
+=================
+
+1. DATA INTEGRATION
+-------------------
+• Import GoTeamUp attendance exports (CSV format)
+• Import historical payment data (CSV format)
+• Match attendance records with correct membership packages
+• Handle multiple profiles per customer
+• Track package usage and expiration dates
+• Support for 50+ different pricing options
+
+2. PAYMENT CALCULATIONS
+-----------------------
+• Group Classes Revenue Distribution:
+  - Coach: 43.5% (default)
+  - BGM (Landlord): 30% (default)
+  - Management: 8.5% (default)
+  - MFC Retained: 18% (default)
+
+• Private Sessions Revenue Distribution:
+  - Coach: 80%
+  - Landlord: 15%
+  - MFC Retained: 5%
+
+• Fixed Rate Calculations for unlimited plans
+• Multi-pack session splitting over total sessions attended
+
+3. DASHBOARD REQUIREMENTS
+-------------------------
+• Split total attendances into Group Classes vs Private Sessions
+• Display separate metrics for each category
+• Real-time calculation updates
+• Monthly summary statistics
+• Quick action buttons for import, calculate, and generate reports
+
+4. RULE MANAGEMENT SYSTEM
+-------------------------
+• Global percentage settings for default payment splits
+• Individual package customization with toggle for:
+  - Fixed rate vs percentage
+  - Price per session calculation
+• Support for unlimited plans with fixed pricing
+• Configurable formulas (4.3 weeks per month for 2x/week)
+• Package categories (Group Classes, Private Sessions)
+
+5. PAYMENT CALCULATOR
+---------------------
+• Separate tracking for Group Classes vs Private Sessions per coach
+• Monthly summary breakdown showing totals for each category
+• Detailed transaction tracking for verification purposes
+• Coach payment summaries with breakdowns
+• BGM payment summaries
+• Management payment summaries
+
+6. EXCEPTION HANDLING SYSTEM (CRITICAL)
+---------------------------------------
+• 100% Discount Identification (IGNORE COMPLETELY):
+  - Freedom Pass
+  - MindBody Switch
+  - Any discount equal to full package price
+
+• Partial Discount Handling:
+  - Apply percentages to discounted amount
+  - Pass savings to all parties (coaches, BGM, management)
+
+• Discount Identification Methods:
+  - Memo containing "discount" keyword
+  - Legacy discount names:
+    * Summer School
+    * Loyalty Scheme
+    * Fortnight Special
+    * Summer Academy
+
+• Manual Override Capability:
+  - For unrecognized packages (like "warrior flow" class names)
+  - Manual package assignment interface
+
+7. REPORTING SYSTEM
+-------------------
+• Monthly summary reports for all parties
+• Individual coach payslips with group/private breakdown
+• BGM (Landlord) payment reports
+• Management team reports
+• Export functionality (PDF, Excel, CSV)
+• Report history tracking
+
+8. USER INTERFACE REQUIREMENTS
+------------------------------
+• Modern, responsive web interface
+• Dark/Light theme toggle
+• Tab-based navigation
+• Data import interface with preview
+• Rule management interface
+• Payment calculator with detailed breakdowns
+• Report generation interface
+• Settings and configuration panel
+
+TECHNICAL SPECIFICATIONS
+========================
+
+FRONTEND (React.js)
+-------------------
+• React 18+ with TypeScript
+• Material-UI or Tailwind CSS for styling
+• Responsive design for desktop and tablet
+• Real-time data updates
+• File upload functionality
+• Export capabilities
+
+BACKEND (Node.js/Express)
+-------------------------
+• RESTful API endpoints
+• CSV file processing
+• Data validation and cleaning
+• Payment calculation engine
+• Report generation
+• Database operations
+
+DATABASE
+--------
+• PostgreSQL or MongoDB for production
+• SQLite for development
+• Data backup functionality
+• User authentication and authorization
+
+DEPLOYMENT
+----------
+• Vercel for frontend deployment
+• Railway or Heroku for backend
+• Environment variable management
+• SSL certificate configuration
+
+EXCEPTIONS AND EDGE CASES
+=========================
+
+1. DISCOUNT HANDLING
+--------------------
+• 100% discounts must be completely ignored
+• Partial discounts reduce all party payments proportionally
+• Legacy discount names must be recognized
+• Manual override for unrecognized discounts
+
+2. PACKAGE MATCHING
+-------------------
+• Match by customer name and package name
+• Handle multiple profiles per customer
+• Support for parent/child profile relationships
+• Track package usage and expiration
+
+3. DATA VALIDATION
+------------------
+• Flag missing payment data for attendance
+• Identify duplicate entries
+• Validate package expiration dates
+• Check for data inconsistencies
+
+4. MANUAL OVERRIDES
+-------------------
+• Interface for manual package assignment
+• Override payment calculations
+• Add notes for manual adjustments
+• Track override reasons
+
+SECURITY REQUIREMENTS
+====================
+• User authentication and authorization
+• Data encryption at rest and in transit
+• Secure file upload handling
+• Input validation and sanitization
+• Audit logging for changes
+
+PERFORMANCE REQUIREMENTS
+=======================
+• Handle large CSV files (1000+ records)
+• Fast calculation processing
+• Responsive UI interactions
+• Efficient database queries
+• Optimized report generation
+
+TESTING REQUIREMENTS
+===================
+• Unit tests for calculation logic
+• Integration tests for data processing
+• End-to-end testing with sample data
+• Performance testing with large datasets
+• Security testing for file uploads
+
+DEPLOYMENT REQUIREMENTS
+======================
+• Environment-specific configurations
+• Database migration scripts
+• Backup and restore procedures
+• Monitoring and logging setup
+• Error handling and reporting
+
+SUPPORT AND MAINTENANCE
+=======================
+• 30 days post-delivery support
+• Bug fixes and minor updates
+• User training and documentation
+• Data migration assistance
+• Performance optimization
+
+ACCEPTANCE CRITERIA
+===================
+• Application processes GoTeamUp data correctly
+• Payment calculations match manual verification
+• Exception handling works as specified
+• Reports generate accurately
+• System handles all discount scenarios
+• UI is intuitive and responsive
+• Performance meets requirements
+• Security requirements are met
+
+TIMELINE
+========
+• Phase 1: Core System (5 weeks)
+• Phase 2: Advanced Features (if needed)
+• Testing and Deployment: 1 week
+• Documentation and Training: 1 week
+
+BUDGET
+=======
+• Development: $1,100 (44 hours @ $25/hour)
+• Additional features: Phase 2 pricing
+• Hosting and domain: Client responsibility
+• Maintenance: Ongoing support agreement 
