@@ -1,73 +1,73 @@
-[18:53:38.703] Running build in Washington, D.C., USA (East) – iad1
-[18:53:38.704] Build machine configuration: 2 cores, 8 GB
-[18:53:38.722] Cloning github.com/Appsbydare/mfc-payment-system (Branch: main, Commit: 996a01e)
-[18:53:38.868] Previous build caches not available
-[18:53:39.191] Cloning completed: 469.000ms
-[18:53:39.235] Found .vercelignore (repository root)
-[18:53:39.242] Removed 20 ignored files defined in .vercelignore
-[18:53:39.242]   /api/data.json
-[18:53:39.242]   /api/env.example
-[18:53:39.242]   /api/package-lock.json
-[18:53:39.242]   /api/package.json
-[18:53:39.242]   /api/src/config/database.ts
-[18:53:39.242]   /api/src/index.ts
-[18:53:39.242]   /api/src/middleware/errorHandler.ts
-[18:53:39.242]   /api/src/middleware/notFound.ts
-[18:53:39.242]   /api/src/routes/auth.ts
-[18:53:39.242]   /api/src/routes/data.ts
-[18:53:41.053] Running "vercel build"
-[18:53:41.532] Vercel CLI 44.7.3
-[18:53:42.094] Running "install" command: `npm install`...
-[18:53:44.272] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
-[18:53:44.508] npm warn deprecated npmlog@5.0.1: This package is no longer supported.
-[18:53:44.678] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-[18:53:44.943] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
-[18:53:45.045] npm warn deprecated gauge@3.0.2: This package is no longer supported.
-[18:53:45.069] npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
-[18:53:55.622] 
-[18:53:55.623] added 241 packages, and audited 242 packages in 13s
-[18:53:55.624] 
-[18:53:55.624] 28 packages are looking for funding
-[18:53:55.624]   run `npm fund` for details
-[18:53:55.643] 
-[18:53:55.643] 9 vulnerabilities (4 moderate, 4 high, 1 critical)
-[18:53:55.643] 
-[18:53:55.644] To address issues that do not require attention, run:
-[18:53:55.644]   npm audit fix
-[18:53:55.644] 
-[18:53:55.644] To address all issues possible (including breaking changes), run:
-[18:53:55.644]   npm audit fix --force
-[18:53:55.644] 
-[18:53:55.644] Some issues need review, and may require choosing
-[18:53:55.644] a different dependency.
-[18:53:55.644] 
-[18:53:55.644] Run `npm audit` for details.
-[18:53:55.902] 
-[18:53:55.902] > mfc-payment-system@0.0.0 build
-[18:53:55.902] > vite build
-[18:53:55.902] 
-[18:53:56.324] [36mvite v4.5.14 [32mbuilding for production...[36m[39m
-[18:53:56.369] transforming...
-[18:53:56.396] node:internal/process/promises:394
-[18:53:56.396]     triggerUncaughtException(err, true /* fromPromise */);
-[18:53:56.397]     ^
-[18:53:56.397] 
-[18:53:56.397] [Failed to load PostCSS config: Failed to load PostCSS config (searchPath: /vercel/path0): [Error] Loading PostCSS Plugin failed: Cannot find module 'tailwindcss'
-[18:53:56.397] Require stack:
-[18:53:56.398] - /vercel/path0/postcss.config.js
-[18:53:56.398] 
-[18:53:56.398] (@/vercel/path0/postcss.config.js)
-[18:53:56.398] Error: Loading PostCSS Plugin failed: Cannot find module 'tailwindcss'
-[18:53:56.398] Require stack:
-[18:53:56.398] - /vercel/path0/postcss.config.js
-[18:53:56.398] 
-[18:53:56.399] (@/vercel/path0/postcss.config.js)
-[18:53:56.399]     at load (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36430:11)
-[18:53:56.399]     at file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36455:16
-[18:53:56.399]     at Array.map (<anonymous>)
-[18:53:56.399]     at plugins (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36454:8)
-[18:53:56.400]     at processResult (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36524:14)
-[18:53:56.400]     at file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36648:14]
-[18:53:56.400] 
-[18:53:56.400] Node.js v22.18.0
-[18:53:56.413] Error: Command "npm run build" exited with 1
+[18:59:36.776] Running build in Washington, D.C., USA (East) – iad1
+[18:59:36.777] Build machine configuration: 2 cores, 8 GB
+[18:59:36.791] Cloning github.com/Appsbydare/mfc-payment-system (Branch: main, Commit: f616459)
+[18:59:36.923] Previous build caches not available
+[18:59:37.262] Cloning completed: 471.000ms
+[18:59:37.333] Found .vercelignore (repository root)
+[18:59:37.340] Removed 20 ignored files defined in .vercelignore
+[18:59:37.340]   /api/data.json
+[18:59:37.340]   /api/env.example
+[18:59:37.340]   /api/package-lock.json
+[18:59:37.340]   /api/package.json
+[18:59:37.340]   /api/src/config/database.ts
+[18:59:37.340]   /api/src/index.ts
+[18:59:37.340]   /api/src/middleware/errorHandler.ts
+[18:59:37.340]   /api/src/middleware/notFound.ts
+[18:59:37.341]   /api/src/routes/auth.ts
+[18:59:37.341]   /api/src/routes/data.ts
+[18:59:39.318] Running "vercel build"
+[18:59:40.284] Vercel CLI 44.7.3
+[18:59:40.859] Running "install" command: `npm install`...
+[18:59:43.202] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[18:59:43.444] npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+[18:59:43.669] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[18:59:43.757] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[18:59:43.992] npm warn deprecated gauge@3.0.2: This package is no longer supported.
+[18:59:44.000] npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+[18:59:55.015] 
+[18:59:55.016] added 241 packages, and audited 242 packages in 14s
+[18:59:55.017] 
+[18:59:55.017] 28 packages are looking for funding
+[18:59:55.017]   run `npm fund` for details
+[18:59:55.040] 
+[18:59:55.040] 9 vulnerabilities (4 moderate, 4 high, 1 critical)
+[18:59:55.041] 
+[18:59:55.041] To address issues that do not require attention, run:
+[18:59:55.041]   npm audit fix
+[18:59:55.041] 
+[18:59:55.041] To address all issues possible (including breaking changes), run:
+[18:59:55.041]   npm audit fix --force
+[18:59:55.041] 
+[18:59:55.041] Some issues need review, and may require choosing
+[18:59:55.041] a different dependency.
+[18:59:55.041] 
+[18:59:55.041] Run `npm audit` for details.
+[18:59:55.312] 
+[18:59:55.315] > mfc-payment-system@0.0.0 build
+[18:59:55.315] > vite build
+[18:59:55.315] 
+[18:59:55.753] [36mvite v4.5.14 [32mbuilding for production...[36m[39m
+[18:59:55.781] transforming...
+[18:59:55.807] node:internal/process/promises:394
+[18:59:55.807]     triggerUncaughtException(err, true /* fromPromise */);
+[18:59:55.808]     ^
+[18:59:55.808] 
+[18:59:55.808] [Failed to load PostCSS config: Failed to load PostCSS config (searchPath: /vercel/path0): [Error] Loading PostCSS Plugin failed: Cannot find module 'tailwindcss'
+[18:59:55.808] Require stack:
+[18:59:55.809] - /vercel/path0/postcss.config.js
+[18:59:55.809] 
+[18:59:55.809] (@/vercel/path0/postcss.config.js)
+[18:59:55.809] Error: Loading PostCSS Plugin failed: Cannot find module 'tailwindcss'
+[18:59:55.809] Require stack:
+[18:59:55.809] - /vercel/path0/postcss.config.js
+[18:59:55.809] 
+[18:59:55.810] (@/vercel/path0/postcss.config.js)
+[18:59:55.810]     at load (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36430:11)
+[18:59:55.810]     at file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36455:16
+[18:59:55.810]     at Array.map (<anonymous>)
+[18:59:55.810]     at plugins (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36454:8)
+[18:59:55.810]     at processResult (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36524:14)
+[18:59:55.810]     at file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-827b23df.js:36648:14]
+[18:59:55.810] 
+[18:59:55.810] Node.js v22.18.0
+[18:59:55.825] Error: Command "npm run build" exited with 1
