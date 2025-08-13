@@ -1,17 +1,6 @@
-# API directory (backend)
 api/
-
-# Deployment scripts
 deploy.bat
 deploy.sh
-
-# Documentation files
 VERCEL_DEPLOYMENT.md
 PROJECT_STATUS.md
 Final_Requirement.txt
-
-# Development files
-.gitignore.dev
-
-# Node modules (will be installed by Vercel)
-node_modules/ 
