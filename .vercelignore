@@ -1,6 +1,14 @@
-api/
-deploy.bat
-deploy.sh
-VERCEL_DEPLOYMENT.md
-PROJECT_STATUS.md
-Final_Requirement.txt
+# Build outputs
+dist/
+build/
+.vercel/
+
+# Development files
+*.log
+node_modules/
+
+# Sensitive files
+maltafightco-0aa5cb40537f.json
+api/setup-env.js
+DepErrors.txt
+LOgs.txt
