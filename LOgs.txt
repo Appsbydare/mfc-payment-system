@@ -1,0 +1,25 @@
+[01:05:43.185] Running build in Washington, D.C., USA (East) – iad1
+[01:05:43.185] Build machine configuration: 2 cores, 8 GB
+[01:05:43.200] Cloning github.com/Appsbydare/mfc-payment-system (Branch: main, Commit: cecf0cd)
+[01:05:43.680] Warning: Failed to fetch one or more git submodules
+[01:05:43.681] Cloning completed: 480.000ms
+[01:05:43.730] Found .vercelignore
+[01:05:43.735] Removed 5 ignored files defined in .vercelignore
+[01:05:43.735]   /deploy.bat
+[01:05:43.735]   /deploy.sh
+[01:05:43.735]   /Final_Requirement.txt
+[01:05:43.735]   /PROJECT_STATUS.md
+[01:05:43.736]   /VERCEL_DEPLOYMENT.md
+[01:05:44.682] Restored build cache from previous deployment (AKJdwB3Y8Q1h52JCn5i7B61DrhNg)
+[01:05:49.577] Running "vercel build"
+[01:05:50.117] Vercel CLI 44.7.3
+[01:05:51.053] npm warn config production Use `--omit=dev` instead.
+[01:05:51.089] npm error code ENOENT
+[01:05:51.090] npm error syscall open
+[01:05:51.090] npm error path /vercel/path0/package.json
+[01:05:51.090] npm error errno -2
+[01:05:51.090] npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/vercel/path0/package.json'
+[01:05:51.091] npm error enoent This is related to npm not being able to find a file.
+[01:05:51.091] npm error enoent
+[01:05:51.092] npm error A complete log of this run can be found in: /vercel/.npm/_logs/2025-08-13T19_35_51_011Z-debug-0.log
+[01:05:51.102] Error: Command "npm run build" exited with 254
