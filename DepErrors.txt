@@ -1,0 +1,50 @@
+[18:49:49.258] Running build in Washington, D.C., USA (East) – iad1
+[18:49:49.258] Build machine configuration: 2 cores, 8 GB
+[18:49:49.274] Cloning github.com/Appsbydare/mfc-payment-system (Branch: main, Commit: 01493f2)
+[18:49:49.406] Previous build caches not available
+[18:49:49.719] Cloning completed: 445.000ms
+[18:49:49.766] Found .vercelignore (repository root)
+[18:49:49.773] Removed 20 ignored files defined in .vercelignore
+[18:49:49.773]   /api/data.json
+[18:49:49.773]   /api/env.example
+[18:49:49.773]   /api/package-lock.json
+[18:49:49.774]   /api/package.json
+[18:49:49.774]   /api/src/config/database.ts
+[18:49:49.774]   /api/src/index.ts
+[18:49:49.774]   /api/src/middleware/errorHandler.ts
+[18:49:49.774]   /api/src/middleware/notFound.ts
+[18:49:49.774]   /api/src/routes/auth.ts
+[18:49:49.774]   /api/src/routes/data.ts
+[18:49:51.786] Running "vercel build"
+[18:49:52.453] Vercel CLI 44.7.3
+[18:49:53.223] Running "install" command: `npm install`...
+[18:49:55.485] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[18:49:55.705] npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+[18:49:55.781] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[18:49:55.782] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[18:49:55.947] npm warn deprecated gauge@3.0.2: This package is no longer supported.
+[18:49:55.978] npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+[18:50:07.463] 
+[18:50:07.465] added 192 packages, and audited 193 packages in 14s
+[18:50:07.466] 
+[18:50:07.466] 21 packages are looking for funding
+[18:50:07.466]   run `npm fund` for details
+[18:50:07.479] 
+[18:50:07.479] 6 vulnerabilities (1 moderate, 4 high, 1 critical)
+[18:50:07.480] 
+[18:50:07.480] To address issues that do not require attention, run:
+[18:50:07.480]   npm audit fix
+[18:50:07.480] 
+[18:50:07.480] To address all issues possible (including breaking changes), run:
+[18:50:07.480]   npm audit fix --force
+[18:50:07.481] 
+[18:50:07.481] Some issues need review, and may require choosing
+[18:50:07.481] a different dependency.
+[18:50:07.481] 
+[18:50:07.481] Run `npm audit` for details.
+[18:50:07.806] 
+[18:50:07.806] > mfc-payment-system@0.0.0 build
+[18:50:07.806] > vite build
+[18:50:07.806] 
+[18:50:07.811] sh: line 1: vite: command not found
+[18:50:07.821] Error: Command "npm run build" exited with 127
