@@ -73,16 +73,26 @@ app.use(notFound);
 // Error handler (must be last)
 app.use(errorHandler);
 
-// Initialize database
-initializeDatabase();
+// Initialize database and start server
+const startServer = async () => {
+  try {
+    // Initialize database
+    await initializeDatabase();
+    
+    // Start server
+    app.listen(PORT, () => {
+      console.log(`🚀 MFC Payment System API running on port ${PORT}`);
+      console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
+      console.log(`🔗 Health check: http://localhost:${PORT}/api/health`);
+      console.log(`🌐 CORS Origin: ${process.env.CORS_ORIGIN || 'https://mfc-payment-system.vercel.app'}`);
+    });
+  } catch (error) {
+    console.error('❌ Failed to start server:', error);
+    process.exit(1);
+  }
+};
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`🚀 MFC Payment System API running on port ${PORT}`);
-  console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔗 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`🌐 CORS Origin: ${process.env.CORS_ORIGIN || 'https://mfc-payment-system.vercel.app'}`);
-});
+startServer();
 
 // Graceful shutdown
 process.on('SIGTERM', () => {
