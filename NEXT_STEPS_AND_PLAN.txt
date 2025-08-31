@@ -1,0 +1,616 @@
+MALTA FIGHT CO. - PAYMENT AUTOMATION SYSTEM
+NEXT STEPS AND IMPLEMENTATION PLAN
+==================================================
+
+PROJECT STATUS: SEPARATE FRONTEND/BACKEND STRUCTURE COMPLETED
+CURRENT PHASE: IMPLEMENTATION PLANNING
+==================================================
+
+EXECUTIVE SUMMARY
+=================
+✅ COMPLETED: Project structure separated into frontend and backend
+✅ COMPLETED: Vercel deployment configuration for both projects
+🔄 NEXT: Implement core features according to client requirements
+🎯 GOAL: Complete payment automation system within 5 weeks
+
+DETAILED IMPLEMENTATION PLAN
+============================
+
+PHASE 1: CORE SYSTEM DEVELOPMENT (Weeks 1-5)
+============================================
+
+WEEK 1: FOUNDATION & DATA INTEGRATION
+-------------------------------------
+
+BACKEND TASKS:
+1. Set up database schema (PostgreSQL/SQLite)
+   - Users table (authentication)
+   - Attendance records table
+   - Payment rules table
+   - Package definitions table
+   - Payment calculations table
+   - Reports history table
+
+2. Implement CSV import functionality
+   - GoTeamUp attendance export parser
+   - Historical payment data parser
+   - Data validation and cleaning
+   - Duplicate detection
+   - Error handling for malformed data
+
+3. Create API endpoints:
+   - POST /api/data/import - File upload and processing
+   - GET /api/data/attendance - Retrieve attendance data
+   - GET /api/data/packages - Retrieve package definitions
+   - POST /api/data/validate - Validate imported data
+
+FRONTEND TASKS:
+1. Create data import interface
+   - File upload component with drag & drop
+   - Data preview table
+   - Import progress indicator
+   - Error display and validation feedback
+   - Success confirmation
+
+2. Implement authentication system
+   - Login/logout functionality
+   - User session management
+   - Protected route components
+
+3. Set up basic navigation structure
+   - Dashboard layout
+   - Tab-based navigation
+   - Responsive design foundation
+
+DELIVERABLES WEEK 1:
+- Database schema and migrations
+- CSV import functionality
+- Basic authentication system
+- Data import UI
+- API endpoints for data management
+
+WEEK 2: PAYMENT RULES & CALCULATION ENGINE
+------------------------------------------
+
+BACKEND TASKS:
+1. Implement payment rules system
+   - Global percentage settings
+   - Individual package customization
+   - Fixed rate vs percentage calculations
+   - Package categories (Group Classes vs Private Sessions)
+   - Rule validation and conflict resolution
+
+2. Build calculation engine
+   - Group Classes revenue distribution (43.5% coach, 30% BGM, 8.5% management, 18% MFC)
+   - Private Sessions revenue distribution (80% coach, 15% landlord, 5% MFC)
+   - Fixed rate calculations for unlimited plans
+   - Multi-pack session splitting
+   - Discount handling (100% and partial)
+
+3. Create calculation API endpoints:
+   - POST /api/payments/calculate - Run payment calculations
+   - GET /api/payments/rules - Retrieve payment rules
+   - POST /api/payments/rules - Update payment rules
+   - GET /api/payments/summary - Get calculation summary
+
+FRONTEND TASKS:
+1. Build rule management interface
+   - Global settings panel
+   - Individual package configuration
+   - Toggle between fixed rate and percentage
+   - Package categorization interface
+   - Rule validation feedback
+
+2. Create payment calculator interface
+   - Calculation trigger button
+   - Progress indicator
+   - Results display with breakdowns
+   - Error handling and validation
+
+3. Implement dashboard metrics
+   - Total attendance display
+   - Group Classes vs Private Sessions split
+   - Revenue distribution charts
+   - Quick action buttons
+
+DELIVERABLES WEEK 2:
+- Payment rules management system
+- Calculation engine with all distribution formulas
+- Rule management UI
+- Payment calculator interface
+- Dashboard with basic metrics
+
+WEEK 3: EXCEPTION HANDLING & DISCOUNT SYSTEM
+--------------------------------------------
+
+BACKEND TASKS:
+1. Implement discount identification system
+   - 100% discount detection (Freedom Pass, MindBody Switch, etc.)
+   - Partial discount handling
+   - Legacy discount name recognition
+   - Discount keyword detection in memos
+
+2. Build exception handling system
+   - Manual override capability
+   - Unrecognized package handling
+   - Package assignment interface
+   - Override tracking and audit logs
+
+3. Create exception API endpoints:
+   - POST /api/exceptions/override - Manual package assignment
+   - GET /api/exceptions/list - List all exceptions
+   - POST /api/exceptions/notes - Add override notes
+   - GET /api/exceptions/audit - Audit trail
+
+FRONTEND TASKS:
+1. Build exception handling interface
+   - Manual package assignment modal
+   - Exception list and management
+   - Override reason tracking
+   - Audit log display
+
+2. Implement discount handling UI
+   - Discount identification display
+   - Partial discount adjustment interface
+   - Legacy discount name management
+   - Discount impact visualization
+
+3. Create data validation interface
+   - Missing data identification
+   - Duplicate entry detection
+   - Data inconsistency flags
+   - Validation error resolution
+
+DELIVERABLES WEEK 3:
+- Complete exception handling system
+- Discount identification and processing
+- Manual override capabilities
+- Data validation and error resolution
+- Exception management UI
+
+WEEK 4: REPORTING SYSTEM & EXPORT FUNCTIONALITY
+-----------------------------------------------
+
+BACKEND TASKS:
+1. Implement report generation system
+   - Monthly summary reports
+   - Individual coach payslips
+   - BGM (Landlord) payment reports
+   - Management team reports
+   - Report history tracking
+
+2. Create export functionality
+   - PDF generation (using PDFKit)
+   - Excel export (using xlsx)
+   - CSV export for data analysis
+   - Report template system
+
+3. Build reporting API endpoints:
+   - POST /api/reports/generate - Generate reports
+   - GET /api/reports/list - List available reports
+   - GET /api/reports/download/:id - Download report
+   - POST /api/reports/export - Export in various formats
+
+FRONTEND TASKS:
+1. Create reporting interface
+   - Report type selection
+   - Date range picker
+   - Report generation trigger
+   - Progress indicator
+   - Download links
+
+2. Implement report preview
+   - PDF preview component
+   - Excel data preview
+   - Report formatting options
+   - Print functionality
+
+3. Build report history
+   - Generated reports list
+   - Report metadata display
+   - Re-download functionality
+   - Report deletion (if needed)
+
+DELIVERABLES WEEK 4:
+- Complete reporting system
+- PDF, Excel, and CSV export functionality
+- Report generation UI
+- Report history management
+- Download and preview capabilities
+
+WEEK 5: POLISHING, TESTING & DEPLOYMENT
+---------------------------------------
+
+BACKEND TASKS:
+1. Performance optimization
+   - Database query optimization
+   - Caching implementation
+   - Large file processing improvements
+   - API response time optimization
+
+2. Security implementation
+   - Input validation and sanitization
+   - File upload security
+   - Authentication hardening
+   - Audit logging
+
+3. Error handling and logging
+   - Comprehensive error handling
+   - Logging system
+   - Error reporting
+   - Monitoring setup
+
+FRONTEND TASKS:
+1. UI/UX polishing
+   - Dark/Light theme implementation
+   - Responsive design optimization
+   - Loading states and animations
+   - Error message improvements
+
+2. Performance optimization
+   - Component optimization
+   - Bundle size reduction
+   - Lazy loading implementation
+   - Caching strategies
+
+3. Testing and bug fixes
+   - Unit testing
+   - Integration testing
+   - User acceptance testing
+   - Bug fixes and refinements
+
+DELIVERABLES WEEK 5:
+- Performance optimized system
+- Security hardened application
+- Polished UI/UX
+- Comprehensive testing
+- Production-ready deployment
+
+TECHNICAL IMPLEMENTATION DETAILS
+================================
+
+DATABASE SCHEMA DESIGN:
+----------------------
+```sql
+-- Users table
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    role VARCHAR(20) DEFAULT 'user',
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Payment rules table
+CREATE TABLE payment_rules (
+    id SERIAL PRIMARY KEY,
+    package_name VARCHAR(100) NOT NULL,
+    category VARCHAR(20) NOT NULL, -- 'group' or 'private'
+    coach_percentage DECIMAL(5,2),
+    bgm_percentage DECIMAL(5,2),
+    management_percentage DECIMAL(5,2),
+    mfc_percentage DECIMAL(5,2),
+    fixed_rate DECIMAL(10,2),
+    is_fixed_rate BOOLEAN DEFAULT FALSE,
+    price_per_session DECIMAL(10,2),
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Attendance records table
+CREATE TABLE attendance_records (
+    id SERIAL PRIMARY KEY,
+    customer_name VARCHAR(100) NOT NULL,
+    package_name VARCHAR(100) NOT NULL,
+    session_date DATE NOT NULL,
+    session_type VARCHAR(20) NOT NULL, -- 'group' or 'private'
+    coach_name VARCHAR(100),
+    amount_paid DECIMAL(10,2),
+    discount_amount DECIMAL(10,2),
+    discount_reason VARCHAR(255),
+    memo TEXT,
+    is_100_percent_discount BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Payment calculations table
+CREATE TABLE payment_calculations (
+    id SERIAL PRIMARY KEY,
+    month_year VARCHAR(7) NOT NULL, -- 'YYYY-MM' format
+    coach_name VARCHAR(100) NOT NULL,
+    group_classes_total DECIMAL(10,2),
+    private_sessions_total DECIMAL(10,2),
+    coach_payment DECIMAL(10,2),
+    bgm_payment DECIMAL(10,2),
+    management_payment DECIMAL(10,2),
+    mfc_retained DECIMAL(10,2),
+    calculation_date TIMESTAMP DEFAULT NOW()
+);
+
+-- Reports table
+CREATE TABLE reports (
+    id SERIAL PRIMARY KEY,
+    report_type VARCHAR(50) NOT NULL,
+    month_year VARCHAR(7) NOT NULL,
+    file_path VARCHAR(255),
+    file_size INTEGER,
+    generated_by INTEGER REFERENCES users(id),
+    created_at TIMESTAMP DEFAULT NOW()
+);
+```
+
+API ENDPOINTS ARCHITECTURE:
+---------------------------
+```
+Authentication:
+POST /api/auth/login
+POST /api/auth/logout
+GET /api/auth/me
+
+Data Management:
+POST /api/data/import
+GET /api/data/attendance
+GET /api/data/packages
+POST /api/data/validate
+DELETE /api/data/attendance/:id
+
+Payment Rules:
+GET /api/rules
+POST /api/rules
+PUT /api/rules/:id
+DELETE /api/rules/:id
+
+Payment Calculations:
+POST /api/payments/calculate
+GET /api/payments/summary
+GET /api/payments/coach/:name
+GET /api/payments/bgm
+GET /api/payments/management
+
+Exceptions:
+POST /api/exceptions/override
+GET /api/exceptions/list
+POST /api/exceptions/notes
+GET /api/exceptions/audit
+
+Reports:
+POST /api/reports/generate
+GET /api/reports/list
+GET /api/reports/download/:id
+POST /api/reports/export
+```
+
+FRONTEND COMPONENT STRUCTURE:
+-----------------------------
+```
+src/
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   ├── Sidebar.tsx
+│   │   └── Layout.tsx
+│   ├── data/
+│   │   ├── DataImport.tsx
+│   │   ├── DataPreview.tsx
+│   │   └── DataValidation.tsx
+│   ├── rules/
+│   │   ├── RuleManager.tsx
+│   │   ├── RuleForm.tsx
+│   │   └── RuleList.tsx
+│   ├── payments/
+│   │   ├── PaymentCalculator.tsx
+│   │   ├── PaymentSummary.tsx
+│   │   └── PaymentBreakdown.tsx
+│   ├── exceptions/
+│   │   ├── ExceptionHandler.tsx
+│   │   ├── ManualOverride.tsx
+│   │   └── ExceptionList.tsx
+│   ├── reports/
+│   │   ├── ReportGenerator.tsx
+│   │   ├── ReportPreview.tsx
+│   │   └── ReportHistory.tsx
+│   └── common/
+│       ├── FileUpload.tsx
+│       ├── DataTable.tsx
+│       ├── Modal.tsx
+│       └── LoadingSpinner.tsx
+├── pages/
+│   ├── Dashboard.tsx
+│   ├── DataImport.tsx
+│   ├── RuleManager.tsx
+│   ├── PaymentCalculator.tsx
+│   ├── Reports.tsx
+│   └── Settings.tsx
+├── services/
+│   ├── api.ts
+│   ├── authService.ts
+│   ├── dataService.ts
+│   ├── paymentService.ts
+│   └── reportService.ts
+├── store/
+│   ├── authSlice.ts
+│   ├── dataSlice.ts
+│   ├── paymentsSlice.ts
+│   └── uiSlice.ts
+└── types/
+    ├── attendance.ts
+    ├── payments.ts
+    ├── rules.ts
+    └── reports.ts
+```
+
+CRITICAL FEATURES TO IMPLEMENT:
+==============================
+
+1. DISCOUNT HANDLING SYSTEM:
+   - 100% discount identification and exclusion
+   - Partial discount proportional distribution
+   - Legacy discount name recognition
+   - Manual discount override capability
+
+2. PAYMENT CALCULATION ENGINE:
+   - Group Classes: 43.5% coach, 30% BGM, 8.5% management, 18% MFC
+   - Private Sessions: 80% coach, 15% landlord, 5% MFC
+   - Fixed rate calculations for unlimited plans
+   - Multi-pack session splitting
+
+3. EXCEPTION HANDLING:
+   - Manual package assignment for unrecognized items
+   - Override tracking and audit logs
+   - Data validation and error resolution
+   - Exception reporting and management
+
+4. REPORTING SYSTEM:
+   - Monthly summary reports
+   - Individual coach payslips
+   - BGM and management reports
+   - PDF, Excel, and CSV export
+
+DEPLOYMENT STRATEGY:
+===================
+
+1. DEVELOPMENT PHASE:
+   - Frontend: Local development with Vite
+   - Backend: Local development with nodemon
+   - Database: SQLite for development
+
+2. STAGING PHASE:
+   - Frontend: Vercel preview deployments
+   - Backend: Railway staging environment
+   - Database: PostgreSQL staging instance
+
+3. PRODUCTION PHASE:
+   - Frontend: Vercel production deployment
+   - Backend: Railway production environment
+   - Database: PostgreSQL production instance
+   - SSL certificates and domain configuration
+
+TESTING STRATEGY:
+=================
+
+1. UNIT TESTING:
+   - Payment calculation logic
+   - Discount handling algorithms
+   - Data validation functions
+   - API endpoint functionality
+
+2. INTEGRATION TESTING:
+   - CSV import and processing
+   - Payment calculation workflows
+   - Report generation processes
+   - Exception handling flows
+
+3. END-TO-END TESTING:
+   - Complete user workflows
+   - Data import to report generation
+   - Error handling scenarios
+   - Performance testing with large datasets
+
+4. USER ACCEPTANCE TESTING:
+   - Client data validation
+   - Payment calculation verification
+   - Report accuracy confirmation
+   - UI/UX feedback and improvements
+
+SUCCESS METRICS:
+================
+
+1. FUNCTIONAL REQUIREMENTS:
+   - ✅ All payment calculations accurate
+   - ✅ Discount handling works correctly
+   - ✅ Exception system functions properly
+   - ✅ Reports generate accurately
+
+2. PERFORMANCE REQUIREMENTS:
+   - ✅ Handle 1000+ attendance records
+   - ✅ Fast calculation processing (< 30 seconds)
+   - ✅ Responsive UI interactions
+   - ✅ Efficient database operations
+
+3. USER EXPERIENCE:
+   - ✅ Intuitive interface design
+   - ✅ Clear error messages
+   - ✅ Helpful validation feedback
+   - ✅ Smooth workflow completion
+
+4. TECHNICAL QUALITY:
+   - ✅ Secure authentication
+   - ✅ Data validation and sanitization
+   - ✅ Error handling and logging
+   - ✅ Code maintainability
+
+NEXT IMMEDIATE ACTIONS:
+======================
+
+1. SET UP DEVELOPMENT ENVIRONMENT:
+   ```bash
+   # Frontend setup
+   cd frontend
+   npm install
+   npm run dev
+   
+   # Backend setup
+   cd backend
+   npm install
+   npm run dev
+   ```
+
+2. CREATE DATABASE SCHEMA:
+   - Implement database migrations
+   - Set up development database
+   - Create seed data for testing
+
+3. IMPLEMENT CORE API ENDPOINTS:
+   - Authentication system
+   - Data import functionality
+   - Basic CRUD operations
+
+4. BUILD FRONTEND FOUNDATION:
+   - Authentication UI
+   - Data import interface
+   - Basic navigation structure
+
+5. SET UP DEPLOYMENT PIPELINES:
+   - Configure Vercel for frontend
+   - Configure Railway for backend
+   - Set up environment variables
+
+TIMELINE SUMMARY:
+=================
+Week 1: Foundation & Data Integration
+Week 2: Payment Rules & Calculation Engine
+Week 3: Exception Handling & Discount System
+Week 4: Reporting System & Export Functionality
+Week 5: Polishing, Testing & Deployment
+
+TOTAL DEVELOPMENT TIME: 5 weeks
+BUDGET: $1,100 (44 hours @ $25/hour)
+DELIVERY DATE: [Current Date + 5 weeks]
+
+RISK MITIGATION:
+================
+
+1. TECHNICAL RISKS:
+   - Complex payment calculations: Implement thorough testing
+   - Large data processing: Optimize algorithms and use pagination
+   - Integration issues: Use well-tested libraries and frameworks
+
+2. TIMELINE RISKS:
+   - Scope creep: Stick to core requirements
+   - Technical challenges: Allocate buffer time in each week
+   - Client feedback delays: Proactive communication
+
+3. QUALITY RISKS:
+   - Calculation accuracy: Multiple validation layers
+   - Data integrity: Comprehensive error handling
+   - User experience: Regular testing and feedback
+
+CONTACT INFORMATION:
+===================
+Client: Malta Fight Co.
+Project Manager: [Your Name]
+Technical Lead: [Your Name]
+Support Email: [Your Email]
+
+This plan provides a comprehensive roadmap for delivering the Malta Fight Co. Payment Automation System within the specified timeline and budget while meeting all client requirements. 
