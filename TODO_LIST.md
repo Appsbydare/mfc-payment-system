@@ -9,27 +9,34 @@
 
 #### **Week 1: Data Integration & Foundation**
 - [x] **1.1** Implement CSV import functionality in backend (`/api/data/import`)
-- [ ] **1.2** Create database schema for attendance records, payment data, and rules
-- [ ] **1.3** Build data validation and cleaning service
+- [x] **1.2** Define Google Sheets tab structure for attendance, payment data, rules, and exceptions
+- [x] **1.3** Build data validation and cleaning service (BOM trim, header/value trim, duplicate handling)
 - [x] **1.4** Connect frontend DataImport page to backend APIs
 - [x] **1.5** Implement data preview and validation in frontend
 
 #### **Week 2: Payment Calculation Engine**
-- [ ] **2.1** Implement payment calculation logic in backend (`/api/payments/calculate`)
-- [ ] **2.2** Build Group Classes vs Private Sessions revenue distribution
-- [ ] **2.3** Create discount handling system (100% and partial discounts)
-- [ ] **2.4** Connect PaymentCalculator frontend to backend
-- [ ] **2.5** Implement RuleManager backend integration
+- [x] **2.1** Implement payment calculation logic in backend (`/api/payments/calculate`)
+- [x] **2.2** Build Group Classes vs Private Sessions revenue distribution
+- [x] **2.3** Create discount handling system (100% and partial discounts)
+- [x] **2.4** Connect PaymentCalculator frontend to backend
+- [x] **2.5** Implement RuleManager backend integration
+- [x] **2.6** Extend rules/settings: unit_price & sessions_per_pack; keep pricing_type/per_week/fixed_rate fields ready
+- [x] **2.7** RuleManager UI: Session Price field; save `unit_price` & `sessions_per_pack`
 
 ---
 
 ### 🎯 **PHASE 2: EXCEPTION HANDLING & ADVANCED FEATURES** (Weeks 3-4)
 
 #### **Week 3: Exception System**
+- [ ] **3.0** Build rules-driven payment↔attendance verification ledger (packs/monthlies/unlimited; fees excluded; discounts handled)
 - [ ] **3.1** Build manual override system for unrecognized packages
 - [ ] **3.2** Implement legacy discount name recognition
 - [ ] **3.3** Create exception tracking and audit logs
 - [ ] **3.4** Add exception handling UI components
+- [ ] **3.5** Categorize unverified: (1) info mismatch/no clue, (2) prepaid unused (session not yet taken)
+- [ ] **3.6** Write verification outputs to `payment_calc_detail` (Verified, Category, ReasonCode, LinkedPaymentIds)
+- [ ] **3.7** Add retained revenue metric to summary and Sheets
+ - [x] **3.8** Add backend `/payments/verify` API and frontend verification table with sort/filter
 
 #### **Week 4: Reporting & Export**
 - [ ] **4.1** Implement report generation system (monthly summaries, payslips)
@@ -79,18 +86,35 @@
 - [x] **RULE_API** API endpoints for rule management
 - [x] **RULE_UI** Frontend RuleManager page with UI components
 
+#### **Data Import Improvements**
+- [x] **CSV_IMPORT_FIXES** Ensure Column A populated (BOM/header/value trimming)
+- [x] **DUPLICATES_LOGGING** Append duplicates to `duplicates` sheet (with `SourceSheet`)
+- [x] **PREVIEW_REFRESH** Allow repeated uploads to refresh preview
+- [x] **UI_CLEANUP** Remove redundant lower import summary block
+- [x] **BUILD_FIX** Resolve TS6133 (unused variable) in `DataImport.tsx`
+
+#### **Payment Calculator**
+- [x] **PAYMENT_SHEETS_WRITE** Write calc summary to `payment_calculator` and details to `payment_calc_detail`
+- [x] **PAYMENT_MAPPING** Map payments to sessions for per-attendance detail and per-coach gross
+- [x] **RULES_DISCOUNTS_SHEETS** Use `rules`, `settings`, and `discounts` sheets for percentages and detection
+- [x] **UI_TABS_BGM_MGMT** Add BGM and Management tabs with totals
+- [x] **UI_EXCEPTIONS_PANEL** Add Exceptions panel with discount counts (basic)
+- [x] **EXPORT_CSV** Add CSV export of coach breakdown in PaymentCalculator
+
 ---
 
 ### 📋 **IMMEDIATE NEXT STEPS** (This Week)
 
-**Priority 1 - Data Import Backend:**
-- [x] **NOW** Implement CSV parsing for AttendanceData.csv and PaymentData.csv
-- [ ] **NOW** Create database models for attendance and payment records
-- [ ] **NOW** Build data validation service
+**Priority 1 - Verification & Rules Enhancements:**
+- [ ] Implement verification ledger and write Verified/Category/Reason to `payment_calc_detail`
+- [x] Extend `rules` tab to include `unit_price` and `sessions_per_pack` (sheets + backend)
+- [x] Add frontend verification table (sort/filter) and `/payments/verify` endpoint
+- [ ] Exceptions panel: list categorized unverified items with reasons
+- [ ] Add retained revenue metric to summary
 
-**Priority 2 - Frontend Integration:**
-- [ ] **NEXT** Connect DataImport page to backend APIs
-- [ ] **NEXT** Add file upload and preview functionality
+**Priority 2 - Data Import follow-ups (optional):**
+- [ ] Add basic column mapping UI for unexpected headers
+- [ ] Add import history view
 
 ---
 
@@ -100,14 +124,16 @@
 - [ ] Exception handling works for discounts
 - [ ] Reports generate accurately
 - [ ] UI is responsive and intuitive
+ - [ ] Verification ledger identifies unverified categories correctly
+ - [ ] Retained revenue (unused/prepaid) reported accurately
 
 ---
 
 ### 📊 **PROGRESS TRACKING**
 
-**Overall Progress**: 35% Complete
-- **Phase 1**: 30% Complete (3/10 tasks)
-- **Phase 2**: 0% Complete (0/8 tasks)  
+**Overall Progress**: 46% Complete
+- **Phase 1**: 40% Complete (4/10 tasks)
+- **Phase 2**: 25% Complete (2/8 tasks)  
 - **Phase 3**: 0% Complete (0/5 tasks)
 - **Infrastructure**: 100% Complete (All setup tasks done)
 
@@ -120,4 +146,4 @@
 - Frontend UI framework is complete and responsive
 - Rule management system is partially implemented
 - Need to focus on core data processing and calculation logic
-- Database schema needs to be designed and implemented
+- Google Sheets tab structure needs to be designed and implemented

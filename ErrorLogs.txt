@@ -1,50 +1,22 @@
-[00:51:12.738] Running build in Washington, D.C., USA (East) – iad1
-[00:51:12.739] Build machine configuration: 2 cores, 8 GB
-[00:51:12.757] Cloning github.com/Appsbydare/mfc-payment-system (Branch: main, Commit: 49a18d4)
-[00:51:13.196] Cloning completed: 439.000ms
-[00:51:13.223] Found .vercelignore
-[00:51:13.228] Removed 24 ignored files defined in .vercelignore
-[00:51:13.228]   /api/data.json
-[00:51:13.228]   /api/env.example
-[00:51:13.228]   /api/GOOGLE_SHEETS_SETUP.md
-[00:51:13.228]   /api/package-lock.json
-[00:51:13.228]   /api/package.json
-[00:51:13.228]   /api/setup-env.js
-[00:51:13.228]   /api/src/config/database.ts
-[00:51:13.228]   /api/src/index.ts
-[00:51:13.229]   /api/src/middleware/errorHandler.ts
-[00:51:13.229]   /api/src/middleware/notFound.ts
-[00:51:14.168] Restored build cache from previous deployment (FQCjq61Vx312LNQdqqaALrxR32NK)
-[00:51:17.816] Running "vercel build"
-[00:51:18.472] Vercel CLI 44.7.3
-[00:51:18.649] WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
-[00:51:19.067] Installing dependencies...
-[00:51:19.446] npm warn config production Use `--omit=dev` instead.
-[00:51:20.396] 
-[00:51:20.396] up to date in 986ms
-[00:51:20.397] 
-[00:51:20.397] 86 packages are looking for funding
-[00:51:20.397]   run `npm fund` for details
-[00:51:20.429] Running "npm run build"
-[00:51:20.517] npm warn config production Use `--omit=dev` instead.
-[00:51:20.543] 
-[00:51:20.543] > mfc-payment-system@0.0.0 build
-[00:51:20.544] > vite build
-[00:51:20.544] 
-[00:51:20.798] [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-[00:51:20.846] [36mvite v5.4.19 [32mbuilding for production...[36m[39m
-[00:51:20.905] transforming...
-[00:51:24.191] [32m✓[39m 1375 modules transformed.
-[00:51:24.559] rendering chunks...
-[00:51:24.777] computing gzip size...
-[00:51:24.929] [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.48 kB[22m[1m[22m[2m │ gzip:  0.31 kB[22m
-[00:51:24.933] [2mdist/[22m[2massets/[22m[35mindex-G04a0I4b.css  [39m[1m[2m 22.81 kB[22m[1m[22m[2m │ gzip:  4.57 kB[22m
-[00:51:24.933] [2mdist/[22m[2massets/[22m[36mindex-GecdEMUm.js   [39m[1m[2m305.91 kB[22m[1m[22m[2m │ gzip: 94.29 kB[22m[2m │ map: 1,240.29 kB[22m
-[00:51:24.934] [32m✓ built in 4.05s[39m
-[00:51:25.051] Build Completed in /vercel/output [6s]
-[00:51:25.157] Deploying outputs...
-[00:51:27.667] Deployment completed
-[00:51:28.509] Creating build cache...
-[00:51:43.024] Created build cache: 14.510s
-[00:51:43.025] Uploading build cache [65.58 MB]
-[00:51:44.043] Build cache uploaded: 1.023s
+[13:48:11.806] Running build in Washington, D.C., USA (East) – iad1
+[13:48:11.806] Build machine configuration: 2 cores, 8 GB
+[13:48:11.818] Cloning github.com/Appsbydare/mfc-payment-frontend (Branch: main, Commit: b0d3a75)
+[13:48:12.321] Cloning completed: 503.000ms
+[13:48:12.977] Restored build cache from previous deployment (B1bA7eEXrp6oKUcCyTMeXxz5CrFY)
+[13:48:13.494] Running "vercel build"
+[13:48:13.936] Vercel CLI 47.0.5
+[13:48:15.503] Installing dependencies...
+[13:48:16.915] npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+[13:48:16.916] npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+[13:48:16.955] npm warn deprecated gauge@3.0.2: This package is no longer supported.
+[13:48:19.590] 
+[13:48:19.590] up to date in 4s
+[13:48:19.591] 
+[13:48:19.591] 86 packages are looking for funding
+[13:48:19.591]   run `npm fund` for details
+[13:48:19.735] 
+[13:48:19.736] > mfc-payment-frontend@1.0.0 build
+[13:48:19.736] > tsc && vite build
+[13:48:19.736] 
+[13:48:23.566] src/pages/RuleManager.tsx(59,10): error TS6133: 'loading' is declared but its value is never read.
+[13:48:23.586] Error: Command "npm run build" exited with 2

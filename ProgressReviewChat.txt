@@ -1,0 +1,1516 @@
+Darshana
+Darshana
+Hi, Jake, how are you?
+Jay
+Jay
+00:03:37
+Yes, I can hear you.
+Darshana
+Darshana
+00:03:41
+Okay, great. So… Actually, I have,
+almost completed most of the calculations, but I just need to,
+verify it, before I move it. So,
+Actually, I just wanted to, you know, if you can show me how you do it manually, with one payslip, that will be great. Then I can, automate the same thing, here.
+Jay
+Jay
+00:04:10
+Sure, let me… let me show you my spreadsheet.
+One second…
+Apologies, I haven't had a chance to do any of the things that I promised I said I would do.
+Regarding the duplicate payment issues.
+And also writing down the rules, because there are a few more updated rules I need to add, but on your membership section, I can create new memberships, right?
+Darshana
+Darshana
+00:05:02
+Yeah, but, still I haven't configured those.
+Jay
+Jay
+00:05:07
+Okay.
+No worries. So can you see this? This is a payslip for, one of my instructors, Ton.
+Darshana
+Darshana
+00:05:19
+Yeah, I have seen, one of the payslips that you have already sent to me. I just need to, know how do you get these values, yeah.
+Jay
+Jay
+00:05:29
+Yeah, sure. So,
+Right. We have, this client here. So let's look at private, private sessions. So we have…
+What I would then do, right, is,
+I would… hold on, I need to change this sharing mode to something different.
+You need to see everything that's on my screen.
+You know, this is not very good… this is not a very good example.
+Different one, right. Let's do… Torn.
+I'd,
+True, writer, Claire.
+Alright, sorry, bear with me,
+Share screen. Share… I'm trying to screen.
+Okay, can you see the other…
+tabs as well, so you can see Team up here.
+Darshana
+Darshana
+00:07:36
+Yeah, I can't see it now.
+Jay
+Jay
+00:07:37
+Okay, so, we've got, first one, private client, Janine, Barzana Angera, so… I obviously had the,
+the… all the transactions, so I would have done a report, right, for this one.
+Would have gone to…
+Reports…
+Events, all attendances, Full report.
+And then for each coach, I would filter here.
+So, I would filter to Claire.
+Darshana
+Darshana
+00:08:25
+Yeah, Jay, so, just, just let me interrupt.
+a bit, so I just need to know the process.
+We implement.
+Jay
+Jay
+00:08:36
+No.
+Darshana
+Darshana
+00:08:36
+He said…
+From the import, option, we… we import all the, attendance and the whole payment data there.
+So, you can, download the recording all the coaches and things?
+I mean, filter it out, then that'll be great.
+Jay
+Jay
+00:08:57
+That's fine. Okay, so let me skip this part. So, I get all the data, and then what I have is, I have all these, kind of transactions and amounts and stuff, so I need to, figure out what their percentage is. So, for now, remember, I didn't have to calculate anything for
+Bgm.
+Because we still haven't signed the contract. We will sign it, tomorrow.
+So it's very important that we have this… this working very soon, so I just need to work out the coach's side. So on the coach's side, I have Janine as her… she had two… two sessions with a private client, so what I would do is I search…
+Janine?
+And… I can see from this that she has… 10 session pack.
+So if I go to payments.
+I can see how much she paid for it.
+I can see that she paid…
+Now, this one, is a bit of a mistake. So, I would have put this one into exceptions. So, she paid…
+For the wrong package, which she then had to refund.
+And then I had to do a cheaper package for her.
+So, on this…
+Darshana
+Darshana
+00:10:19
+Yeah, Ajay, how about this? So, if we can, if we can open the attendance and payment files.
+both to, CSV files, and, if you can, explain me how to get information from that and develop the, payslip, that's the process I need to know.
+Jay
+Jay
+00:10:39
+Right, okay.
+Darshana
+Darshana
+00:10:40
+So, I guess, those are the only two files that we need to have in order to finalize these payerslips, right? Is that my understanding correct?
+Jay
+Jay
+00:10:52
+Yeah, yeah, correct. Okay, so, yeah, I've been doing it a slightly different way.
+And not using the… the spreadsheets. Give me a moment.
+I sent you these payslips in.
+Darshana
+Darshana
+00:11:07
+Exactly.
+Jay
+Jay
+00:11:10
+Why was it?
+Darshana
+Darshana
+00:11:13
+Even I can open the, files from my, computer and share the screen.
+If you are comfortable with that.
+Jay
+Jay
+00:11:23
+Yeah, sure. Yeah, let's do it like that, then.
+Darshana
+Darshana
+00:11:26
+Yeah, okay, just a few minutes.
+Jay
+Jay
+00:11:34
+How about I show you exactly how I would calculate the payments for… Each coach.
+Darshana
+Darshana
+00:11:42
+Yeah.
+Yeah. You can see my screen, right?
+Jay
+Jay
+00:12:03
+One moment…
+Yes.
+Darshana
+Darshana
+00:12:10
+Okay, very good. So, let's filter by… let's do it for Alex for the month of, I don't know, June.
+So, from a rendurance file, right?
+Jay
+Jay
+00:12:21
+From the attendance file, yes.
+Darshana
+Darshana
+00:12:24
+Okay, let's select the month first.
+with Jewel, right?
+Jay
+Jay
+00:12:34
+Yes, please.
+Darshana
+Darshana
+00:12:35
+No, Joni's not there.
+What about July?
+Jay
+Jay
+00:12:41
+Sure.
+Darshana
+Darshana
+00:12:46
+Well, I think I must have given you August.
+You mean to do August?
+Jay
+Jay
+00:12:54
+What, which dates did I give you for this attendance?
+Darshana
+Darshana
+00:12:59
+This one has, like, hold on… It's from, yeah, it's from July.
+Jay
+Jay
+00:13:06
+Okay, great. So that's fine. You don't need to filter by July, because I've only given you one month. If you just filter by Coach Alex.
+Darshana
+Darshana
+00:13:16
+Yeah.
+Jay
+Jay
+00:13:17
+Excellent, so what I would do is I would then filter, the memberships, so I would calculate the private sessions first. So if you go onto membership name.
+Darshana
+Darshana
+00:13:31
+Yeah.
+Jay
+Jay
+00:13:32
+and I would untick everything, And only select the following. So, 1 to 1 private 10-pack.
+Yeah, all these privates. 1 to 1, 1 to 1, 2 to 1.
+Good, then keep scrolling down.
+Mattia Special is also a private pack.
+Good, scroll down…
+Darshana
+Darshana
+00:14:00
+That's it.
+Jay
+Jay
+00:14:01
+That's everything.
+Can you scroll up for me one more time?
+Okay, good. So, Darshan, we have more packs, but these are the only ones that have actually been purchased and used for Alex. So, here I will click OK.
+Now I have a list of transactions where I know, I'm gonna put in one section. So,
+Here, then, I have… where is the name of the client?
+Okay, good, right.
+Nope, it's not here.
+Okay. So, what I would also do is, I would probably hide, columns be… to… D.
+To make life easier.
+Okay, good. So, now we've minimized the data, so, alright, first one, Sufian. So, you take his name, Sufian Jay, I would copy that.
+And then I would maybe then look up, that name in the other spreadsheet.
+And I wanna see what membership he's used.
+Darshana
+Darshana
+00:15:29
+One-to-one private comment.
+Jay
+Jay
+00:15:33
+Yeah, exactly. So, he's got a single session.
+So I'll do a Ctrl-F, maybe?
+Darshana
+Darshana
+00:15:49
+Is this or two?
+Jay
+Jay
+00:15:50
+And,
+So he's gonna have a few of these, right? And we need to find which one is the one that pertains to this date.
+Darshana
+Darshana
+00:16:02
+Oh, okay. So it's…
+Jay
+Jay
+00:16:04
+What's… it's… this one was purchased on 7th of September.
+No, that's… that date hasn't occurred yet.
+Dustin, give me the…
+Darshana
+Darshana
+00:16:12
+It's fine.
+In this file, you don't have a date, right?
+Jay
+Jay
+00:16:18
+I have… Actually, you know what, the columns that I told you to hide are important.
+Maybe, maybe worth.
+I'm hiding.
+We have the other date, okay. So, customer email and offering type is probably not important.
+Darshana
+Darshana
+00:16:43
+So here, it should be, 1st of June… July.
+What's tough.
+Jay
+Jay
+00:16:50
+It will be… yeah, that would be the absolute latest date that Sufien could have…
+purchased… well, actually, sometime. Now… Sometimes they pay afterwards as well.
+So we always need to apply it to the latest date.
+So… Have we got a different date format here?
+skimming session, pace you go.
+Oh, and this is the one where we've got multiple recurrences.
+Darshana
+Darshana
+00:17:25
+Yeah, exactly.
+Jay
+Jay
+00:17:27
+Okay, interesting. So, 7, 9. Can you go back to the previous screen?
+Darshana
+Darshana
+00:17:40
+Do you want me to, filter it through this one?
+7… sorry, 1st.
+3rd, 5th, 8th, 10th…
+Jay
+Jay
+00:18:07
+So, I would say for the one that's on the 1st of July, we need to try and match it
+to…
+Darshana
+Darshana
+00:18:18
+What else is there?
+So, don't we have any method to get the exact match?
+Jay
+Jay
+00:18:29
+Is there an invoice number, maybe, on here?
+Darshana
+Darshana
+00:18:37
+No.
+Jay
+Jay
+00:18:38
+What about the ones that we hid?
+Customino inside. Okay.
+Darshana
+Darshana
+00:18:53
+Maybe, maybe, the, source of this information, the platform that you have, shown me?
+Yeah. Is there any possibility that we can add the additional fields to this report?
+Jay
+Jay
+00:19:09
+No, these are fixed, unfortunately. I've requested this a long time ago, saying, can we create highly customized reports? But unfortunately, they're not able to do that.
+Okay, don't worry, I think there's another way around this. So, listen, if,
+All I have to do is find… the latest…
+for that date. So, 1st of July, I need to find a transaction that happened…
+Around the 1st of July.
+Darshana
+Darshana
+00:19:46
+Jean.
+Jay
+Jay
+00:19:49
+Because usually these are paid. Sometimes they're paid later.
+Darshana
+Darshana
+00:19:58
+Why this customer membership is changing?
+Jay
+Jay
+00:20:02
+Mmm… What else does it say? It's customer membership ID.
+Let's see if there's anything on the other spreadsheet that allows us to match.
+Darshana
+Darshana
+00:20:15
+Those two.
+No, it has the payment.
+Value Revoice ID?
+The package information and the customer name only.
+Yeah, in order to do a proper reporting, Jay, we should have a, some kind of unique value in the both sheets in order to match.
+Match it from there, yeah.
+Otherwise, yeah, it'll be, like, you will have to get the null every time and manually adjust the reports.
+in order to get that accurate report. So I don't think that will be a sustainable option.
+Jay
+Jay
+00:21:01
+Wait a minute. I think I've figured something… I might have figured something out.
+Memberships.
+Same decision.
+These transactions all occurred on the 13th, right?
+No.
+Darshana
+Darshana
+00:21:19
+7th. It's on the 9th.
+We can filter for that customer here.
+Jay
+Jay
+00:21:31
+1, 2, 3…
+Bear with me, I think I've figured something out. Hmm…
+Darshana
+Darshana
+00:22:33
+I think I've realized why they're all in the same invoice.
+Jay
+Jay
+00:22:38
+Donald Trump.
+Yes. That's an okay, I need to correct something for you. Right.
+Darshana
+Darshana
+00:22:45
+So, the one's on the same invoice.
+Jay
+Jay
+00:22:49
+Are, not in error.
+they are when I've added… so, for example, for… Sufienn.
+He paid… He paid two of those at the same time, so it was on one invoice.
+So he did pay… they are separate transactions, they are correct.
+Darshana
+Darshana
+00:23:19
+You mean, if we take this example, there are 32.71 transactions.
+Trade transactions under the same invoice.
+Jay
+Jay
+00:23:30
+Exactly, so they… he did play for 3 classes all at once.
+Darshana
+Darshana
+00:23:35
+Yeah, okay, which means, this one.
+The total is matching with this one.
+Jay
+Jay
+00:23:42
+Yep.
+Darshana
+Darshana
+00:23:43
+It is under the same invoice.
+Yeah, but for these transactions.
+The fee is…
+Jay
+Jay
+00:23:54
+the tax.
+Darshana
+Darshana
+00:23:56
+Okay.
+Jay
+Jay
+00:23:59
+They were done separately.
+Darshana
+Darshana
+00:24:03
+Which means we don't need to…
+Jay
+Jay
+00:24:05
+On the, yeah, so on the 13th.
+The price increased.
+Darshana
+Darshana
+00:24:15
+Okay.
+Jay
+Jay
+00:24:16
+And so we would give Alex… so, can you go back to the previous…
+Darshana
+Darshana
+00:24:21
+hold on… They are…
+This one, the package is 10 packs, right?
+Jay
+Jay
+00:24:30
+Yep.
+Darshana
+Darshana
+00:24:32
+Okay.
+Okay. Okay, this is the, other file.
+Jay
+Jay
+00:24:38
+And this… so these are all single sessions. So, on the 1st of July… let's go back to the other one.
+Darshana
+Darshana
+00:24:50
+You mean Alajit?
+Jay
+Jay
+00:24:51
+Yeah.
+Darshana
+Darshana
+00:24:52
+Okay.
+Jay
+Jay
+00:24:53
+On the 1st of July…
+Darshana
+Darshana
+00:24:57
+1st of July, there is no records. These are the only records which belongs to July.
+Jay
+Jay
+00:25:03
+Yep.
+Okay, so he may… he may have paid up for those late.
+So, the latest ones that are not matched would be…
+All from the 7th of September.
+So I would take this amount, $31.71… sorry, $32.71,
+And then… find out what 80% of that is.
+Darshana
+Darshana
+00:25:32
+Okay… So.
+Jay
+Jay
+00:25:40
+This is a tough one to tell the software to do automatically, isn't it?
+Darshana
+Darshana
+00:25:43
+Yeah, that's what I'm thinking.
+Jay
+Jay
+00:25:45
+Yeah, without,
+Darshana
+Darshana
+00:25:51
+Because I can, I can, you know, give you a mechanism, but the thing is… There is no…
+Proper guarantee on the information accuracy.
+The program might, match… The same thing with the other information.
+Yep.
+Jay
+Jay
+00:26:14
+--
+Maybe we've stumbled across a quite complicated exception.
+Most of them should be quite straightforward.
+Like, this customer paying singles, is, he's a pretty stupid customer, you know, most customers buy 10 packs.
+Darshana
+Darshana
+00:26:44
+Okay.
+Jay
+Jay
+00:26:45
+So, this is… this is why we're struggling a little bit, because there's lots of singles.
+Darshana
+Darshana
+00:26:53
+Right, so…
+Jay
+Jay
+00:26:55
+I would be quite happy, Dash and I, in this… in this case where the system's picking up multiple things.
+I… I would rather that I just went on the system and…
+looked at it and made a common sense decision. And then later, if we want, we can… we can change this so it's automated.
+But if you could just flag it and say, I can't match Sufian's payment data.
+I think this would apply to about…
+Darshana
+Darshana
+00:27:24
+Yeah, I can do that if we have a, you know, basic mechanic, I mean,
+Jay
+Jay
+00:27:29
+Let's go for a different example, then, shall we?
+Darshana
+Darshana
+00:27:35
+Okay.
+Jay
+Jay
+00:27:35
+Should be easier, right. Let's find another one. Let's find a customer with a 10-pack.
+One-to-one private session, 10 pack.
+Okay, Maxime's a good one. So, Maxime attended…
+Darshana
+Darshana
+00:28:09
+March.
+Jay
+Jay
+00:28:10
+Let's do Ryan, because I think Maxime might have, had some time off. So go, go, no, sorry, this is, Alex's sheet, right?
+Let's go back to.
+Darshana
+Darshana
+00:28:19
+No, this is, this is March and,
+So, other file, we have only.
+Jay
+Jay
+00:28:27
+July. And also, this is my people as well, not Alex's. So go back to the previous screen.
+Go back to the other one.
+Okay, let's find,
+If you go to the left, let's filter by… Alex, first?
+No, no, no, coach. Coach is Alex.
+Instructor, yeah.
+Okay, who has bought a 10-pack?
+One-to-one private conversation.
+Can you change the offering type names to make it bigger, so I can see if it's a 10-pack or a single session?
+Darshana
+Darshana
+00:29:34
+This one, right?
+Jay
+Jay
+00:29:36
+Okay, that hasn't got the information in it.
+Can you scroll to the right for me?
+Okay, so one-to-one private session, 10-pack.
+Darshana
+Darshana
+00:29:52
+You want me to fill it up with that?
+Jay
+Jay
+00:29:53
+No, yeah, that'll be good.
+Okay, scroll to the left.
+Okay, so Martin's a good one. So, Martin Antevsky, if you search Martin, On the other spreadsheet now.
+So Martin has a 10-pack, he's trained once in July.
+And he's bought this 110-pack. So this is very straightforward.
+Martin.
+Darshana
+Darshana
+00:30:32
+Oh, this is…
+Jay
+Jay
+00:30:33
+This is most of our situations, right?
+Darshana
+Darshana
+00:30:36
+This is June, right?
+Jay
+Jay
+00:30:38
+This, is… April, that's fine. So, he bought the pack in April, And he attended in July.
+Darshana
+Darshana
+00:30:50
+Okay…
+Jay
+Jay
+00:30:52
+So, in this case, we would take 28972,
+I would divide that by 10 to find out the price of one session.
+Darshana
+Darshana
+00:31:04
+Jean?
+Jay
+Jay
+00:31:07
+And then I would, find 80% of that.
+Good. That goes to Alex.
+Then, 15% goes to Best Gyms Malta.
+Darshana
+Darshana
+00:31:28
+15% for what?
+Jay
+Jay
+00:31:31
+for Best Gyms Malta, our landlord.
+Darshana
+Darshana
+00:31:35
+Do you have a shortcut name?
+Jay
+Jay
+00:31:39
+like, BGM.
+Is the name?
+Yeah, so on the left one, I would say coach.
+Or Alex?
+Okay, and then 5% for, Multifica, for MHC.
+MFC.
+Darshana
+Darshana
+00:32:15
+Huh, that's your point.
+Jay
+Jay
+00:32:16
+Foxtrot, Charlie, but yeah, that doesn't matter too much.
+Good.
+So there's 80 plus 15, Plus 5 should equal 100%.
+So… that's the splits, and most of our situations look like that.
+So I'm quite happy for Sufian's payments to be completely flagged.
+And, you know, gives me a list to say, okay, what do you want to do? You want to calculate it manually?
+Or, actually, doesn't, doesn't… it would be good if you could say, how much does this pack cost? And I would type it in manually, and then it would apply all the, all the splits.
+Darshana
+Darshana
+00:33:09
+Why you are, calculating, I mean, divided it by 10, For the impacts,
+So, we will have to consider this, package as well, right?
+Jay
+Jay
+00:33:23
+Yeah. So, remember, Martin bought 10 sessions.
+He can do those 10 sessions with whatever coach he wants.
+And he might not do all of them in one month, so he only did one with Alex.
+Darshana
+Darshana
+00:33:37
+Hmm.
+So, for his 10-pack, so he might choose 10 coaches for, those 10 sessions, right?
+Jay
+Jay
+00:33:46
+Exactly.
+really and truly, he will probably end up sticking with one or two coaches, Max.
+Darshana
+Darshana
+00:33:54
+Okay.
+Jay
+Jay
+00:33:56
+But I only want to pay the coach that amount divided by 10.
+Darshana
+Darshana
+00:34:02
+Yeah, I got it.
+So, overall,
+So if we can, you know, figure out how this amount is being, you know, divided.
+Later on the…
+Jay
+Jay
+00:34:17
+I sent you a list of rules.
+Long time ago.
+Darshana
+Darshana
+00:34:22
+Yeah.
+Jay
+Jay
+00:34:23
+That's… that's good. That will cover most of the scenarios. I need to update. There are a few more packages that have been added since then.
+Darshana
+Darshana
+00:34:36
+Okay.
+So those are the… those are the…
+Those are the things that we need to, you know, figure out… figure out under the rules section, right?
+Jay
+Jay
+00:34:51
+Yes, exactly.
+So, some of them… you'll have three, kind of, main situations, right? A few more. Let me talk you through the situations. You're gonna have…
+The single packs?
+Darshana
+Darshana
+00:35:06
+Yeah.
+Jay
+Jay
+00:35:07
+They are quite straightforward, because you just, apply the percentages.
+They are… where they're not straightforward is where… because single packs, there's con… they're buying lots of different packs all the time, so it might be difficult to match up which one is what.
+So that's where the software might throw up, like, an exception to say, Jay, can you look into it? Number two is when you have a multi-pack.
+So you just have to add a bit of division, so if it's a 15-pack, then we divide it by 5, and then it's the same process.
+They will buy less of those, so more easier to track.
+Then you have your unlimited packs, which we are phasing out. They are very, very easy to deal with, because it's just a fixed amount.
+And a monthly payment.
+Then there is the monthly 2 a week, three a week. They're also fairly straightforward, because they have…
+a standard divisor, so if it's 2 a week, it's gonna be… I've applied it with the working out, that all months have, on average, 4.3 weeks.
+So for 2 a week, it would be… you divide it by 4.3,
+and then divide it by 2 to find out the cost per class. But it's all in that… in that rules spreadsheet.
+Darshana
+Darshana
+00:36:29
+Oh, game.
+Jay
+Jay
+00:36:32
+Yeah, so.
+Darshana
+Darshana
+00:36:35
+I need to, go through those, rules again, Jay.
+Yeah. So, I think, let me figure out something. Now I have a… Better understanding.
+Yeah, I think if you can find…
+Jay
+Jay
+00:36:51
+a situation, right, where all the easy stuff is automatically calculated.
+to try and find what's easy, go for the quick wins, and then… if we can get, like.
+70-80% of it automated. I'd be very happy for now, for an initial…
+product, like an MVP type thing.
+Then, you know, if you left 20% of the transactions to say Jay, you can manually find
+what payments are linked to that, that would still save me a lot of time.
+Darshana
+Darshana
+00:37:25
+Okay, so, from this one, the main document is payment data, right?
+So, if I get payment data as the source file and, you know, trying to figure out, one row by row.
+Then, then if I cannot, you know, categorize it.
+With the current logics, I will leave that.
+And for the simple logics, simple rules, I will, you know, do the payment calculation on the same row and put the comment and everything. So, those will be, finalized, and if there is no, any clue or something like that, I will leave those for as the first step.
+Jay
+Jay
+00:38:13
+Wait, I… you know this information, right? I… I think this should go in the other spreadsheet, not the payment data sheet.
+Darshana
+Darshana
+00:38:21
+Good news, huh?
+Jay
+Jay
+00:38:23
+Yeah, it would go on the attendance one.
+Darshana
+Darshana
+00:38:25
+Okay, no worries.
+Jay
+Jay
+00:38:26
+Yeah, remember, so this is the one that's filtering it by the month.
+Darshana
+Darshana
+00:38:31
+Only thing is, this one doesn't have the, value, right? Payment data.
+Jay
+Jay
+00:38:36
+Yeah, exactly. So, that's where…
+Darshana
+Darshana
+00:38:39
+Yeah, what I'll do is… Yeah. What I'll do is, I will add a payment column there.
+Yes. And, at the potential payment, here.
+Jay
+Jay
+00:38:54
+Yep.
+Darshana
+Darshana
+00:38:54
+With the reference to the other sheet.
+Jay
+Jay
+00:38:56
+Exactly. Boom, good.
+Darshana
+Darshana
+00:38:58
+Yeah.
+Yeah, then you can, in any case, you can see, what information is taken to this particular row.
+So, based on that, let's see if we can… Figure out something, and
+Let's decide how we… how we are going to move forward.
+Jay
+Jay
+00:39:20
+Yeah.
+And, you can see…
+I think, so for most of them, it's gonna say, this one links to this payment, there's no… there's no doubt, there's no other payment that it could link to.
+And it's very straightforward, and then there are some where it's gonna link to multiple payments. So in that situation, I'm quite happy for it to then just leave it as an exception, and then I go and manually check and…
+Apply my logic.
+And then we can… we can make this process smoother as time goes on.
+Darshana
+Darshana
+00:39:53
+Okay. So, we talk about this one-on-ones. So, what about the other ones?
+Jay
+Jay
+00:39:59
+Okay, so, how about… let's, again, let's filter to Alex.
+So we keep it on him.
+Darshana
+Darshana
+00:40:07
+Okay.
+Jay
+Jay
+00:40:15
+Good, let's do… what have you got? Right. Adult pay monthly 3 times a week.
+See that? Which… 36? Row number 36?
+Okay, which customer is this? If you go to the left…
+Daniel Bessie. Okay, so let's search up Daniel Bessie.
+Darshana
+Darshana
+00:40:56
+So, this, name is, consistent, right?
+So there's.
+Jay
+Jay
+00:41:02
+There should only be… yes, yes, I wouldn't worry about… We might have some duplicates.
+Darshana
+Darshana
+00:41:10
+Yeah.
+And again.
+Jay
+Jay
+00:41:13
+it's rare to have someone having exactly the same name, and again, I don't mind if it then flags on it. Okay, so, you can see, so Daniel Bessie's on a monthly recurring subscription, right?
+And the most…
+Darshana
+Darshana
+00:41:31
+This is 3, 3, right?
+Jay
+Jay
+00:41:33
+Yeah, 3 times per week, and he attended on the 2nd of July, so the payment that is…
+Yeah, exactly. It's gotta be that one.
+Darshana
+Darshana
+00:41:45
+Yeah.
+Jay
+Jay
+00:41:45
+So, with this one, we have a…
+This would be around 90 euros. Yes, okay, so there's no discount that's been applied.
+And we would divide this one by… so, you see this column, F?
+I would do 84.11.
+Divided by 4.3.
+Darshana
+Darshana
+00:42:13
+So that's the price per…
+Jay
+Jay
+00:42:15
+So we have an average 4.3 weeks in a month.
+And they would do 3 classes per week, so divide it by, 4.3 times 3.
+Maybe we use some brackets, because we'd have to do the…
+Or is it all the same?
+No, it shouldn't be that big.
+Can we do brackets around 4.3 times 3?
+Darshana
+Darshana
+00:42:46
+That doesn't matter, since there is no plus or minus in the formula.
+Jay
+Jay
+00:42:52
+Yeah, that sounds like more of a good amount. So this is the cost, the revenue per class.
+And Alex gets 43.5% of this.
+So the coach gets 43.5.
+Darshana
+Darshana
+00:43:10
+from the sun.
+Jay
+Jay
+00:43:11
+Yep.
+Darshana
+Darshana
+00:43:14
+Or 3 point.
+Jay
+Jay
+00:43:15
+5%.
+Good. BGM gets 30%.
+Good, and then MFC gets 18%.
+And also, on this one, we have Manager 1 and Manager 2 getting… 4.25 and 4.25%.
+The exact amounts don't matter, right? You're gonna double-check that.
+Darshana
+Darshana
+00:44:04
+Sorry?
+Jay
+Jay
+00:44:06
+the exact amounts don't matter, right? You'll double-check this later on the… On the rules sheet, right?
+Darshana
+Darshana
+00:44:13
+Yeah, yeah, yeah.
+Jay
+Jay
+00:44:14
+Yeah, good, okay.
+So.
+Darshana
+Darshana
+00:44:17
+So, I have a question there.
+Jay
+Jay
+00:44:19
+Yep.
+Darshana
+Darshana
+00:44:20
+So, ju divided by 4.3.
+And again, divided by 3.
+Jay
+Jay
+00:44:30
+Yep.
+So…
+Darshana
+Darshana
+00:44:31
+So, one week… Yeah, go ahead.
+Jay
+Jay
+00:44:35
+So, all these pricing models have been developed on the model that the average month has 4.3 weeks.
+So… If I do 4.3 times 3, that is the number of classes in a month.
+On average?
+I…
+Darshana
+Darshana
+00:44:53
+Yeah.
+Jay
+Jay
+00:44:53
+So 8411 divided by the number of classes per month gives me the cost per class.
+Darshana
+Darshana
+00:45:03
+Okay.
+Jay
+Jay
+00:45:08
+But you don't need to worry too much about the logic. I would say just take the formulas and…
+Darshana
+Darshana
+00:45:13
+Okay, yeah, I like that.
+Jay
+Jay
+00:45:14
+in. If there's a mistake, that's then my fault, and I will look into the software and… well, you'll give me the opportunity to change the formulas, right?
+Yeah, so… I think, on your interface, I remember that the rules, there was no section for rules.
+Darshana
+Darshana
+00:45:36
+No, there is.
+Jay
+Jay
+00:45:39
+Well, I mean, it wasn't very customizable, so you can see that some are straightforward, where you just… you know, it's one class, and then there are some where you have to divide it.
+There's somewhere you have to have a fixed price.
+Darshana
+Darshana
+00:45:57
+Yeah.
+So these are the… Now, these are the rules.
+Jay
+Jay
+00:46:06
+Okay, so if it has number of sessions, then it would divide that automatically.
+Darshana
+Darshana
+00:46:11
+Pure.
+Jay
+Jay
+00:46:12
+Yeah, good. Then I also need something where I can toggle and say, this… we pay a fixed price.
+Darshana
+Darshana
+00:46:24
+Yeah, so, you, you have requested that option where you can override everything, so we'll have, we'll add a different, you know.
+window, something like that.
+Jay
+Jay
+00:46:35
+Yeah, so listen, so there's two situations, right? So there's one situation where there's an individual transaction and it can't seem to match it. That I want to override, but number two is I have a whole group of unlimited
+Packages where we actually pay a fixed price to all parties.
+Okay, so then…
+Darshana
+Darshana
+00:46:57
+What we can do is, How do we manage?
+Jay
+Jay
+00:47:03
+So, maybe you could say fixed or variable on the price?
+Darshana
+Darshana
+00:47:09
+Hmm.
+Or, is it… Is it possible where we can, add a new membership type for that?
+Jay
+Jay
+00:47:19
+Yes, yes, exactly. So, I mean, monthly unlimited adult would be… would be that one, but with this screen, I wouldn't be able to put in a fixed price per attendance for that one.
+Darshana
+Darshana
+00:47:30
+Yeah, we can do that.
+Jay
+Jay
+00:47:32
+With this, I could.
+Darshana
+Darshana
+00:47:33
+I will figure it out. I will, give you option to do that.
+Jay
+Jay
+00:47:36
+Yeah, that'd be great.
+Darshana
+Darshana
+00:47:38
+Yeah.
+We'll put a tick or something where you can.
+Jay
+Jay
+00:47:45
+Yes, exactly. Fixed.
+Darshana
+Darshana
+00:47:47
+Or whatever.
+Jay
+Jay
+00:47:49
+And then, yeah, then the next issue would then be with the discounts, and…
+You know, people that have… Purchase things for free.
+Darshana
+Darshana
+00:48:04
+Yeah, here you have allowed discounts, so I will…
+I will, figure it out.
+And if we have, like, yeah…
+Jay
+Jay
+00:48:15
+To be honest, the discount will be factored into the price already, so… Maybe that fixes our problem.
+Darshana
+Darshana
+00:48:24
+Yeah.
+But if you… if you need to, calculate the total discounts later on, that… that will be, not possible.
+No, that's…
+Jay
+Jay
+00:48:37
+What would be nice, though, is if… you know some of the paystips that I gave you? They're highlighted in yellow where we've given the customer a discount.
+This just helps the coach understand why they're paid a little bit less.
+Darshana
+Darshana
+00:48:55
+Okay.
+Jay
+Jay
+00:48:56
+So something similar would be good, where it could flag and say, discount has been applied on this.
+And that's why it's different.
+Darshana
+Darshana
+00:49:05
+Yeah. So, anyway, in the attendance sheet, I will have to add a few more columns.
+With the, exact amount for these, categories?
+So, in that… I will add another column for discounts, so…
+That information will be visible for all reports.
+Jay
+Jay
+00:49:30
+Excellent.
+Okay, how does that sound? Does that clarify the problem?
+Darshana
+Darshana
+00:49:39
+Yeah, yeah.
+So, actually, I'll have to, you know.
+rethink about the mechanism that I have planned.
+So, yeah, anyway, yeah, good.
+Jay
+Jay
+00:49:52
+Good, good, good.
+Darshana
+Darshana
+00:49:53
+Jia.
+So, I have, finished these, data imports and everything. If I… Show you that,
+In this data, you need to select the CESV.
+And, you can upload the payment data in the same time as well.
+And, validate data.
+And just clicked import data. There you, with the current settings, it removes the duplicates.
+So I will, I will change the birth to, you know.
+Without removing duplicates, have all the records on the database.
+Jay
+Jay
+00:50:43
+Good.
+Darshana
+Darshana
+00:50:47
+Okay, now,
+So, based on that, I have a few,
+And I need to, get your confirmation on this total revenue method as well.
+So, if I select the total period there.
+I don't remember, it's from the March… So, it's getting this number.
+So, I need to know… I need to just verify this number.
+If I show you how I get this number, it's based on the payment data.
+And, it calculates…
+The total of this… Amount column.
+Without the minus values.
+Yep.
+So, do you think it is a correct method?
+For the revenue calculation?
+Jay
+Jay
+00:52:03
+Let's… let's try doing it by… so, let's do it for April.
+April's a bit of a… A difficult month.
+Darshana
+Darshana
+00:52:24
+technology's development.
+Jay
+Jay
+00:52:25
+So.
+Darshana
+Darshana
+00:52:27
+No, hold on.
+Yeah, for April, it is, 6,000… 6,688.
+Jay
+Jay
+00:52:37
+Yeah,
+No, you know what? No, that would not be the correct way. So, the problem is, Dashano, right? April is the month where everyone's memberships were brought over.
+onto the platform, so I went to the checkout, and then applied a 100% discount.
+But actually, we didn't receive any new funds.
+Darshana
+Darshana
+00:53:00
+Okay.
+Jay
+Jay
+00:53:01
+So, anything where it says mind-body switch, should…
+Be ignored as not new revenue?
+Darshana
+Darshana
+00:53:14
+song.
+Jay
+Jay
+00:53:15
+Yeah.
+Darshana
+Darshana
+00:53:17
+I mean, these two.
+Jay
+Jay
+00:53:18
+We're… actually, a better way to describe it is.
+If it is… if the di- if the discount is 100%,
+That means it is not new revenue.
+Darshana
+Darshana
+00:53:32
+Okay.
+Jay
+Jay
+00:53:34
+Yeah, so which means if I get the total of this column.
+It should… Yes, because they'll cancel each other out.
+Darshana
+Darshana
+00:53:42
+Yeah, exactly.
+So, if I get the total of this filtered… Data, it says 6688.
+It should be correct then.
+Jay
+Jay
+00:53:55
+6,688.
+Sounds like a… a feasible amount that we made in April.
+Darshana
+Darshana
+00:54:05
+Yeah, because, you have these… These ones.
+So, this doesn't have any discounts.
+This doesn't have…
+Jay
+Jay
+00:54:19
+April will be the really difficult one.
+Darshana
+Darshana
+00:54:23
+Jump.
+These two doesn't have… So, likewise, the total of these highlighted ones… Will be 6,600, so…
+I just need to, you know…
+If… to… to double-check with you, if that is possible.
+Jay
+Jay
+00:54:48
+The fee, however, needs to be removed.
+Anything that says fee, is tax.
+Darshana
+Darshana
+00:55:03
+Okay, so, which means we need to, remove this fee, From the calculation.
+Jay
+Jay
+00:55:11
+Yep.
+Darshana
+Darshana
+00:55:13
+So, do you want it to, add, that again to somewhere else?
+Jay
+Jay
+00:55:18
+No, because all our calculations for these purposes are without tax.
+Darshana
+Darshana
+00:55:32
+Okay, I got it.
+So, when the revenue calculation is done, I will remove… this fee… From the calculation?
+And we'll get… the sum of… This amount column.
+Jay
+Jay
+00:55:51
+Yep.
+Darshana
+Darshana
+00:55:52
+And when we are, filtering it.
+To a specific date range.
+From here… You will filter it from here.
+And get the total from there.
+Jay
+Jay
+00:56:07
+Yes.
+Darshana
+Darshana
+00:56:08
+Okay.
+I will finalize that one. So,
+So, I have another question, Jay. So, when we calculated the revenue in that way.
+Jay
+Jay
+00:56:22
+Yeah.
+Darshana
+Darshana
+00:56:22
+Is it possible for us to calculate the BGM payment based on a percentage from that revenue?
+Jay
+Jay
+00:56:29
+Very good question. So, remember, there are many customers who will purchase A package, but not attend.
+And that revenue is then, retained by Malta FICO.
+So, you would verify…
+by, all the BGM payments would be verified by adding every single transaction on the other spreadsheet.
+Darshana
+Darshana
+00:56:58
+Or the coaches.
+Jay
+Jay
+00:57:01
+And… what we should see, right, is the total revenue should equal BGM plus coaches.
+So, total revenue equals coaches pay.
+plus PGM, plus management pay, and then everything left over goes to Malta FICO.
+Darshana
+Darshana
+00:57:23
+So, how about the sessions that has not been taken place?
+Jay
+Jay
+00:57:27
+Exactly, so if they don't use a session, we retain the revenue.
+Darshana
+Darshana
+00:57:34
+Yeah, but it shouldn't be… that amount shouldn't be calculated under BGM payment and other categories, right?
+Jay
+Jay
+00:57:43
+No, no, I don't want to give that money to them.
+This is our secret way of making a little bit more money on the side.
+Darshana
+Darshana
+00:57:52
+Okay.
+Okay, I will, so, first up first, in order to calculate BGM payment, we will need to, you know,
+The, the… categorize the payments.
+I mean, do the payment verifications for the sessions that have been already taken place, right?
+Jay
+Jay
+00:58:16
+Exactly, yes.
+Darshana
+Darshana
+00:58:17
+Nice.
+Jay
+Jay
+00:58:18
+So coaches, coaches, management, everyone only gets paid if the client actually uses that.
+Otherwise, that money is retained by Malta FICO.
+And,
+Actually, that would be a good metric for us to have, Lashana, so you'll see all the money that we retained from the classes that were attended.
+And we can also see the classes that weren't attended as well.
+Darshana
+Darshana
+00:58:46
+Jean.
+Jay
+Jay
+00:58:47
+Yeah.
+Darshana
+Darshana
+00:58:48
+Okay.
+So, yeah, after we finalize the, you know, the payment,
+categorization, I should be able to give you a rough idea about that amount as well.
+Jay
+Jay
+00:59:04
+Very good, yeah. Can you just kind of, for each one, write down your logic?
+As to how you've calculated it, and then I can… I can double.
+Darshana
+Darshana
+00:59:14
+Yeah. That works. Yeah, exactly. I will do that.
+Jay
+Jay
+00:59:17
+Yeah, I feel like you've got a good understanding, though, of what's going on behind the scenes.
+Darshana
+Darshana
+00:59:21
+Jean.
+Jay
+Jay
+00:59:22
+Yeah. You know, we were just trying to make sure that our production line, you know, our services are just carved up and given to the right people.
+and we are very tight on our margins, and we know exactly who's going… like, each payment is… is… you know, that's going to the coach, this is going to Multified Co, this is going to managers, blah, blah, blah. Before, it was very… it was just… it didn't make any sense. You know, we were just… had a random number.
+And it was open for abuse, you know, if a customer came 100 times in a month, then we'd be losing money.
+Darshana
+Darshana
+00:59:56
+Hmm.
+Jay
+Jay
+00:59:56
+Well, every transaction, we're making a profit. That 18%.
+Darshana
+Darshana
+01:00:01
+John.
+Okay, Jay, so that will be a good start.
+So, let me, let me finalize the mechanism, apply it, and have another session with you, so…
+Jay
+Jay
+01:00:17
+Yeah, sure. I'm more than happy to give you my time to get this right. You've got to nail this very soon.
+Darshana
+Darshana
+01:00:24
+Yeah, the method is not straightforward, so there are a lot of exceptions, so that's why I thought to have a session with you.
+Jay
+Jay
+01:00:33
+Yeah, yeah, good. And to be honest, this is why I didn't want to… because I've been looking into vibe coding as well, and I just thought, ugh, I think I need a developer on this one, this is a complicated one, to vibe code.
+Darshana
+Darshana
+01:00:44
+Yo.
+Okay, Jake, then, jean.
+How about…
+Jay
+Jay
+01:00:53
+Even if you want a message at 3am, just send me a message, and I will respond to you whenever I can, okay?
+Darshana
+Darshana
+01:01:01
+Yeah, thank you very much. So, I really appreciate that, yeah.
+I will keep you posted with the status, Jay.
+Jay
+Jay
+01:01:09
+Alright, excellent.
+Darshana
+Darshana
+01:01:11
+Okay.
+Jay
+Jay
+01:01:12
+Thank you, my friend.
+Darshana
+Darshana
+01:01:13
+Okay, thanks for your time, have a nice day.
+Jay
+Jay
+01:01:15
+Lovely, it's a night there, isn't it? Have a lovely evening.
+Darshana
+Darshana
+Yeah, thank you, thank you. You too. Cia, bye.
+Jay
+Jay
+01:01:22
+Bye.
