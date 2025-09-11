@@ -1,0 +1,1208 @@
+Jay
+Jay
+Mandashina.
+Darshana
+Darshana
+00:59
+Good morning, Jane.
+Jay
+Jay
+01:00
+How are you, buddy?
+Darshana
+Darshana
+01:01
+Yeah, I'm good. Hope you are doing good, too.
+Jay
+Jay
+01:04
+You're good, I like the positivity in your voice.
+Darshana
+Darshana
+01:08
+Yeah.
+Haha.
+So…
+Yeah, let's start. Let me share my screen, based on the last conversation we had, I have…
+I have, some progress to show you.
+Jay
+Jay
+01:22
+Great.
+Darshana
+Darshana
+01:24
+Thank you, Shameless.
+Can you see my screen now?
+Jay
+Jay
+01:38
+Yes, yes I can.
+Darshana
+Darshana
+01:40
+Okay, Jay, so this is the,
+Landing page, this is the, dashboard.
+When you are, logging into the system.
+So, this will be displayed as the first page.
+So, at, at the end of the, project, I will give you,
+What do you call a user login system?
+Yeah, you will have a password to, see the go, I mean, to enter the…
+application.
+Jay
+Jay
+02:14
+Great, looks good.
+Darshana
+Darshana
+02:15
+Yeah. So, I have uploaded the data there, so you just need to, select the date range.
+Based on the date range, it will, showed you the, numbers.
+So, currently, these are, updating based on the,
+Previous data, previous calculation methods, so I'm in the process of changing those.
+So, basically, what I wanted to,
+inform you is this, data import, process is totally completed. Now, you can test the data by, browsing
+this, and, add… Attendance data here.
+And, payment data here.
+And, after that, I have completed the, role manager as well.
+Now, all the information that you have provided through an Excel file a few weeks ago.
+Have added to this, list.
+Now, these are, based on your actual, packages.
+So everything has been uploaded now.
+So, if you have anything, you just need to… you can, I mean, you can change it from there.
+And also…
+Jay
+Jay
+03:40
+Quick question. How do I… if I was to do a fixed price, I just changed session price?
+Darshana
+Darshana
+03:52
+If you have a fixed price.
+Jay
+Jay
+03:54
+Yeah.
+Fixed price per session.
+Darshana
+Darshana
+04:00
+yeah, fixed price by session means, yeah, you can… I mean, is there any difference there?
+Jay
+Jay
+04:08
+So, for example, like, this one's a good example. So you have 65 euros, right? Is that… that's how much it costs for a month, but for one class.
+We don't have a number of sessions, right? So, we…
+I'm not gonna pay 60.75 for one class, I would want to pay either a divided amount, but for this one, it's unlimited, so we're gonna do a…
+fixed amount, let's say it's $260, would I put that in session price?
+Darshana
+Darshana
+04:40
+Yeah, I mean, this option is given for the scenarios like this.
+See? Based on the laws…
+Jay
+Jay
+04:49
+Okay. So, can I… So here, can you just delete session price?
+Does it automatically calculate that?
+Darshana
+Darshana
+05:01
+Yeah, automatically calculates that, based on the previous,
+Jay
+Jay
+05:07
+We don't include a number of sessions.
+Will it… can I manually enter the session price?
+Darshana
+Darshana
+05:15
+Yes, for now, yes, if you want to, you know…
+Jay
+Jay
+05:19
+That's great, okay, perfect.
+Darshana
+Darshana
+05:21
+Okay. So, I wanted you to have, have a look and test.
+with some of the data. Sorry, say again?
+I mean, now you can, you know, use the file and see if you have any challenges by adding these data, adding data, when you are going to add new data. If you have any challenges, so if you need any modification, just let me know.
+Now the, this, rule manager is ready.
+That's great, okay. Yeah, just have a look, and let me know if you need any changes.
+Jay
+Jay
+05:57
+Looks… looks good for me for now. My, is it ready for me to start putting data in and testing?
+Darshana
+Darshana
+06:04
+Actually, yes, yes, that's what I mean. Okay. So, basically, the main packages I have added, if you can add a new package and see, that'll be great, then we don't need to, you know, add the packages again.
+Okay, so you have provided me an Excel file a few weeks ago. Based on that only, I have added this information.
+Jay
+Jay
+06:27
+Yeah, and also, I need to add some more as well, because,
+Darshana
+Darshana
+06:30
+Yeah.
+Jay
+Jay
+06:31
+We've, yeah, we've changed things.
+Darshana
+Darshana
+06:33
+Just, just, Aden, let me know your feedback.
+And for payment calculation, also, I have,
+done the improvements that we have discussed. So, based on the payment data we have updated, it, verified now.
+It is verifying, each and every record in that attendance, data.
+Jay
+Jay
+06:59
+So verification basically means I can match this to a payment.
+Darshana
+Darshana
+07:04
+Yes, exactly. It is automatically matched.
+Okay. So, if the verified is yes, it is matched, and you can see the invoice number there.
+Jay
+Jay
+07:14
+Very good.
+Darshana
+Darshana
+07:16
+Yeah, so, in case if you need to check whether it is matching correctly, you just need to refer to the invoice number.
+I have, tested a few of them as well. So, and also, the payment speeds will be there.
+Jay
+Jay
+07:33
+Okay, good. Now, that's excellent, well done. If there is…
+a situation where I need to override for a coach.
+Darshana
+Darshana
+07:42
+Yeah.
+Jay
+Jay
+07:42
+Usually, it's for coaches where I've agreed a minimum rate. How do I go about that process?
+Darshana
+Darshana
+07:48
+Yeah, let me explain you one by one, and the next one I need to,
+pay your attention is this one. So, if there is any, mismatching records of the payment records are not there. So, yeah, you will get verified as no.
+So in that situation, You just need to click this verify button.
+And there you will be see…
+You'll be seeing the potential invoice numbers there. If there is any, you know, closely matching invoice number.
+Okay.
+I mean, unverified invoice number, with the amount, will be displayed here.
+So, I just need to know, what are the actions that you need to take after this… after you're getting this information, so then I can, you know, program it.
+Jay
+Jay
+08:46
+So, on this one, what I would do is, I would say, manually input.
+Darshana
+Darshana
+08:52
+Okay.
+Jay
+Jay
+08:53
+And then I…
+Darshana
+Darshana
+08:53
+Manually input what, Jay? The amount, or the payment split? Yes.
+Jay
+Jay
+08:59
+Exactly, all, all amounts.
+Darshana
+Darshana
+09:02
+Okay, you need, like, empty row there, empty cells there, you just need to put the amounts.
+Jay
+Jay
+09:08
+Exactly.
+Darshana
+Darshana
+09:09
+Okay, I will do that.
+So, there are, unverified data like this.
+Jay
+Jay
+09:16
+So you just need to, you know.
+Darshana
+Darshana
+09:20
+Just click verify, and also if, if…
+There is any issue with the payment records,
+You will get… get a notification.
+So just, use the tool, Jay. I will do the amendments that we have discussed so far.
+within a day, and by tomorrow, I will confirm you,
+With the calculations that we just discussed.
+Jay
+Jay
+09:47
+Okay, excellent. So, I need to pay Adam today
+So can we use him as our test cases, if possible?
+Darshana
+Darshana
+09:58
+Yeah, let's do that.
+Jay
+Jay
+10:00
+So I'd need to pay Adam for the period of…
+all of, August, so from the 1st of August to the 31st, if… if it does go up to… does it go up to 31?
+Yes, 1st to the 31st of August I need to pay Adam for.
+Darshana
+Darshana
+10:18
+Yeah, let's see how it comes.
+First stop for this… So, PM1 data is not available for…
+Jay
+Jay
+10:27
+I can get you that. Give me one moment.
+Darshana
+Darshana
+10:30
+Okay.
+Jay
+Jay
+10:37
+I'll send it to you in Fiverr, so we have a record of it.
+Darshana
+Darshana
+10:42
+Okay.
+Jay
+Jay
+10:44
+So you need, attendance data for August?
+Darshana
+Darshana
+10:51
+Attendance data is already there, GA.
+Yeah, yeah, if you can send me the book files…
+Jay
+Jay
+10:57
+updated for August, so yeah, I'll send that.
+Is there any, particular file name
+that I should use for our records for the two… the two files.
+Darshana
+Darshana
+12:11
+No, Jay, you just need to, you can update any file there.
+Jay
+Jay
+12:15
+Okay, fine.
+Darshana
+Darshana
+12:16
+So, it doesn't, yeah.
+Jay
+Jay
+12:23
+I'll just make it clear to you, so…
+Darshana
+Darshana
+12:26
+Now, let me, let me.
+Jay
+Jay
+13:08
+7 days is done.
+Customer experience, oh, let's…
+So we've got your payments data, just getting you your, customer attendance data as well.
+Darshana
+Darshana
+14:15
+Okay.
+Jay
+Jay
+14:20
+Wow, 880 in attendance is very good.
+Okay, buddy, just click send.
+Darshana
+Darshana
+16:15
+Ja, okay, le…
+Let me download the files.
+Yeah, okay, let's upload it.
+Jay
+Jay
+16:55
+So, am I right in thinking, the historical pay data it will save…
+So let's say I gave it to you in March.
+Darshana
+Darshana
+17:05
+Yeah, it seems like data appending.
+Jay
+Jay
+17:07
+And then it will add April, and add, and add, and add, so we don't have to create…
+Darshana
+Darshana
+17:12
+Yeah, there is a, there is a, little thing that I need to, you know,
+highlight here, Jay, since we have, removed the data duplication process, now we will have to update, you know,
+We'll need to make sure we don't add duplicate data manually.
+Jay
+Jay
+17:34
+Okay.
+Darshana
+Darshana
+17:34
+For example, if we had June 1st to June 30, Today, and,
+Next month, you'll have to, make sure we don't duplicate June 30th, though, any June data there.
+Jay
+Jay
+17:49
+Okay.
+Darshana
+Darshana
+17:50
+So, if you have any mechanism, just let me know, then I can automate and add it to there. I just can't, you know, figure out a logic to, you know, remove the…
+duplicate… real duplicates, and keep the duplicate records, because in our scenario, there are duplicate records which we need to, calculate them without, yeah, that's…
+Jay
+Jay
+18:13
+Yeah, so we have the, ones where we have the same invoice number.
+Darshana
+Darshana
+18:17
+Yeah.
+Jay
+Jay
+18:18
+On the same day.
+Darshana
+Darshana
+18:20
+Okay.
+Jay
+Jay
+18:21
+Cheech.
+Darshana
+Darshana
+18:22
+Yep.
+So if you can, you know, figure out…
+Jay
+Jay
+18:25
+But we do a mechanism that's nowhere. So, I mean, I think it's very rare that I would do anything more than
+10.
+Do… like… In one month, I don't think there's gonna be more than 10 duplicate records.
+So.
+Darshana
+Darshana
+18:49
+I don't think it's a good mechanism to depend on a number.
+There. Because if something happens, it will cost you in dollars, so…
+Jay
+Jay
+19:02
+Yeah, well, I mean, I would say, if we see more than 10 duplicates, then I would like the system to say, are you sure this is… could you go back and check, this is the correct file, as we have more than 10 duplicates?
+Darshana
+Darshana
+19:19
+Maybe not.
+Currently, we have a mechanism like,
+cross-check the duplicates and separate it to a separate data table. So, I can do something like this. I can give you the access to that, and you can,
+selective, those are, not duplicates, so need to add to the database. Yeah.
+Jay
+Jay
+19:44
+And then maybe also, if we could keep a separate record where I can say.
+Payroll has been completed for this month.
+this month, this month, and then, you know, for May, June, July, and then I can know, or maybe someone else can know if, if that data would then be duplicated.
+Do you understand what I'm saying?
+Darshana
+Darshana
+20:09
+Yeah, I got that, the only thing is…
+We will need to, you know,
+Arrange the data based on a date and time.
+So if we, for example, if we have finalized the, payment data for August.
+Jay
+Jay
+20:30
+Yep.
+Darshana
+Darshana
+20:30
+We should block… Data inputting for, that complete.
+Jay
+Jay
+20:35
+Yes, yes, much better. That's a much better solution, yeah, good. So yeah, it should ask you, for what months am I entering this data for?
+Darshana
+Darshana
+20:44
+You might talk a little bit.
+Jay
+Jay
+20:45
+And then it should… it shouldn't really allow you to do the previous month if the payroll has been closed off for that previous month.
+Darshana
+Darshana
+20:53
+Okay, let's.
+Jay
+Jay
+20:54
+Then, yeah, then it kind of saves all the previous work.
+Darshana
+Darshana
+20:58
+Okay, I will do that.
+Jay
+Jay
+21:00
+Yeah, good idea, great, great.
+Darshana
+Darshana
+21:02
+Yeah, okay, now we have…
+Jay
+Jay
+21:04
+Okay, Justin, I think… I mean, for now, it's okay, but in the future, I think there's gonna be times where we realize, shit, we made a mistake, we might need to then unlock
+unlock that info and amend it now.
+Darshana
+Darshana
+21:17
+That's the issue I was also thinking about. The thing is,
+Yeah, the thing is that pre-increase… The development hours…
+Okay. Yeah, let's, let's, let's talk about at the end, and let's finalize, discuss and finalize what we are going to do.
+Jay
+Jay
+21:40
+Yep.
+Darshana
+Darshana
+21:40
+I mean, we'll also…
+Jay
+Jay
+21:42
+That's very rare that that happens, so I'm also happy to just make manual amendments, which is fine.
+Darshana
+Darshana
+21:50
+Okay, let me think about if we have a, you know, easy mechanism to handle that situation. Yeah, great.
+Yeah.
+Let's add the payment data as well.
+Okay…
+Now let's import the data.
+Okay, now the, August data has been imported.
+So, there you will see a summary of the data import.
+Jay
+Jay
+22:30
+Very good.
+Darshana
+Darshana
+22:31
+Okay, there are two duplicate records identified and removed. Let's… Let's see that separately.
+Now, let's go to the payment calculator.
+Jay
+Jay
+22:49
+So, in this scenario also, Dasha, so we've got the data in there, and
+I'm going to update the rules later, so… will that be fine to do? And then I can click run, and it will calculate based on the new rules each time?
+Darshana
+Darshana
+23:06
+Yeah, exactly.
+Jay
+Jay
+23:07
+Okay, good. And I can do that as many times as I want. If I identify that…
+Darshana
+Darshana
+23:11
+Yeah, the… yeah, only thing is, Jay, if you are changing existing rule.
+So, if we have used that rule in the past for calculations, those also going to be changed.
+So the best scenario is… yeah.
+Jay
+Jay
+23:28
+That's not the end of the world, because…
+Darshana
+Darshana
+23:34
+I mean, if you can, instead of changing a rule, if you can add a new… add that as a new rule, then it'll be, it'll be, no issue for you.
+Jay
+Jay
+23:43
+Okay, good. So, alright, so we need new packages each time there's a change.
+Darshana
+Darshana
+23:50
+Yeah, yeah, if you can, yeah, that's a… I guess that's a good mechanism, because you will…
+Have the same past records?
+And,
+We can even, you know, update the rules as a new, version of the same rule.
+Jay
+Jay
+24:10
+Okay.
+Darshana
+Darshana
+24:11
+So we'll have to use some kind of mechanism for that.
+That's what I suggest, so if you need, if you need to change the, change and override the existing rule, that's also possible.
+Jay
+Jay
+24:25
+I think this is, yeah, a consideration you'll have to think about when
+We… we talk about locking previous…
+Darshana
+Darshana
+24:33
+Jean.
+Jay
+Jay
+24:34
+Yeah.
+Darshana
+Darshana
+24:35
+Yeah, in that situation, we can change the existing rule. But, in database management, Jay, to be honest with you, we don't use that mechanism.
+as a best practice, so that's what I, wanted to highlight that.
+So, if your situation is different, we can go with that.
+Jay
+Jay
+24:56
+Yeah, I mean, I will remember, it's just, I fear that in the future, we have… we might have other managers that might…
+Not realize what the… what the ramifications of changing a rule or a price.
+Darshana
+Darshana
+25:13
+Okay.
+So, this is the result, verification, the, the, the, the, both files have, verified now.
+Jay
+Jay
+25:24
+So, let's…
+Darshana
+Darshana
+25:26
+Go with the instructor.
+What's his name? So, you have a sorting, mechanism there.
+Jay
+Jay
+25:33
+Oh, that's excellent, good. We need to sort Adam, please.
+Darshana
+Darshana
+25:38
+I know.
+Joking.
+So, basically…
+Jay
+Jay
+25:50
+Yeah, this looks correct.
+Darshana
+Darshana
+25:54
+So let's, let's cross the, cross-check, A random, record.
+Let's take this one.
+Jay
+Jay
+26:07
+The discounts mechanism, that's not in place yet, is it?
+Darshana
+Darshana
+26:13
+No. Discount mechanism, you mean, the, the payment, or it's under payment irrigation?
+Figgo.
+Jay
+Jay
+26:21
+Okay.
+Darshana
+Darshana
+26:22
+Payment certification, oops.
+Click verify the payments, so payments will be verified, and it'll, categorize the payments under tax.
+And, fits a 100% discount.
+Jay
+Jay
+26:40
+I see.
+Darshana
+Darshana
+26:43
+Yeah.
+So, for example, these two amounts categorized as…
+100% discount, because the same amount is… so this is the scenario we discussed, right?
+If it's a fee, it's undertax.
+Jay
+Jay
+27:03
+Yep, correct. Also, so there's two types of 100% discounts.
+Basically, anything that says discount in the…
+You know what, let's do this. I'll come back to you on that one, because,
+Hold on. It was, you know, you know in the sheet that says, rules, or the original brief?
+That tells you exactly how this mechanism works, because I have… three scenarios, right? .
+Darshana
+Darshana
+27:37
+Hmm?
+Jay
+Jay
+27:37
+So I have, 100% discount.
+which is done under a certain code, usually it's mind-body switch. There, I would like you to treat it as if the discount doesn't apply.
+There are situations where we have a less than 100% discount, so maybe 20%. There, I would like you to apply the discount to every single person, so MFC gets less, the coach gets less.
+There are some where we have given out free classes. So, for example,
+There was, like, box… and the code will have the word discount in it.
+And in that case, I would like everyone to be paid nothing.
+Darshana
+Darshana
+28:25
+Okay, so.
+Jay
+Jay
+28:27
+And, I… the way to distinguish
+Them is in that document, the original brief, or the rules document?
+Darshana
+Darshana
+28:38
+Okay.
+Order was a good girl.
+Jay
+Jay
+28:46
+I think, yeah, brief.doc, we'll have it.
+Darshana
+Darshana
+29:13
+Okay, let me check that, that document, first, Jay. I remember that you have mentioned these scenarios. Yeah. So,
+So, you say, is there any indication in this memo field where I can find those three scenarios?
+Jay
+Jay
+29:30
+Yeah, so, for example… I think Franvilla?
+Invoice number 795.
+Darshana
+Darshana
+29:40
+Yeah?
+Jay
+Jay
+29:42
+boxing discount.
+Hmm…
+Darshana
+Darshana
+29:45
+Yeah.
+Jay
+Jay
+29:46
+Why? Why? I do not remember making a code like that. Bear with me.
+Darshana
+Darshana
+30:01
+So, what we want to do is, first of all, we'll remove the 100% discount, and identifying a mechanism to exclude other discounts as well.
+And then start the verification process, right?
+But you have another scenario where, the payment will be, goes to coaches.
+Jay
+Jay
+30:32
+Based on a…
+Darshana
+Darshana
+30:35
+Based on a pre-desired percentage, right?
+Jay
+Jay
+30:39
+Yes. Let me do this. I'm gonna make you a flow chart to help you understand exactly. Give me… give me 30 minutes, and I'll send it to you.
+Darshana
+Darshana
+30:49
+Okay, if you have already given that information to me, you just need to tell me, so then I can begin, you know, check the information. So you don't want to repeat the same thing.
+Jay
+Jay
+31:01
+I don't mind. To be honest, I need to double-check, my…
+Because I've created new discount codes since then, and I need to make sure that they all fit the same pattern.
+Darshana
+Darshana
+31:12
+Okay.
+Jay
+Jay
+31:13
+I'll give you an updated version.
+Darshana
+Darshana
+31:16
+Yeah, just let me know if my understanding is correct on this one. So, first of all, we will, do the payment verification, and remove whatever the payments that are under discounts, and then only we just need to, verify the records with, attendance, right?
+Jay
+Jay
+31:35
+Hmm, I'm not following you on this one, so…
+I would say, my understanding is, you input those two spreadsheets, you try and link all the records together, so link and attendance with a payment amount.
+Then, there'll be a process where, obviously, we have to verify certain records if we can't, find the payment data. And then, number two, we're looking into the discounts, so…
+as I said, there's 3 types of discount. One is where 100% has been applied, but actually we need to treat it as a, as if there's no discount.
+And there is, another situation where a 100% discount has been applied, and we need to treat it as completely free.
+And then there's another discount where it's anything less than 100%, and then we need to proportionately, apply payments to all parties involved.
+Darshana
+Darshana
+32:39
+Okay, so how about this, since the, since this mechanism is built, total for payment,
+information finalization. So, as the first step, I will get the payment verification file.
+and remove all the discount information from there before I, you know, compare with attendance certification.
+Jay
+Jay
+33:03
+Okay. I think that's a good way of making sure that, yeah, that the base is correct, and then the discount stuff is a separate thing.
+Darshana
+Darshana
+33:09
+Yeah.
+Jay
+Jay
+33:10
+Yeah, and then also, if you go back to the rules section, Dashana, because maybe this might mess things up, because…
+If, so, for example, yeah, like, adult 10-pack, 15-pack, that is discountable.
+So, the price may change based on the… Discount. You following me?
+Darshana
+Darshana
+33:35
+Yeah, how do we identify the discount for that?
+Jay
+Jay
+33:39
+So, I would say that we should have a rule
+I mean, we shouldn't have a price there, unless the price is fixed.
+The rule should be, we divide the price by 15.
+Darshana
+Darshana
+33:54
+Yeah.
+Jay
+Jay
+33:55
+Yeah.
+Darshana
+Darshana
+33:58
+So, how does the discount, risk going to be applied?
+You mean if we… if, for example, if we give a 10% discount for this package, so the, base price would be,
+Reduced 15% from this one. Yeah. And then divide the dip by 15 to get this final price.
+Jay
+Jay
+34:23
+Exactly.
+Darshana
+Darshana
+34:24
+Okay.
+Jay
+Jay
+34:26
+So, I…
+Darshana
+Darshana
+34:26
+I think…
+Jay
+Jay
+34:27
+That it should pick up the actual price paid for the package, rather than a fixed amount that it's expecting.
+Darshana
+Darshana
+34:38
+Okay, is there any possibility that we can, add the correct amount here, without the discount?
+Jay
+Jay
+34:46
+Yes, I mean, it depends on how the mechanism works. So, I mean, I… yeah, I can have the usual price there, but then the system needs to pick up and treat the discounted amounts differently.
+So maybe we include that here, and then later it says.
+If you can see that it's been discounted, and we are actually applying the discount, then we take the new amount and divide that by 15 to get the actual session price.
+Darshana
+Darshana
+35:15
+Okay, is that, discount percentages, consistent for this package.
+I think it's wife.
+Jay
+Jay
+35:25
+No, I mean, there's gonna be lots of different discounts applying to lots of different packages.
+Darshana
+Darshana
+35:31
+I mean, the, the, the, the, this, if we take, this package as example.
+Jay
+Jay
+35:36
+Yeah.
+Darshana
+Darshana
+35:36
+So, the percentage amount will be fixed for that package.
+Or, inside the package, the discount can be changed.
+Do you…
+Jay
+Jay
+35:48
+We may have… we may have a 10% discount that we give out, we might give a 15% discount.
+Darshana
+Darshana
+35:56
+No, I mean, inside the package, for a single package, you will have different, discount percentages.
+Jay
+Jay
+36:05
+Yes, potentially, yeah, it depends which customer we're giving it out to. We have some corporate customers who are on 20%, maybe, some other customers who are on 10%.
+Darshana
+Darshana
+36:15
+Yeah, then, we cannot manage it from here.
+from Role Manager, we'll have to find different mechanism.
+Because this is rather, all package information is saved, so if the percentage is,
+Not consistent, and and depending on the package, we'll have to manage that separately.
+Jay
+Jay
+36:41
+Okay.
+And then also.
+Darshana
+Darshana
+36:43
+So, do you have that information in the payment data or at interest data file?
+Jay
+Jay
+36:48
+The discount…
+Darshana
+Darshana
+36:50
+Only… yeah, the percentage?
+Jay
+Jay
+36:52
+Give me a moment… I think it's… It's definitely in the,
+payments, I will just double check.
+Darshana
+Darshana
+37:03
+Let me open that file.
+Jay
+Jay
+37:10
+Yeah, yes, it's under the memo section, under the payment data.
+Darshana
+Darshana
+37:16
+Okay.
+So, can you give me an example, then I can…
+Jay
+Jay
+37:21
+So, let's say… Sanam.
+She has, on the 2nd of August.
+She has a loyalty one-to-one single-class discount.
+Darshana
+Darshana
+37:35
+So, what's the name?
+Jay
+Jay
+37:36
+Sanam? S-A-N-E-M.
+Darshana
+Darshana
+37:47
+Okay, these are… Oh, under the memo, yeah, so you can see these two… these three records are all linked.
+Jay
+Jay
+37:53
+So she paid $2.29 in taxes.
+And then… so, basically, Dasha, the story here is, we have,
+I had a customer who came in a month before, and I quoted her a price of 35 euros for a class, and then later the price had gone up to 40 euros.
+Darshana
+Darshana
+38:16
+Okay.
+So… So, I think we have a, logic there to capture the actual amount.
+So, if we take this in invoice number.
+Jay
+Jay
+38:30
+Yep.
+Darshana
+Darshana
+38:32
+And this amount is also, we need to remove that, right?
+This is…
+Jay
+Jay
+38:36
+That one, we always ignore that, yeah, correct?
+Darshana
+Darshana
+38:39
+Ja, then, this 37 should be, I mean, if we take the,
+Total amount for that particular invoice.
+Then it'll be, okay, right?
+Jay
+Jay
+38:53
+Yes, exactly.
+Darshana
+Darshana
+38:55
+So, this, scenario, we should consider the package as 32, and if, this have multiple sessions, so we'll need to divide this by number of sessions.
+Jay
+Jay
+39:07
+Yep, exactly. Boom. You got it.
+Darshana
+Darshana
+39:11
+Okay, let's do that. So, I will, you know…
+Keep that in mind, and okay.
+Jay
+Jay
+39:17
+So, my understanding is, you're gonna have the standard logic for anything that doesn't Have a discount?
+And then you'll We'll find…
+Darshana
+Darshana
+39:27
+I mean, not discount the J. The logic was, if we have any minus amount in the amount, that will be, divided, that will be reduced.
+From the totally noise. Yeah.
+Do you have any, you know, you see any, issue in that logic?
+Considering any discount or anything like that, I just remove the minus values from the total invoice.
+And then divide it to, the number of sessions.
+Jay
+Jay
+40:01
+Yeah, so there, there, like I said, there's, there's 3 scenarios.
+And you can… basically, a lot of the discount codes have the word discount in them, the ones that are actual discounts.
+Darshana
+Darshana
+40:15
+Yeah, I understand that. So, what I'm asking is, without considering that, discount thing in the memo.
+Memo description.
+Jay
+Jay
+40:24
+Yep.
+Darshana
+Darshana
+40:25
+If it's a hundred… if it's a 100% discount, you will have a minus 37 here.
+So that scenario is also covered.
+Right?
+Jay
+Jay
+40:36
+Yeah, so in that situation, there's either one of two scenarios, so either it is actually free.
+if it has the word discount in it, then it means the class was free, and I wouldn't like no one to get paid. Or, it means that they were… they had purchased the package with our previous app.
+And then that's usually under the discount code of, TEAMUP SWITCH.
+And in that case, they are paid as usual, as per the usual rules.
+Darshana
+Darshana
+41:10
+So, do you have any example in this file?
+Jay
+Jay
+41:12
+Yes, so, you see where it says mind-body switch?
+Antonio Sena?
+Darshana
+Darshana
+41:19
+This one.
+Jay
+Jay
+41:20
+Yep, that's a good one. So, hmm…
+Darshana
+Darshana
+41:31
+Yeah, for this scenario also, the logic, I said this, applicable, right?
+Jay
+Jay
+41:38
+Second W. Yeah, so, if it's mind-body switch, then…
+we should treat this as usual. So, we ignore the discount.
+Darshana
+Darshana
+41:51
+Yeah, here you don't have any,
+Payments for coaches, or anything like… anyone like that, right?
+Jay
+Jay
+41:59
+No, this one we repay as normal. For everyone.
+Darshana
+Darshana
+42:04
+Oh, that didn't shoot there.
+Jay
+Jay
+42:06
+Yeah, that's where the difficulty is, but you can filter by the memo. So, anything that's an actual discount will have the word discount in it.
+There are a few exceptions, which I've also included on that brief sheet.
+But, MindBodySwitch is a good example where everyone should be paid as usual.
+Darshana
+Darshana
+42:30
+That is the only scenario, we are going to pay for purchase, when we… when the scenario is applicable for a discount.
+Jay
+Jay
+42:43
+So there are a few codes.
+like, in the past, Ashina, I didn't realize that we were gonna build this software, so I didn't know the ramifications of the naming. There are a few old codes that fall in this category as well, and I've given you the list.
+Darshana
+Darshana
+43:00
+Okay, is there any possibility that, we can standardize from your system?
+Jay
+Jay
+43:05
+Yes, I can't do it for the past.
+Darshana
+Darshana
+43:09
+But I can do it for the future.
+Okay.
+Jay
+Jay
+43:13
+So I will… for now, any new co… and ever since we've had this conversation, like, a few months ago, I standardized, so if it has the word discount in it, then that means it's a real discount, and we apply it properly. If it's something where I'm just trying to input something and…
+You know, give them a free class.
+Darshana
+Darshana
+43:38
+Yeah, I got. I will, yeah, just send me the, memos, Jay. Yeah, sure. Then I will, remove that from the court.
+Jay
+Jay
+43:47
+Copy. Okay, will do.
+Yeah, I'll send you an updated memo, because there's a few new, A few new things.
+Darshana
+Darshana
+43:55
+Okay.
+Right. So, then payment verification is that.
+Awww.
+And I'm in the process of improving this, verification summary area.
+Jay
+Jay
+44:15
+Okay.
+Darshana
+Darshana
+44:16
+You can, you know, have a summary of the information, so it is not finalized yet.
+And, there you will have the, coach payments.
+This is also, I need to, you know, check and finalize the formulas and everything. This is not finished yet.
+Jay
+Jay
+44:40
+So…
+Darshana
+Darshana
+44:42
+And BGM and, all these… Hi, Seth.
+So, probably by, I'm planning to finish this, all tabs by tomorrow.
+And then, once we finalize all these four tabs.
+Then go to the reports, because, reports will take, like, 5 to 6 hours.
+So, it's not a big deal. So, once we finalized the calculations and the mechanism.
+And manage the exceptions that we discussed, so…
+We just need to, finalize a format for these… Reports?
+And, finalize the coding.
+So we're almost there.
+Jay
+Jay
+45:30
+Solid plan. I like it.
+Darshana
+Darshana
+45:31
+Yeah, yeah.
+So, do you have any, questions, Jay?
+Jay
+Jay
+45:38
+Not for now, yeah, if you could send me over the…
+link, I can then update the… so I've got 3 things to do, right? I need to, update the rules, update the coaches.
+And, send you a summary of all the discounts, and how they work.
+Darshana
+Darshana
+45:58
+Okay, so, I'm going to send you the…
+description. This one, I already sent you the same,
+Jay
+Jay
+46:08
+The front end I have yet, but I just don't have the.
+Darshana
+Darshana
+46:10
+Yeah, that's… yeah, that's the link, that's the link for the app, Jay. Same app.
+Yeah, if you need to, if you need to have a custom name.
+You can, obtain a name from, GoReady or anything like that?
+and send it to me, then I can change it for you, but it seems.
+Jay
+Jay
+46:31
+Okay, well, we have a website, so it'd be nice if it was incorporated in the website, but no big deal for now.
+Darshana
+Darshana
+46:38
+Okay.
+Then I will, send this to you. At any given time, you can change that.
+Jay
+Jay
+46:43
+Yeah, great.
+Darshana
+Darshana
+46:45
+Okay.
+Okay, Jay, then, let's have a chat whenever possible by tomorrow, just let me know. I will, finish everything and let you know by tomorrow.
+Jay
+Jay
+46:57
+Beautiful, thank you.
+Darshana
+Darshana
+46:58
+Okay, Jay.
+Jay
+Jay
+46:59
+Thank you, Darshan. It's great work. I'm really pleased.
+Darshana
+Darshana
+Yeah, thank you, Erdogan. So, let's have a chat.
+Jay
+Jay
+47:06
+Yeah, speak soon.
