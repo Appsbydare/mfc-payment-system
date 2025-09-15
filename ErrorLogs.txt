@@ -1,24 +1,23 @@
-[14:57:07.581] Running build in Washington, D.C., USA (East) – iad1
-[14:57:07.582] Build machine configuration: 2 cores, 8 GB
-[14:57:07.615] Cloning github.com/Appsbydare/mfc-payment-frontend (Branch: main, Commit: 0fd2074)
-[14:57:08.055] Cloning completed: 439.000ms
-[14:57:08.616] Restored build cache from previous deployment (2eMUCc9EiSuyaTMSq9LEt2dZmBfW)
-[14:57:09.191] Running "vercel build"
-[14:57:09.626] Vercel CLI 47.0.5
-[14:57:11.014] Installing dependencies...
-[14:57:12.541] npm warn deprecated npmlog@5.0.1: This package is no longer supported.
-[14:57:12.545] npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
-[14:57:12.582] npm warn deprecated gauge@3.0.2: This package is no longer supported.
-[14:57:15.228] 
-[14:57:15.229] up to date in 4s
-[14:57:15.229] 
-[14:57:15.229] 86 packages are looking for funding
-[14:57:15.230]   run `npm fund` for details
-[14:57:15.666] 
-[14:57:15.666] > mfc-payment-frontend@1.0.0 build
-[14:57:15.667] > tsc && vite build
-[14:57:15.667] 
-[14:57:19.729] src/App.tsx(37,9): error TS2322: Type '{ children: Element; fromDate: string; toDate: string; onFromDateChange: Dispatch<SetStateAction<string>>; onToDateChange: Dispatch<SetStateAction<string>>; }' is not assignable to type 'IntrinsicAttributes & LayoutProps'.
-[14:57:19.729]   Property 'fromDate' does not exist on type 'IntrinsicAttributes & LayoutProps'.
-[14:57:19.730] src/components/layout/Header.tsx(12,9): error TS6133: 'location' is declared but its value is never read.
-[14:57:19.749] Error: Command "npm run build" exited with 2
+PS D:\01. Fiverr\602 - JR_New_Restore\frontend> Set-Location "D:\01. Fiverr\602 - JR_New_Restore\frontend"
+>> git switch -C main
+>> git pull --rebase origin main
+>> git add -A
+>> git commit -m "fix(api): correct base URL to not double-append /api for Vercel backend"
+>> git push -u origin main
+Reset branch 'main'
+Your branch is up to date with 'origin/main'.
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[main 6327455] fix(api): correct base URL to not double-append /api for Vercel backend
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 535 bytes | 535.00 KiB/s, done.
+Total 5 (delta 3), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Appsbydare/mfc-payment-frontend.git
+   e546306..6327455  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\01. Fiverr\602 - JR_New_Restore\frontend>
