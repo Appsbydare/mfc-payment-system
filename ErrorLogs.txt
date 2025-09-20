@@ -1,79 +1,23 @@
-PS D:\01. Fiverr\602 - JR_New_Restore - 2\backend> cd "D:\01. Fiverr\602 - JR_New_Restore - 2"
-PS D:\01. Fiverr\602 - JR_New_Restore - 2> cd frontend
->> git pull origin main
->> git push origin main
-remote: Enumerating objects: 48, done.
-remote: Counting objects: 100% (48/48), done.
-remote: Compressing objects: 100% (20/20), done.
-remote: Total 39 (delta 30), reused 26 (delta 17), pack-reused 0 (from 0)
-Unpacking objects: 100% (39/39), 6.33 KiB | 39.00 KiB/s, done.
-From https://github.com/Appsbydare/mfc-payment-frontend
- * branch            main       -> FETCH_HEAD
-   477e1f8..548c472  main       -> origin/main
-Auto-merging src/services/api.ts
-CONFLICT (content): Merge conflict in src/services/api.ts
-Automatic merge failed; fix conflicts and then commit the result.
-To https://github.com/Appsbydare/mfc-payment-frontend.git
- ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/Appsbydare/mfc-payment-frontend.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. If you want to integrate the remote changes,
-hint: use 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-PS D:\01. Fiverr\602 - JR_New_Restore - 2\frontend> cd backend
->> git pull origin main
->> git push origin main
-Set-Location: Cannot find path 'D:\01. Fiverr\602 - JR_New_Restore - 2\frontend\backend' because it does not exist.
-error: Pulling is not possible because you have unmerged files.
-hint: Fix them up in the work tree, and then use 'git add/rm <file>'
-hint: as appropriate to mark resolution and make a commit.
-fatal: Exiting because of an unresolved conflict.
-To https://github.com/Appsbydare/mfc-payment-frontend.git
- ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/Appsbydare/mfc-payment-frontend.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. If you want to integrate the remote changes,
-hint: use 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-PS D:\01. Fiverr\602 - JR_New_Restore - 2\frontend> cd "D:\01. Fiverr\602 - JR_New_Restore - 2"
-PS D:\01. Fiverr\602 - JR_New_Restore - 2> cd backend
->> git pull origin main
->> git push origin main
-remote: Enumerating objects: 41, done.
-remote: Counting objects: 100% (41/41), done.
-remote: Compressing objects: 100% (23/23), done.
-remote: Total 41 (delta 26), reused 33 (delta 18), pack-reused 0 (from 0)
-Unpacking objects: 100% (41/41), 14.87 KiB | 25.00 KiB/s, done.
-From https://github.com/Appsbydare/mfc-payment-backend
- * branch            main       -> FETCH_HEAD
-   d04e760..d427cbe  main       -> origin/main
-Auto-merging api/index.js
-CONFLICT (content): Merge conflict in api/index.js
-CONFLICT (modify/delete): src/routes/verification.ts deleted in HEAD and modified in d427cbef073b0761e6bd3b0f0c815a771209e344.  Version d427cbef073b0761e6bd3b0f0c815a771209e344 of src/routes/verification.ts left in tree.
-Automatic merge failed; fix conflicts and then commit the result.
-To https://github.com/Appsbydare/mfc-payment-backend.git
- ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/Appsbydare/mfc-payment-backend.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. If you want to integrate the remote changes,
-hint: use 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-PS D:\01. Fiverr\602 - JR_New_Restore - 2\backend> cd "D:\01. Fiverr\602 - JR_New_Restore - 2"
-PS D:\01. Fiverr\602 - JR_New_Restore - 2> cd ..
->> git add .
->> git commit -m "docs: add documentation for removed Dashboard and Verification systems
->>
->> - Add REMOVED_DASHBOARD_MECHANISM.md
->> - Add REMOVED_ATTENDANCE_VERIFICATION_SYSTEM.md
->> - Document complete removal of both systems as requested"
->> git push origin restore-90b833a
-fatal: not a git repository (or any of the parent directories): .git
-fatal: not a git repository (or any of the parent directories): .git
-fatal: not a git repository (or any of the parent directories): .git
-PS D:\01. Fiverr>
-
-
-
-
-
-
+14:31:29.915 Running build in Washington, D.C., USA (East) – iad1
+14:31:29.915 Build machine configuration: 2 cores, 8 GB
+14:31:29.936 Cloning github.com/Appsbydare/mfc-payment-frontend (Branch: main, Commit: 5e93cba)
+14:31:30.523 Cloning completed: 587.000ms
+14:31:30.789 Restored build cache from previous deployment (HfknpKS7XNPCuJMgA3ccfmNmwPZL)
+14:31:31.270 Running "vercel build"
+14:31:31.641 Vercel CLI 48.0.2
+14:31:32.174 Installing dependencies...
+14:31:33.504 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+14:31:33.512 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+14:31:33.546 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+14:31:35.929 
+14:31:35.929 up to date in 4s
+14:31:35.930 
+14:31:35.931 86 packages are looking for funding
+14:31:35.932   run `npm fund` for details
+14:31:36.106 
+14:31:36.106 > mfc-payment-frontend@1.0.0 build
+14:31:36.106 > tsc && vite build
+14:31:36.106 
+14:31:40.147 src/pages/VerificationManager.tsx(136,26): error TS2339: Property 'services' does not exist on type '{ existingRecords: number; initializedRecords: number; sampleData: any[]; }'.
+14:31:40.148 src/pages/VerificationManager.tsx(137,64): error TS2339: Property 'services' does not exist on type '{ existingRecords: number; initializedRecords: number; sampleData: any[]; }'.
+14:31:40.186 Error: Command "npm run build" exited with 2

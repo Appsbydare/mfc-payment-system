@@ -1,0 +1,81 @@
+Enhanced Verification Process with Invoice Tracking
+Step 1: Data Loading & Initialization
+Load all required data:
+Attendance records from attendance sheet
+Payment records from Payments sheet
+Rules from rules sheet (for package matching)
+Discounts from Discount Manager sheet
+Initialize Invoice Verification System:
+Load existing invoice verification data from Inv_Verification sheet
+If empty, initialize from Payments sheet by aggregating payments by invoice
+Create invoice records with: totalAmount, usedAmount, remainingBalance, status
+Step 2: Rule Matching (Exact Matching)
+For each attendance record:
+Find exact rule match:
+Match Membership Name (from attendance) with attendance_alias (column W in rules)
+If no exact match found → Status: "Package Cannot be found"
+If match found → Extract packagePrice (column E) and sessionPrice (column H)
+Step 3: Invoice Balance Tracking (FIFO)
+For each attendance record with valid rule:
+Find available invoice (FIFO):
+Look for customer's invoices with remainingBalance >= sessionPrice
+Use First-In-First-Out (oldest invoices first)
+Check invoice status: Available or Partially Used
+Invoice decision logic:
+If invoice found with sufficient balance:
+Status: "Verified"
+Use sessionPrice as amount
+Update invoice: usedAmount += sessionPrice, remainingBalance -= sessionPrice
+Update sessionsUsed and lastUsedDate
+If no invoice with sufficient balance:
+Status: "Not Verified" (for manual verification later)
+Track as unverified balance
+Step 4: Discount Application
+For verified records:
+Apply discounts:
+Find discount by invoiceNumber and discountPercentage
+Calculate discountedSessionPrice = sessionPrice * (1 - discountPercentage/100)
+All subsequent calculations use discountedSessionPrice
+Step 5: Coach & Fee Calculations
+For verified records:
+Calculate coach percentage:
+Use Coaches % from rules sheet
+coachAmount = discountedSessionPrice * (coachesPercentage/100)
+Calculate other fees:
+Platform fees, taxes, etc. based on discountedSessionPrice
+Step 6: Invoice Status Updates
+After processing each record:
+Update invoice status:
+Available → Partially Used (if balance remaining)
+Available → Fully Used (if balance = 0)
+Track sessionsUsed and totalSessions
+Step 7: Data Persistence
+Save invoice verification data:
+Write updated invoice records to Inv_Verification sheet
+Include: remainingBalance, usedAmount, status, sessionsUsed
+Save master verification data:
+Write all processed records to payment_calc_detail sheet
+Include: verificationStatus, invoiceNumber, amount, discountedSessionPrice
+Key Improvements We Planned:
+1. FIFO Invoice Management
+✅ Use oldest invoices first
+✅ Track remaining balances
+✅ Prevent over-usage of invoices
+2. Exact Rule Matching
+✅ No fuzzy matching - exact attendance_alias match only
+✅ Clear "Package Cannot be found" status for unmatched records
+3. Invoice Balance Tracking
+✅ Real-time balance updates
+✅ Session usage tracking (e.g., "5/10 sessions used")
+✅ Unverified balance tracking for manual review
+4. Enhanced Status System
+✅ "Verified" - Successfully matched with invoice
+✅ "Not Verified" - No available invoice balance
+✅ "Package Cannot be found" - No matching rule
+5. Discount Integration
+✅ Apply discounts to discountedSessionPrice
+✅ All calculations based on discounted amount
+✅ Preserve original packagePrice and sessionPrice
+Current Status:
+The system is now working without errors, but we need to implement the FIFO invoice logic and proper balance tracking to complete the enhancement.
+Would you like me to proceed with implementing these improvements step by step?
