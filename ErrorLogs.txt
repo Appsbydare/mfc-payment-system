@@ -1,23 +1,26 @@
-14:31:29.915 Running build in Washington, D.C., USA (East) – iad1
-14:31:29.915 Build machine configuration: 2 cores, 8 GB
-14:31:29.936 Cloning github.com/Appsbydare/mfc-payment-frontend (Branch: main, Commit: 5e93cba)
-14:31:30.523 Cloning completed: 587.000ms
-14:31:30.789 Restored build cache from previous deployment (HfknpKS7XNPCuJMgA3ccfmNmwPZL)
-14:31:31.270 Running "vercel build"
-14:31:31.641 Vercel CLI 48.0.2
-14:31:32.174 Installing dependencies...
-14:31:33.504 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
-14:31:33.512 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
-14:31:33.546 npm warn deprecated gauge@3.0.2: This package is no longer supported.
-14:31:35.929 
-14:31:35.929 up to date in 4s
-14:31:35.930 
-14:31:35.931 86 packages are looking for funding
-14:31:35.932   run `npm fund` for details
-14:31:36.106 
-14:31:36.106 > mfc-payment-frontend@1.0.0 build
-14:31:36.106 > tsc && vite build
-14:31:36.106 
-14:31:40.147 src/pages/VerificationManager.tsx(136,26): error TS2339: Property 'services' does not exist on type '{ existingRecords: number; initializedRecords: number; sampleData: any[]; }'.
-14:31:40.148 src/pages/VerificationManager.tsx(137,64): error TS2339: Property 'services' does not exist on type '{ existingRecords: number; initializedRecords: number; sampleData: any[]; }'.
-14:31:40.186 Error: Command "npm run build" exited with 2
+19:35:34.399 Running build in Washington, D.C., USA (East) – iad1
+19:35:34.402 Build machine configuration: 2 cores, 8 GB
+19:35:34.450 Cloning github.com/Appsbydare/mfc-payment-backend (Branch: main, Commit: f982013)
+19:35:35.094 Cloning completed: 644.000ms
+19:35:35.594 Restored build cache from previous deployment (CQSohoyKc18b3736rBWXJ8GE7szS)
+19:35:36.303 Running "vercel build"
+19:35:36.697 Vercel CLI 48.0.2
+19:35:36.860 WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+19:35:37.323 Installing dependencies...
+19:35:38.774 
+19:35:38.776 up to date in 1s
+19:35:38.777 
+19:35:38.777 118 packages are looking for funding
+19:35:38.777   run `npm fund` for details
+19:35:38.817 Running "npm run vercel-build"
+19:35:38.926 
+19:35:38.926 > mfc-payment-backend@1.0.0 vercel-build
+19:35:38.926 > npm run build
+19:35:38.926 
+19:35:39.036 
+19:35:39.037 > mfc-payment-backend@1.0.0 build
+19:35:39.037 > npx tsc
+19:35:39.037 
+19:35:47.616 src/routes/attendanceVerification.ts(129,41): error TS2341: Property 'saveMasterData' is private and only accessible within class 'AttendanceVerificationService'.
+19:35:47.617 src/routes/attendanceVerification.ts(176,41): error TS2341: Property 'saveMasterData' is private and only accessible within class 'AttendanceVerificationService'.
+19:35:47.700 Error: Command "npm run vercel-build" exited with 2
