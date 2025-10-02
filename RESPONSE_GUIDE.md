@@ -1,7 +1,7 @@
 # MFC Payment System - Response Guide
 
 ## Project Overview
-This is a **monorepo-style project** for the MFC Payment System with separate frontend and backend repositories that need to be deployed independently.
+This is a **monorepo-style project** for the MFC Payment System with separate frontend and backend repositories that need to be deployed independently. Each repository has its own Git repository and must be pushed separately.
 
 ## Project Structure
 ```
@@ -79,12 +79,14 @@ vercel --prod
 ```
 
 ### Development Setup
+**Note**: This project is deployed directly to Vercel without local testing. All environment variables are configured in the Vercel backend repository.
+
 ```powershell
-# Backend (Terminal 1)
+# Backend (Terminal 1) - For development only
 cd backend
 npm start
 
-# Frontend (Terminal 2)
+# Frontend (Terminal 2) - For development only
 cd frontend
 npm run dev
 ```
@@ -92,15 +94,17 @@ npm run dev
 ## Environment Configuration
 
 ### Backend Environment Variables Required
+**Note**: All environment variables are already configured in the Vercel backend repository. Google Sheets and Google Console settings are saved under environment variables in Vercel.
+
 ```env
 # Server Configuration
 PORT=5000
-NODE_ENV=development
+NODE_ENV=production
 
 # CORS Configuration
-CORS_ORIGIN=http://localhost:3000
+CORS_ORIGIN=https://your-frontend-domain.vercel.app
 
-# Google Sheets API Configuration (CRITICAL)
+# Google Sheets API Configuration (CRITICAL) - Already configured in Vercel
 GOOGLE_SHEETS_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_HERE\n-----END PRIVATE KEY-----\n"
 GOOGLE_SHEETS_CLIENT_EMAIL=your-service-account@your-project.iam.gserviceaccount.com
 GOOGLE_SHEETS_PROJECT_ID=your-project-id
@@ -117,8 +121,8 @@ RATE_LIMIT_MAX_REQUESTS=100
 
 ### Frontend Environment Variables
 ```env
-# API Configuration
-VITE_API_URL=http://localhost:5000/api
+# API Configuration - Already configured in Vercel
+VITE_API_URL=https://your-backend-domain.vercel.app/api
 ```
 
 ## Google Sheets Integration
@@ -219,9 +223,11 @@ The system expects these sheets in the Google Spreadsheet:
 4. **Styling**: Follow the dark theme pattern established in Verification Manager
 
 ### Testing
-- Backend: Check console for Google Sheets connection status
-- Frontend: Verify API calls work in browser dev tools
-- Integration: Test full workflows (import → verify → export)
+**Note**: This project is deployed directly to Vercel without local testing. All testing is done on the production environment.
+
+- Backend: Check Vercel logs for Google Sheets connection status
+- Frontend: Verify API calls work in production environment
+- Integration: Test full workflows (import → verify → export) on deployed application
 
 ## File Organization
 
@@ -260,6 +266,19 @@ frontend/
 3. **Update both frontend and backend** if API changes are needed
 4. **Test integration** between frontend and backend
 5. **Document any new environment variables** or setup requirements
+
+### Mandatory Response Footer (Every Conversation)
+- Always append the "Git Push Commands" block (backend and frontend) tailored to this monorepo.
+- If any deployment/build errors were seen in current or previous messages, list them briefly under "Known Deployment Errors" and confirm fixes or the next action.
+- Keep the footer concise and copy-paste ready.
+
+### Deployment Error Log (Running Ledger)
+- Maintain a short running ledger of the latest deployment errors to avoid repeats.
+- Update this list when new errors occur and when they are fixed.
+
+Known Deployment Errors (examples)
+- Frontend TS build: String has no call signatures in `VerificationManager.tsx` → fixed by using template literals instead of `String(...)` and ordering variable initialization.
+- Frontend TS build: implicit any/self-referential initializer for `changeHistory` → fixed by explicit string typing and separate variables.
 
 ### Code Style Requirements
 - Use TypeScript for type safety
@@ -306,13 +325,49 @@ cd frontend && vercel --prod
 
 ### Troubleshooting
 ```powershell
-# Check backend health
-curl http://localhost:5000/api/health
+# Check backend health (production)
+curl https://your-backend-domain.vercel.app/api/health
 
-# Check frontend
-# Open http://localhost:3000 in browser
+# Check frontend (production)
+# Open https://your-frontend-domain.vercel.app in browser
+```
+
+## Git Push Commands
+
+### Backend Repository (always include)
+```powershell
+# Navigate to backend directory
+cd backend
+
+# Add all changes
+git add .
+
+# Commit the changes
+git commit -m "Your commit message here"
+
+# Push to backend repository
+git push origin main
+```
+
+### Frontend Repository (always include)
+```powershell
+# Navigate to frontend directory
+cd frontend
+
+# Add all changes
+git add .
+
+# Commit the changes
+git commit -m "Your commit message here"
+
+# Push to frontend repository
+git push origin main
 ```
 
 ---
 
-**Remember**: This is a monorepo with separate deployments. Always deploy frontend and backend independently using the PowerShell commands above.
+When responding to the user, always end with the two Git Push blocks above and, if applicable, a brief "Known Deployment Errors" note reflecting the ledger here.
+
+---
+
+**Remember**: This project uses separate repositories for frontend and backend. Each must be pushed to its own Git repository independently. All environment variables are configured in Vercel, and the project is deployed directly to production without local testing.

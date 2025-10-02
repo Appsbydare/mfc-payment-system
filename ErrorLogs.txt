@@ -1,26 +1,25 @@
-19:35:34.399 Running build in Washington, D.C., USA (East) – iad1
-19:35:34.402 Build machine configuration: 2 cores, 8 GB
-19:35:34.450 Cloning github.com/Appsbydare/mfc-payment-backend (Branch: main, Commit: f982013)
-19:35:35.094 Cloning completed: 644.000ms
-19:35:35.594 Restored build cache from previous deployment (CQSohoyKc18b3736rBWXJ8GE7szS)
-19:35:36.303 Running "vercel build"
-19:35:36.697 Vercel CLI 48.0.2
-19:35:36.860 WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
-19:35:37.323 Installing dependencies...
-19:35:38.774 
-19:35:38.776 up to date in 1s
-19:35:38.777 
-19:35:38.777 118 packages are looking for funding
-19:35:38.777   run `npm fund` for details
-19:35:38.817 Running "npm run vercel-build"
-19:35:38.926 
-19:35:38.926 > mfc-payment-backend@1.0.0 vercel-build
-19:35:38.926 > npm run build
-19:35:38.926 
-19:35:39.036 
-19:35:39.037 > mfc-payment-backend@1.0.0 build
-19:35:39.037 > npx tsc
-19:35:39.037 
-19:35:47.616 src/routes/attendanceVerification.ts(129,41): error TS2341: Property 'saveMasterData' is private and only accessible within class 'AttendanceVerificationService'.
-19:35:47.617 src/routes/attendanceVerification.ts(176,41): error TS2341: Property 'saveMasterData' is private and only accessible within class 'AttendanceVerificationService'.
-19:35:47.700 Error: Command "npm run vercel-build" exited with 2
+18:14:49.646 Running build in Washington, D.C., USA (East) – iad1
+18:14:49.646 Build machine configuration: 2 cores, 8 GB
+18:14:49.677 Cloning github.com/Appsbydare/mfc-payment-frontend (Branch: main, Commit: b31c776)
+18:14:50.311 Cloning completed: 633.000ms
+18:14:50.758 Restored build cache from previous deployment (BXYMU5tghgEMEjjcVudGvKHAG57N)
+18:14:51.282 Running "vercel build"
+18:14:51.672 Vercel CLI 48.1.6
+18:14:52.564 Installing dependencies...
+18:14:54.372 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+18:14:54.384 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+18:14:54.417 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+18:14:57.035 
+18:14:57.035 up to date in 4s
+18:14:57.035 
+18:14:57.036 86 packages are looking for funding
+18:14:57.036   run `npm fund` for details
+18:14:57.241 
+18:14:57.241 > mfc-payment-frontend@1.0.0 build
+18:14:57.242 > tsc && vite build
+18:14:57.242 
+18:15:01.701 src/pages/VerificationManager.tsx(230,92): error TS2349: This expression is not callable.
+18:15:01.701   Type 'String' has no call signatures.
+18:15:01.702 src/pages/VerificationManager.tsx(231,39): error TS2448: Block-scoped variable 'changeHistoryText' used before its declaration.
+18:15:01.702 src/pages/VerificationManager.tsx(231,39): error TS2454: Variable 'changeHistoryText' is used before being assigned.
+18:15:01.721 Error: Command "npm run build" exited with 2
