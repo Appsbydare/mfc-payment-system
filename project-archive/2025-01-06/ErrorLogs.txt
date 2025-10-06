@@ -1,0 +1,17 @@
+13:34:47.060 Running build in Washington, D.C., USA (East) – iad1
+13:34:47.060 Build machine configuration: 2 cores, 8 GB
+13:34:47.075 Cloning github.com/Appsbydare/mfc-payment-system (Branch: restore-90b833a, Commit: d472e22)
+13:34:47.294 Previous build caches not available
+13:34:47.436 Warning: Failed to fetch one or more git submodules
+13:34:47.436 Cloning completed: 361.000ms
+13:34:47.783 Running "vercel build"
+13:34:48.187 Vercel CLI 48.2.0
+13:34:49.073 npm error code ENOENT
+13:34:49.074 npm error syscall open
+13:34:49.075 npm error path /vercel/path0/package.json
+13:34:49.075 npm error errno -2
+13:34:49.075 npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/vercel/path0/package.json'
+13:34:49.075 npm error enoent This is related to npm not being able to find a file.
+13:34:49.076 npm error enoent
+13:34:49.076 npm error A complete log of this run can be found in: /vercel/.npm/_logs/2025-10-06T08_04_49_002Z-debug-0.log
+13:34:49.086 Error: Command "npm run build" exited with 254

@@ -1,0 +1,9 @@
+{
+  "name": "mfc-payment-system-hub",
+  "version": "1.0.0",
+  "description": "Project hub for MFC Payment System",
+  "private": true,
+  "scripts": {
+    "docs": "echo \"Documentation and project management repository\""
+  }
+}
