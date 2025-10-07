@@ -1,17 +1,30 @@
-13:34:47.060 Running build in Washington, D.C., USA (East) – iad1
-13:34:47.060 Build machine configuration: 2 cores, 8 GB
-13:34:47.075 Cloning github.com/Appsbydare/mfc-payment-system (Branch: restore-90b833a, Commit: d472e22)
-13:34:47.294 Previous build caches not available
-13:34:47.436 Warning: Failed to fetch one or more git submodules
-13:34:47.436 Cloning completed: 361.000ms
-13:34:47.783 Running "vercel build"
-13:34:48.187 Vercel CLI 48.2.0
-13:34:49.073 npm error code ENOENT
-13:34:49.074 npm error syscall open
-13:34:49.075 npm error path /vercel/path0/package.json
-13:34:49.075 npm error errno -2
-13:34:49.075 npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/vercel/path0/package.json'
-13:34:49.075 npm error enoent This is related to npm not being able to find a file.
-13:34:49.076 npm error enoent
-13:34:49.076 npm error A complete log of this run can be found in: /vercel/.npm/_logs/2025-10-06T08_04_49_002Z-debug-0.log
-13:34:49.086 Error: Command "npm run build" exited with 254
+13:28:16.426 Running build in Washington, D.C., USA (East) – iad1
+13:28:16.426 Build machine configuration: 2 cores, 8 GB
+13:28:16.447 Cloning github.com/Appsbydare/mfc-payment-frontend (Branch: main, Commit: 3b45dfe)
+13:28:16.967 Cloning completed: 519.000ms
+13:28:17.280 Restored build cache from previous deployment (EwSFWa9W4Do8W9uHizJzAYwqHT1B)
+13:28:17.823 Running "vercel build"
+13:28:18.212 Vercel CLI 48.2.0
+13:28:18.786 Installing dependencies...
+13:28:20.145 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+13:28:20.155 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+13:28:20.188 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+13:28:22.862 
+13:28:22.862 up to date in 4s
+13:28:22.862 
+13:28:22.863 86 packages are looking for funding
+13:28:22.863   run `npm fund` for details
+13:28:23.007 
+13:28:23.007 > mfc-payment-frontend@1.0.0 build
+13:28:23.008 > tsc && vite build
+13:28:23.008 
+13:28:27.762 src/pages/VerificationManager.tsx(870,14): error TS1109: Expression expected.
+13:28:27.763 src/pages/VerificationManager.tsx(900,11): error TS1128: Declaration or statement expected.
+13:28:27.764 src/pages/VerificationManager.tsx(904,11): error TS2657: JSX expressions must have one parent element.
+13:28:27.764 src/pages/VerificationManager.tsx(1272,9): error TS1128: Declaration or statement expected.
+13:28:27.764 src/pages/VerificationManager.tsx(1274,7): error TS1109: Expression expected.
+13:28:27.765 src/pages/VerificationManager.tsx(1274,8): error TS1128: Declaration or statement expected.
+13:28:27.765 src/pages/VerificationManager.tsx(1425,5): error TS1128: Declaration or statement expected.
+13:28:27.765 src/pages/VerificationManager.tsx(1427,3): error TS1109: Expression expected.
+13:28:27.765 src/pages/VerificationManager.tsx(1429,1): error TS1128: Declaration or statement expected.
+13:28:27.784 Error: Command "npm run build" exited with 2
