@@ -1,0 +1,28 @@
+15:20:23.897 
+Installing dependencies...
+15:20:25.279 
+npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+15:20:25.286 
+npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+15:20:25.317 
+npm warn deprecated gauge@3.0.2: This package is no longer supported.
+15:20:28.567 
+15:20:28.568 
+up to date in 4s
+15:20:28.568 
+15:20:28.568 
+86 packages are looking for funding
+15:20:28.569 
+  run `npm fund` for details
+15:20:28.781 
+15:20:28.782 
+> mfc-payment-frontend@1.0.0 build
+15:20:28.782 
+> tsc && vite build
+15:20:28.782 
+15:20:33.751 
+src/pages/Reports.tsx(15,10): error TS6133: 'selectedCoach' is declared but its value is never read.
+15:20:33.752 
+src/pages/Reports.tsx(15,25): error TS6133: 'setSelectedCoach' is declared but its value is never read.
+15:20:33.773 
+Error: Command "npm run build" exited with 2
