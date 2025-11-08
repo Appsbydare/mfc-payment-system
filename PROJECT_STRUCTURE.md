@@ -105,3 +105,27 @@ Backend Vercel config
 
 ## Troubleshooting
 - If Vercel fails building an old project connected to this monorepo, ensure it’s disconnected or configured with a Root Directory. Only the split repos should auto-deploy.
+
+## Git Commands (Monorepo → Split Repos)
+Use this template for creating a feature branch, committing changes, and syncing to the split frontend/backend repositories.
+
+```bash
+# 1) Create a feature branch and commit your changes in the monorepo
+git checkout -b <your-feature-branch>
+git add <paths>
+git commit -m "<concise change description>"
+git push origin <your-feature-branch>
+
+# 2) Split and push Frontend to its repo (from monorepo root)
+git subtree split --prefix=frontend -b frontend-split
+git push https://github.com/Appsbydare/mfc-payment-frontend.git frontend-split:main --force
+
+# 3) Split and push Backend to its repo (from monorepo root)
+git subtree split --prefix=backend -b backend-split
+git push https://github.com/Appsbydare/mfc-payment-backend.git backend-split:main --force
+```
+
+Notes:
+- Replace `<your-feature-branch>` and `<paths>` as needed.
+- Use the same branch name across changes to keep traceability.
+- The `--force` on subtree pushes is expected because the split history is regenerated each time.
